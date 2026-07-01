@@ -8,7 +8,7 @@ show heading.where(level: 2) : it => [ #counter(heading).step() #pagebreak()  Le
 
 show heading.where(level: 1) : set text(size: 22pt, style: "italic", weight: "light")
 show heading.where(level: 1) : it => [   #pagebreak() #set align(center+ horizon)
-    #text(size: 34pt, style: "italic", weight: "light")[Kapitel: #counter(heading.where(level: 1)).display() #it.body ] #counter(heading.where(level: 1)).step()
+    #text(size: 34pt, style: "italic", weight: "light")[Kapitel #counter(heading.where(level: 1)).display(): #it.body ] #counter(heading.where(level: 1)).step()
 ]
 
     body

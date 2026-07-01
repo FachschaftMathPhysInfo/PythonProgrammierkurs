@@ -47,16 +47,12 @@ body
 }
 
 #let Code(path, basename: "../Code/") = {
-let content = {
-    let raw_c = read(basename + path)
-    // Remove trailing newline
-     if (raw_c.last() == "\n") {
-        str.slice(raw_c, 0, -1)
-        
-        
+    let content =  {
+
+        let raw = read(basename + path)
+        raw.trim(regex("\s"), at: end)
+
     }
-    else {raw_c}
-}
 
 
 zebraw(raw(lang: "Python", content, block: true))
@@ -64,9 +60,9 @@ zebraw(raw(lang: "Python", content, block: true))
 
 
 
+// Quiz is  abit more complicated than the other environments 
 #let Quiz_answers = state("Quiz_answers", ())
 
-// Quiz is  abit more complicated than the other environments 
 #let Quiz(answer: "", body) = {
      context {
     let number =   counter(heading).get().at(0)
@@ -80,7 +76,7 @@ zebraw(raw(lang: "Python", content, block: true))
 
 #let Quiz_answers_table() = {
 
-    [ Wir haben #context Quiz_answers.final().len() Aswers]
+//    [ Wir haben #context Quiz_answers.final().len() Aswers]
 
     context    grid(columns: (1fr, 1fr), row-gutter: 1em,
         [Quiz], [Antwort], grid.hline(), ..Quiz_answers.final().map(((n, a)) => ( [#n],
@@ -94,7 +90,7 @@ zebraw(raw(lang: "Python", content, block: true))
 }
 
 
-#let MakeSetting(title: "", show-heading: true, body) = {
+#let BaseEnvironment(title: "", show-heading: true, body) = {
 
     if show-heading {
         heading(level: 3)[#title]}
@@ -105,6 +101,6 @@ zebraw(raw(lang: "Python", content, block: true))
 
 
 
-#let Praxis = MakeSetting.with(title: "Praxis")
-#let Spiel = MakeSetting.with(title: "Spiel")
-#let Theorie = MakeSetting.with(title: "Theorie")
+#let Praxis = BaseEnvironment.with(title: "Praxis")
+#let Spiel = BaseEnvironment.with(title: "Spiel")
+#let Theorie = BaseEnvironment.with(title: "Theorie")
