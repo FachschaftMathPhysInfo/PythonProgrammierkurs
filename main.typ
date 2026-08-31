@@ -43,22 +43,45 @@
 
 #include "Lektionen/shell.typ"
 
-
 #include "Lektionen/manpages.typ"
 
-#include "Lektionen/rechte.typ"
-
-== NixOs Package management
-
+// Anatomie eines Shell befehls. Hilfe zur selbsthilge
+// Shell crashkurs, cp, ls, mv, find, grep, whoami,...
 
 
-== Tiling Window Manager
+#include "Lektionen/rechte.typ" // Erweitern auf chown chgrp
+
+
+
+
+
+
+
+
+
+
 
 
 =  Python
 
-== Numpy
 
+// Hello World + erweitert mit einlesen
+
+// Variablen und Arithmetik
+
+// Kontrollfluss
+
+// Schleifen
+
+// Funktionen
+
+// das Python repl
+
+// list
+
+// stl, Multifile programs
+
+// Abschlussprojekt
 
 
 #let codesnippet(path, name) = {

@@ -28,6 +28,53 @@ Ich kann vermutlich nicht alles alleine Schreiben. Falls ihr Lust habt mir zu he
 
 
 
+
+## Lektionen
+Ich habe mir mal einige (sehr wenige) Gedanken über möglich Lektionen gemacht. Hier ist die liste der von mir geplanten Lektionen
+
+
+1. Vorbereitung
+   - Installation von Programmen wie WSL, Python und VSCode
+2. Hello World
+   Einmal Hello World Programmieren. Da das in Python recht einfach ist kann man hier das ganze recht einfach erweitern und noch eingaben einlesen (Variablen müssen sie einfach so hinnehmen)
+   
+3. Die Shell
+   Lektion kann fast direkt aus dem alten Skript übernommen werden.
+   - Was ist die Shell
+   - Wie bewege ich mich darin
+4. Shell Befehle
+   Ich will tiefer in die Shell eintauchen und denen noch ein paar nützliche Shellbefehle mitgeben
+   - ls, cd, cp, mv, find, grep, whoami, pwd, less, ...
+   - Wie sind Shellbefehle aufgebaut (flags)
+5. Man Pages
+   Passt thematisch gut zur obigen Lektion und ist auch direkt übernommen
+6. Dateirechte
+   Auch vom alten Skript, kann man erweiten um die chown und chgrp befehle
+   
+7. Variablen + Arithmetik
+   Variablen sind in Python recht trivial, deshalb kann man das mit Arithmetik zusammenwerfen
+8. Kontrollfluss
+   Verzweigungen
+9. Schleifen
+
+10. Funktionen
+   - Funktionen definieren und aufrufen
+   - Rekursion
+
+11. listen
+   Listen sind als erste Datenstruktur ganz toll, sollte man unbedingt drannbringen
+12. repl
+   Das repl ist toll, Hilft das konzept von interpretierten Programmiersprachen zu verstehen
+13. import
+   - Die Erstis sollen lernen das man Programme aufeilen kann
+   - Zuerst mit der Std, dann mit eingenen Dateien
+   
+14. Abschlussprojekt
+  Es wäre toll ein großen Abschlussprojekt zu haben, was alles was sie gelernt haben beinhaltet
+
+
+
+
 ## Roadmap
 ### Alpha Version
 - [ ] Scope Festlegen

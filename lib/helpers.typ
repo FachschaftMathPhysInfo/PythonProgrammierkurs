@@ -46,6 +46,20 @@ body
 
 }
 
+#let dev_mode = true
+
+#let dev(body) = {
+
+    set list(marker: "- TODO: ")
+
+    if dev_mode == true [#rect[
+
+        Diese Liste ist nur im dev mode sichtbar und wird in der Finalen Version verschwinden.
+
+
+        #body]]
+}
+
 #let Code(path, basename: "../Code/") = {
 let content = {
     let raw_c = read(basename + path)

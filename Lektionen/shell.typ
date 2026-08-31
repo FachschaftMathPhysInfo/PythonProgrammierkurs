@@ -2,6 +2,12 @@
 
 == Die Shell
 
+
+
+#dev[
+    - Hier muss etwas tiefer angefangen werden, z.b mit was ist das Terminal. Darf dann auch gerne etwas größer werden.
+]
+
 #Theorie(show-heading: false )[
 Wenn ihr bisher nur mit Windows oder Mac gearbeitet habt, habt ihr
 wahrscheinlich in der letzten Lektion nebenbei etwas neues Kennen gelernt: Die
@@ -36,7 +42,7 @@ spezielle Verzeichnis `..` (also zwei Punkte) angeben, welches für das
 nächst höher liegende Verzeichnis steht. Wenn ihr euch den Inhalt des
 Verzeichnisses anschauen wollt, könnt ihr dafür den Befehl `ls`
 benutzen. Um herauszufinden, in welchem Verzeichnis ihr euch befindet, könnt
-ihr  `pwd` nutzen, zum Kompilieren von \Cpp-Programmen habt ihr den Befehl
+nihr  `pwd` nutzen, zum Kompilieren von \Cpp-Programmen habt ihr den Befehl
 `g++` kennengelernt. Solltet ihr Hilfe zu irgendeinem Befehl benötigen,
 könnt ihr den Befehl `man` (für „Manual“) geben, gefolgt von dem Befehl,
 zu dem ihr Hilfe braucht (über `man` werden wir später noch
