@@ -35,8 +35,7 @@
 
 = Intro
 
-== Vorbereitung eigener Computer
-
+#include "Lektionen/vorbereitung.typ"
 
 =  Unix artige Betriebssysteme
 
