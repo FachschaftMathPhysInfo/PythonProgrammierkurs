@@ -52,14 +52,38 @@ let content = {
     // Remove trailing newline
      if (raw_c.last() == "\n") {
         str.slice(raw_c, 0, -1)
-        
-        
+
+
     }
     else {raw_c}
 }
 
+let ext-to-lang(ext) = {
+  let mapping = (
+    "py": "Python",
+    "cpp": "C++",
+    "java": "Java",
+    "js": "JavaScript",
+    "ts": "TypeScript",
+    "rs": "Rust",
+    "go": "Go",
+    "rb": "Ruby",
+    "php": "PHP",
+    "c": "C",
+    "h": "C",
+    "hpp": "C++",
+  )
+  mapping.at(ext, default: "")
+}
 
-zebraw(raw(lang: "Python", content, block: true))
+let ext = path.split(".").last()
+let lang = ext-to-lang(ext)
+
+stack(
+  if lang != "" {text(size: 0.85em, weight: "bold", fill: gray)[#lang]} else [],
+  zebraw(raw(lang: lang, content, block: true)),
+  spacing: 0.3em
+)
 }
 
 
