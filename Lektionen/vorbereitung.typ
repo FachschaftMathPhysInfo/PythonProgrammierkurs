@@ -26,16 +26,14 @@ Klicke auf den Namen deines Betriebssystems unten, um zur passenden Anleitung zu
 - *macOS* → “macOS Setup”
 - *Linux* → “Linux Setup”
 
----
+=== Windows + WSL2 Setup
 
-== Windows + WSL2 Setup
-
-=== Warum WSL2 und nicht einfach Python auf Windows?
+==== Warum WSL2 und nicht einfach Python auf Windows?
 
 #Theorie[
   Das ist eine berechtigte Frage. Man könnte Python auch direkt auf Windows installieren – aber warum tun wir das nicht?
 
-  *Das Kernproblem:* Viele Programmier-Tools wurden auf Unix/Linux gebaut (macOS und Linux sind Unix-ähnlich). Diese Tools erwarten bestimmte Dateistrukturen, Befehle und Verhaltensweisen, die auf Windows anders sind oder fehlen.
+    *Das Kernproblem:* Viele Programmier-Tools wurden auf Unix/Linux gebaut (macOS und Linux sind Unix-ähnlich). Diese Tools erwarten bestimmte Dateistrukturen, Befehle und Verhaltensweisen, die auf Windows anders sind oder fehlen. Teilweise existieren sie auch nur für Linux, wenn du später in deinem Studium mal so ein Tool brauchst, wäre es von Vorteil Linux schon mal von innen gesehen zu haben.
 
   *Konkrete Probleme mit Windows-native Python:*
   - *Pfade sind anders:* Linux nutzt `/home/user/projekt`, Windows nutzt `C:\Users\user\projekt`. Das führt zu Verwirung.
@@ -53,6 +51,7 @@ Klicke auf den Namen deines Betriebssystems unten, um zur passenden Anleitung zu
   *macOS und Linux haben dieses Problem nicht:* Sie sind bereits Unix-ähnlich, daher kann Python dort direkt installiert werden.
 ]
 
+==== Die Installation
 *Schritt 1: WSL2 installieren*
 
 Öffne *PowerShell* als Administrator:
@@ -87,7 +86,7 @@ sudo apt update
 sudo apt install python3 python3-pip git
 ```
 
-Das Terminal fragt vielleicht nach deinem Passwort (das du bei WSL-Setup erstellt hast). Tippe es ein (es wird nicht angezeigt, das ist normal!) und drücke Enter.
+Das Terminal fragt vielleicht nach deinem Passwort (das du beim WSL-Setup erstellt hast). Tippe es ein (es wird nicht angezeigt, das ist normal!) und drücke Enter.
 
 Nach 2–3 Minuten ist Python installiert.
 
@@ -147,7 +146,7 @@ Hello World!
 
 Glückwunsch! Python läuft!
 
----
+#pagebreak()
 
 === macOS Setup
 
@@ -155,7 +154,7 @@ Glückwunsch! Python läuft!
 
 Homebrew ist ein "App-Manager" für macOS, wie ein App-Store für die Terminal.
 
-Öffne *Terminal* (Spotlight: Cmd+Space, tippe "Terminal"):
+Öffne *Terminal* (Spotlight: Cmd+Space, tippe "Terminal") und gebe folgenden Befehl ein:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -189,7 +188,7 @@ cd ~/Programmiervorkurs
 
 Öffne VSCode:
 + Drücke Cmd+Shift+P
-+ Tippe "code ."
++ Tippe  `code .`
 + Drücke Enter
 
 Das öffnet VSCode im `Programmiervorkurs` Ordner.
@@ -209,9 +208,7 @@ Du solltest sehen:
 Hello World!
 ```
 
-Glückwunsch!
-
----
+#pagebreak()
 
 === Linux Setup
 
@@ -240,7 +237,7 @@ Option A (über Terminal):
 sudo apt install code
 ```
 
-Option B (manuell):
+Option B (für die Hacker):
 + Gehe auf https://code.visualstudio.com
 + Lade die `.deb` Datei (für Debian/Ubuntu) herunter
 + Installiere sie mit `sudo dpkg -i code_*.deb`
@@ -280,23 +277,19 @@ Hello World!
 
 *Herzlichen Glückwunsch!* Deine Umgebung ist bereit.
 
----
 
----
+#pagebreak()
 
-== Überprüfung deiner Installation
+=== Überprüfung deiner Installation
 
 #Praxis[
   *Aufgabe 1: Verifiziere, dass alles installiert ist*
-
   Öffne dein Terminal (WSL/macOS/Linux) und gib diese Befehle nacheinander ein:
-
   ```bash
-  python3 --version
+  python3 --versione
   git --version
   code --version
   ```
-
   Jeder Befehl sollte eine Versionsnummer ausgeben, z.B.:
   ```
   Python 3.10.12
@@ -305,7 +298,6 @@ Hello World!
   ```
 
   *Wenn ein Befehl nicht funktioniert:* Gehe zurück zur passenden Anleitung oben und überprüfe die Schritte.
-
   *Aufgabe 2: Erstelle und starte dein erstes echtes Programm*
 
   Im Terminal:
@@ -337,9 +329,9 @@ Hello World!
   *Das ist bereits ein echtes Python-Programm!* Es nimmt Input entgegen und verarbeitet ihn.
 ]
 
----
+#pagebreak()
 
-== Häufige Probleme und Lösungen
+=== Häufige Probleme und Lösungen
 
 #Theorie[
   *Problem: "command not found: python3" (oder "python3: command not found")*
@@ -367,11 +359,11 @@ Hello World!
   Manche Systeme haben andere Shortcuts. Versuche:
   - Statt `Ctrl+Shift+P`: Öffne VSCode und klicke auf "View" > "Command Palette"
   - Statt `Cmd+N`: Datei > New File
+
+    *Die Allgemeine Lösung:* Falls du irgendwo nicht mehr weiter kommst, einfach deine Tutorin fragen.
 ]
 
----
 
-== Reflexion
 
 #Spiel[
   *Frage 1:* Du hast jetzt drei Komponenten installiert: Python, VSCode und ein Terminal. Welche dieser drei ist der "Computer" und welche sind die "Werkzeuge"?
