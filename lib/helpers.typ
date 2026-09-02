@@ -111,6 +111,7 @@ zebraw(raw(lang: "Python", content, block: true))
 #let MakeSetting(title: "", show-heading: true, body) = {
 
     if show-heading {
+        show heading: set text(size: 16pt)
         heading(level: 3)[#title]}
     body
 } 
