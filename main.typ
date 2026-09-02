@@ -39,6 +39,7 @@
 
 =  Unix artige Betriebssysteme
 
+#include "Lektionen/helloworld.typ"
 
 #include "Lektionen/shell.typ"
 

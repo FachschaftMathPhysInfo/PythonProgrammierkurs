@@ -11,7 +11,7 @@
 
   Es gibt Hunderte von Programmiersprachen. Python hat sich für Anfänger als ideal erwiesen, weil:
 
-  1. *Lesbarkeit:* Python-Code sieht dem Englischen ähnlich. `print(“Hallo”)` ist selbsterklärend, anders als etwa #Code("helloworld.cpp") oder #Code("helloworld.java") .
+  1. *Lesbarkeit:* Python-Code sieht dem Englischen ähnlich. `print(“Hallo”)` ist selbsterklärend, anders als etwa #Code("helloworld.cpp") oder #Code("HelloWorld.java") .
 
   2. *Minimalistische Syntax:* Python erzwingt saubere Formatierung durch Einrückungen. Das führt zu besseren Gewohnheiten.
 
