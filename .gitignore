@@ -1,0 +1,8 @@
+graphify-out/
+graphity-out
+.json
+main.pdf
+CLAUDE.md
+.idea/
+__pycache__/
+*.pyc

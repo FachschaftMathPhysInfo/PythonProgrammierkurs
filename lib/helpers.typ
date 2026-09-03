@@ -89,13 +89,15 @@ stack(
 
 
 #let Quiz_answers = state("Quiz_answers", ())
+#let Quiz_counter = counter("quiz")
 
-// Quiz is  abit more complicated than the other environments 
+// Quiz is  abit more complicated than the other environments
 #let Quiz(answer: "", body) = {
-     context {
-    let number =   counter(heading).get().at(0)
+    Quiz_counter.step()
+    context {
+    let number = Quiz_counter.get().at(0)
      Quiz_answers.update(s => s + ((number, answer),))
-    
+
     [=== Quiz #number ]
     set enum(numbering: "a)")
     body
