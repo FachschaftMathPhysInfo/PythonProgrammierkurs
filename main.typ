@@ -60,6 +60,8 @@
 
 #include "Lektionen/variablen_aritmetik.typ"
 
+#include "Lektionen/kontrollfluss.typ"
+
 == Numpy
 
 
