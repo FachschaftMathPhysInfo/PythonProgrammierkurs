@@ -29,7 +29,7 @@ Bisher lief jedes unserer Programme stur von oben nach unten durch , jede Zeile 
   Der `else`-Zweig ist optional. Oft will man nur etwas tun, *wenn* eine Bedingung zutrifft, und sonst nichts , dann lässt man `else` einfach weg.
 ]
 
-#Code("division_pruefen.py")
+#Code("08_kontrollfluss/division_pruefen.py")
 
 #Theorie[
   === Der Doppelgänger: `=` und `==`
@@ -85,7 +85,7 @@ Bisher lief jedes unserer Programme stur von oben nach unten durch , jede Zeile 
   - *Mische niemals Leerzeichen und Tabulatoren.* Für das Auge sehen beide gleich aus, für Python sind es verschiedene Zeichen. Die meisten Editoren (auch VSCode) wandeln einen Tastendruck auf `Tab` automatisch in Leerzeichen um , lass diese Einstellung an.
 ]
 
-#Code("einrueckung_wichtig.py")
+#Code("08_kontrollfluss/einrueckung_wichtig.py")
 
 #Praxis[
   + Öffne `division_pruefen.py` und führe es zweimal aus: einmal mit einer `0` als zweiter Zahl, einmal mit einer anderen Zahl. Verfolge, welcher Block jeweils läuft.
@@ -120,7 +120,7 @@ Bisher lief jedes unserer Programme stur von oben nach unten durch , jede Zeile 
   Ein `if` darf beliebig viele `elif`-Zweige haben, aber *höchstens ein* `else`, und das steht immer am Schluss.
 ]
 
-#Code("noten_kategorie.py")
+#Code("08_kontrollfluss/noten_kategorie.py")
 
 #Praxis[
   + Führe `noten_kategorie.py` mit den Eingaben `95`, `60` und `30` aus und prüfe, ob die Note stimmt.
@@ -158,13 +158,13 @@ Bisher lief jedes unserer Programme stur von oben nach unten durch , jede Zeile 
   Gelesen: „Falls es wärmer als 20 Grad ist *und* die Sonne scheint …“. Ist auch nur eine der beiden Bedingungen falsch, wird der Block übersprungen.
 ]
 
-#Code("vergleiche_und_wahrheit.py")
+#Code("08_kontrollfluss/vergleiche_und_wahrheit.py")
 
 #Theorie[
   Mit diesem Werkzeug können wir die Aufgabe aus der letzten Lektion sauber lösen: prüfen, ob eine Zahl eine andere teilt. Der Rest-Operator `%` verrät es uns , ist der Rest `0`, geht die Division glatt auf.
 ]
 
-#Code("teilbarkeit.py")
+#Code("09_schleifen/teilbarkeit.py")
 
 #Praxis[
   + Schreibe ein Programm, das eine ganze Zahl einliest und ausgibt, ob sie gerade oder ungerade ist. (Tipp: `zahl % 2`.)
@@ -188,7 +188,7 @@ Bisher lief jedes unserer Programme stur von oben nach unten durch , jede Zeile 
   + In Python gilt eine `0` in einer Bedingung als falsch und jede andere Zahl als wahr. Probier `if 3:` und `if 0:` aus. Merkwürdig? Für den Anfang: bleib bei echten Vergleichen, dann bist du auf der sicheren Seite.
 ]
 
-#Code("zahlenraten.py")
+#Code("08_kontrollfluss/zahlenraten.py")
 
 #Quiz(answer: "b)")[
   Was ist der Unterschied zwischen `=` und `==`?

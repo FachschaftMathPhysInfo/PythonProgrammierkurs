@@ -20,7 +20,7 @@ Bisher haben unsere Programme immer exakt das Gleiche getan. Wir haben Text ausg
   Das folgende Programm erzählt von seinem Tag. Führe es aus und schau dir die Ausgabe an.
 ]
 
-#Code("variablen.py")
+#Code("07_variablen_arithmetik/variablen.py")
 
 #Theorie[
   === Das Gleichheitszeichen ist keine Gleichung
@@ -44,7 +44,7 @@ Bisher haben unsere Programme immer exakt das Gleiche getan. Wir haben Text ausg
   Anders als in vielen anderen Sprachen musst du den Typ in Python *nicht* vorab hinschreiben. Python erkennt ihn automatisch am Wert. Mit der Funktion `type()` kannst du nachfragen, welchen Typ ein Wert gerade hat.
 ]
 
-#Code("variablen_aendern.py")
+#Code("07_variablen_arithmetik/variablen_aendern.py")
 
 #Praxis[
   + Weise `beschreibung` in `variablen.py` ein anderes Wort zu und führe das Programm erneut aus. Was ändert sich in der Ausgabe?
@@ -75,7 +75,7 @@ Bisher haben unsere Programme immer exakt das Gleiche getan. Wir haben Text ausg
   - `float("3.5")` macht aus dem Text die Kommazahl `3.5`
 ]
 
-#Code("eingabe_zahlen.py")
+#Code("07_variablen_arithmetik/eingabe_zahlen.py")
 
 #Praxis[
   + Schreibe ein Programm, das nach dem Namen fragt und anschließend `Hallo, <Name>!` ausgibt.
@@ -109,13 +109,13 @@ Bisher haben unsere Programme immer exakt das Gleiche getan. Wir haben Text ausg
   Eine angenehme Eigenschaft: Ganze Zahlen (`int`) haben in Python *keine Obergrenze*. `2 ** 200` rechnet Python ohne zu murren exakt aus. In vielen anderen Sprachen würde eine so große Zahl „überlaufen“.
 ]
 
-#Code("rechnen.py")
+#Code("07_variablen_arithmetik/rechnen.py")
 
 #Theorie[
   Genauso können wir mit Zahlen rechnen, die die Nutzerin eingibt – vorausgesetzt, wir wandeln die Eingabe vorher mit `int()` um.
 ]
 
-#Code("rechner_eingabe.py")
+#Code("07_variablen_arithmetik/rechner_eingabe.py")
 
 #Praxis[
   + Schreibe ein Programm, das zwei ganze Zahlen entgegennimmt und Summe, Differenz, Produkt *und* Quotient ausgibt.
