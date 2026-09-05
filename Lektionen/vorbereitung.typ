@@ -2,7 +2,7 @@
 
 == Vorbereitung eigener Computer
 
-Dieses Kapitel bereitet deinen Computer vor, um Python-Programme zu schreiben und auszuführen. Du wirst drei zentrale Komponenten installieren und konfigurieren. Je nach deinem Betriebssystem unterscheiden sich die Schritte leicht.
+In diesem Kapitel bereitetst du deinen Computer vor, um Python-Programme zu schreiben und auszuführen. Du wirst drei zentrale Komponenten installieren und konfigurieren. Je nach deinem Betriebssystem unterscheiden sich die Schritte leicht.
 
 === Was benötigen wir?
 
@@ -54,15 +54,15 @@ Klicke auf den Namen deines Betriebssystems unten, um zur passenden Anleitung zu
 ==== Die Installation
 *Schritt 1: WSL2 installieren*
 
-Öffne *PowerShell* als Administrator:
-+ Gehe auf der suchleiste und dort *PowerShell* suchen, dann mitt rechts klick soll auf die option Als Administrator starten.
-+ Kopiere diesen Befehl rein und drücke Enter:
+Öffne *Command Promt*:
++ Suche in der Suchleiste nach *CMD* und führe es aus
++ Tippe diesen Befehl ein und drücke Enter:
 
 ```
 wsl --install -d Ubuntu
 ```
 
-Das Terminal wird viele Zeilen Text anzeigen – das ist normal. Der Prozess dauert 5–10 Minuten. Am Ende wirst du gefragt, einen *Benutzernamen* und ein *Passwort* einzugeben. Diese sind wichtig, schreib dir beide auf, du brauchst das Passwort später!
+Das Terminal wird viele Zeilen Text anzeigen – das ist normal. Der Prozess dauert 5–10 Minuten. Am Ende wirst du aufgefordert, einen *Benutzernamen* und ein *Passwort* einzugeben. Diese sind wichtig, schreib dir beide auf, du brauchst das Passwort später!
 
 #image("../Assets/wsl-intallation.png", width: 115%, alt: "WSL2 Installation")
 
@@ -70,20 +70,16 @@ Nach der Installation: *Starte deinen PC neu.*
 
 *Schritt 2: Ubuntu Terminal öffnen*
 
-Nach dem Neustart:
-+ Öffne das *Start-Menü*
-+ Suche nach "Ubuntu"
-+ Klicke auf "Ubuntu"
-
-Das Ubuntu-Terminal öffnet sich. Das ist dein neues "Zuhause" zum Programmieren!
+Suche in der Suchleiste nach *Ubuntu* und führe es aus. Das Ubuntu-Terminal öffnet sich, es ist dein neues "Zuhause" zum Programmieren!
 
 *Schritt 3: Python installieren*
 
-Im Ubuntu-Terminal, gib diese Befehle ein (kopieren & einfügen mit Ctrl+Shift+V):
+Im Ubuntu-Terminal, gib diese Befehle ein:
 
 ```bash
 sudo apt update
-sudo apt install python3 python3-pip git
+sudo apt upgrade
+sudo apt install python3-pip
 ```
 
 Das Terminal fragt vielleicht nach deinem Passwort (das du beim WSL-Setup erstellt hast). Tippe es ein (es wird nicht angezeigt, das ist normal!) und drücke Enter.
@@ -110,14 +106,13 @@ Das erlaubt VSCode, mit deinem Ubuntu-Linux zu kommunizieren.
 
 + Öffne VSCode
 + Drücke Ctrl+Shift+P (oder Cmd+Shift+P auf Mac)
-+ Tippe "WSL: New Window"
-+ Klicke drauf
++ Wähle "WSL: Connect to WSL"
 
 VSCode öffnet sich jetzt im WSL-Modus. Oben sollte es "WSL: Ubuntu" anzeigen.
 
 *Schritt 6: Test – Dein erstes Programm*
 
-Im WSL-Terminal:
+Im Ubuntu-Terminal:
 
 ```bash
 mkdir -p ~/Programmiervorkurs
@@ -129,7 +124,7 @@ cd ~/Programmiervorkurs
 + Navigiere zu deinem `Programmiervorkurs` Ordner
 + Erstelle eine neue Datei: "helloworld.py"
 
-Kopiere diesen Code rein:
+Gebe diesen Code ein:
 
 #Code("helloworld.py")
 
@@ -220,6 +215,7 @@ Linux ist wie macOS Unix-basiert, daher läuft Python nativ ohne zusätzliche La
 
 ```bash
 sudo apt update
+sudo apt upgrade
 sudo apt install python3 python3-pip git
 ```
 
@@ -292,8 +288,8 @@ Hello World!
   ```
   Jeder Befehl sollte eine Versionsnummer ausgeben, z.B.:
   ```
-  Python 3.10.12
-  git version 2.34.1
+  Python 3.12.3
+  git version 2.43.0
   code 1.86.2
   ```
 
