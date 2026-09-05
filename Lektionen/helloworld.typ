@@ -36,7 +36,28 @@ Jetzt aber endlich zurück zu etwas Prakischem. Ihr habt vielleicht gefragt waru
 
 
 
-=== Der Print Befehl
+
+  === Das “Hello World”-Ritual
+
+  “Hello World” ist die Tradition in der Informatik. Es ist nicht wegen der Aufgabe wichtig, sondern weil es das Fundamental-Konzept demonstriert: *Du kannst dem Computer befehlen, etwas zu tun, und er tut es.*
+
+  Das ist der Kern des Programmierens.
+//]
+
+#Praxis[
+  Erstelle eine neue Datei namens `helloworld.py` und schreibe folgende Zeile:
+
+  ```python
+  print(“Hello World!”)
+  ```
+
+  Speichere und führe das Programm aus. Die Ausgabe sollte sein: `Hello World!`
+]
+
+#Code("02_helloworld/helloworld.py")
+
+=== Anatomie des Befehls
+
 
 #Theorie[
 
