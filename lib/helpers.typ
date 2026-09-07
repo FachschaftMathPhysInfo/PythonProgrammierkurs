@@ -147,3 +147,13 @@ stack(
 #let Praxis = MakeSetting.with(title: "Praxis")
 #let Spiel = MakeSetting.with(title: "Spiel")
 #let Theorie = MakeSetting.with(title: "Theorie")
+
+
+
+
+#let Hinweis(content) = {
+
+    [*Hinweis*]
+    rect[
+    #content]
+}

@@ -1,5 +1,6 @@
 #import "../lib/helpers.typ": *
 
+
 == Vorbereitung eigener Computer
 
 Dieses Kapitel bereitet deinen Computer vor, um Python-Programme zu schreiben und auszuführen. Du wirst drei zentrale Komponenten installieren und konfigurieren. Je nach deinem Betriebssystem unterscheiden sich die Schritte leicht.
@@ -55,7 +56,7 @@ Klicke auf den Namen deines Betriebssystems unten, um zur passenden Anleitung zu
 *Schritt 1: WSL2 installieren*
 
 Öffne *PowerShell* als Administrator:
-+ Gehe auf der suchleiste und dort *PowerShell* suchen, dann mitt rechts klick soll auf die option Als Administrator starten.
++ Gehe auf der suchleiste und dort *PowerShell* suchen, dann mit rechts klick soll auf die option Als Administrator starten.
 + Kopiere diesen Befehl rein und drücke Enter:
 
 ```
@@ -115,50 +116,58 @@ Das erlaubt VSCode, mit deinem Ubuntu-Linux zu kommunizieren.
 
 VSCode öffnet sich jetzt im WSL-Modus. Oben sollte es "WSL: Ubuntu" anzeigen.
 
-*Schritt 6: Test – Dein erstes Programm*
+// *Schritt 6: Test – Dein erstes Programm*
 
-Im WSL-Terminal:
+// Im WSL-Terminal:
 
-```bash
-mkdir -p ~/Programmiervorkurs
-cd ~/Programmiervorkurs
-```
+// ```bash
+// mkdir -p ~/Programmiervorkurs
+// cd ~/Programmiervorkurs
+// ```
 
-Öffne die Datei `helloworld.py` in VSCode:
-+ Drücke Ctrl+K, dann Ctrl+O
-+ Navigiere zu deinem `Programmiervorkurs` Ordner
-+ Erstelle eine neue Datei: "helloworld.py"
+// Öffne die Datei `helloworld.py` in VSCode:
+// + Drücke Ctrl+K, dann Ctrl+O
+// + Navigiere zu deinem `Programmiervorkurs` Ordner
+// + Erstelle eine neue Datei: "helloworld.py"
 
-Kopiere diesen Code rein:
+// Kopiere diesen Code rein:
 
-#Code("helloworld.py")
+// #Code("helloworld.py")
 
-Speichern (Ctrl+S), dann im Terminal:
+// Speichern (Ctrl+S), dann im Terminal:
 
-```bash
-python3 helloworld.py
-```
+// ```bash
+// python3 helloworld.py
+// ```
 
-Du solltest sehen:
-```
-Hello World!
-```
+// Du solltest sehen:
+// ```
+// Hello World!
+// ```
 
-Glückwunsch! Python läuft!
+// Glückwunsch! Python läuft!
 
 #pagebreak()
 
 === macOS Setup
 
+Für macOS ist die vorbereitung um einiges einfacher als Windows, da wir schon ein Unixoides Betriebsystem haben. Trotzdem können wir python nicht einfach so installieren. Wir benötigen dafür erst nochmal einen sogenannten _Package-Manager_. Das ist wie ein App Store, der aber nicht nur Apps, sonder auch viele Bibilotheken und Hilfsprogramme enthält, die ein normaler Nutzer nicht wirklich braucht. 
+
 *Schritt 1: Homebrew installieren*
 
-Homebrew ist ein "App-Manager" für macOS, wie ein App-Store für die Terminal.
+Der _Package-Manger_ den wir verwenden heißt _Homebrew_.
 
 Öffne *Terminal* (Spotlight: Cmd+Space, tippe "Terminal") und gebe folgenden Befehl ein:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+
+*Was passiert hier?* Wir benutzen hier 2 wichtige Programme. `curl` lädt eine Installationsdatei aus dem Internet herunter. Diese enthält sehr viele Anweisungen für die Shell. Die geben wir auch dann an `bash` weiter. `bash` werden wir noch ganz ausführlich behandeln.
+
+//Hinweis, kein Code aus dem Internet einfach so ausführen.
+
+#Hinweis[Es ist nicht ungefährlich einfach so fremden Code aus dem Internet einfach so auszuführen. Wenn du dir unsicher bist kanns du einfach den link in einen Browser eingeben und nachschauen was da genau passiert.]
 
 Das dauert ein paar Minuten. Folge den Anweisungen auf dem Bildschirm.
 
@@ -177,36 +186,36 @@ brew install python3 git
 + Öffne die `.zip` Datei, die heruntergeladen wird
 + Ziehe VSCode in den "Applications" Ordner
 
-*Schritt 4: Test – Dein erstes Programm*
+// *Schritt 4: Test – Dein erstes Programm*
 
-Im Terminal:
+// Im Terminal:
 
-```bash
-mkdir -p ~/Programmiervorkurs
-cd ~/Programmiervorkurs
-```
+// ```bash
+// mkdir -p ~/Programmiervorkurs
+// cd ~/Programmiervorkurs
+// ```
 
-Öffne VSCode:
-+ Drücke Cmd+Shift+P
-+ Tippe  `code .`
-+ Drücke Enter
+// Öffne VSCode:
+// + Drücke Cmd+Shift+P
+// + Tippe  `code .`
+// + Drücke Enter
 
-Das öffnet VSCode im `Programmiervorkurs` Ordner.
+// Das öffnet VSCode im `Programmiervorkurs` Ordner.
 
-Erstelle eine neue Datei `helloworld.py` mit:
+// Erstelle eine neue Datei `helloworld.py` mit:
 
-#Code("helloworld.py")
+// #Code("helloworld.py")
 
-Speichern (Cmd+S), dann im Terminal:
+// Speichern (Cmd+S), dann im Terminal:
 
-```bash
-python3 helloworld.py
-```
+// ```bash
+// python3 helloworld.py
+// ```
 
-Du solltest sehen:
-```
-Hello World!
-```
+// Du solltest sehen:
+// ```
+// Hello World!
+// ```
 
 #pagebreak()
 
@@ -256,31 +265,33 @@ code .
 
 Das öffnet VSCode im `Programmiervorkurs` Ordner.
 
-Erstelle eine neue Datei:
-+ Drücke Ctrl+N
-+ Speichere sie als `helloworld.py` (Ctrl+S)
+// Erstelle eine neue Datei:
+// + Drücke Ctrl+N
+// + Speichere sie als `helloworld.py` (Ctrl+S)
 
-Kopiere diesen Code rein:
+// Kopiere diesen Code rein:
 
-#Code("helloworld.py")
+// #Code("helloworld.py")
 
-Speichern (Ctrl+S), dann im Terminal:
+// Speichern (Ctrl+S), dann im Terminal:
 
-```bash
-python3 helloworld.py
-```
+// ```bash
+// python3 helloworld.py
+// ```
 
-Du solltest sehen:
-```
-Hello World!
-```
+// Du solltest sehen:
+// ```
+// Hello World!
+// ```
 
-*Herzlichen Glückwunsch!* Deine Umgebung ist bereit.
+// *Herzlichen Glückwunsch!* Deine Umgebung ist bereit.
 
 
 #pagebreak()
 
 === Überprüfung deiner Installation
+
+Ob alles richtig ist, seht ihr wenn das Licht angeht, oder so. Naja, wir müssen (oder sollten) noch überprüfen ob alles geklappt hat. 
 
 #Praxis[
   *Aufgabe 1: Verifiziere, dass alles installiert ist*
@@ -298,7 +309,7 @@ Hello World!
   ```
 
   *Wenn ein Befehl nicht funktioniert:* Gehe zurück zur passenden Anleitung oben und überprüfe die Schritte.
-  *Aufgabe 2: Erstelle und starte dein erstes echtes Programm*
+  *Aufgabe 2: Erstelle und starte ein erstes Programm*
 
   Im Terminal:
 
@@ -307,11 +318,10 @@ Hello World!
   code test.py
   ```
 
-  VSCode öffnet sich mit einer neuen Datei `test.py`. Schreib diesen Code rein:
+   VSCode öffnet sich mit einer neuen Datei `test.py`. Schreib diesen Code rein:
 
   ```python
-  name = input("Wie heißt du? ")
-  print(f"Hallo {name}! Willkommen zum Python-Kurs.")
+  print("Hello World")
   ```
 
   Speichern (Ctrl+S oder Cmd+S). Dann im Terminal:
@@ -320,13 +330,19 @@ Hello World!
   python3 test.py
   ```
 
-  Das Terminal fragt dich nach deinem Namen. Tippe ihn ein und drücke Enter. Das Programm sollte antworten:
-  ```
-  Wie heißt du? Max
-  Hallo Max! Willkommen zum Python-Kurs.
-  ```
+    Du solltest nun
+    ```bash
+      Hello World
+    ```
+    in deinem Terminal stehen haben. Herzlichen Glückwunsch zu deinem ersten Programm.
 
-  *Das ist bereits ein echtes Python-Programm!* Es nimmt Input entgegen und verarbeitet ihn.
+  // Das Terminal fragt dich nach deinem Namen. Tippe ihn ein und drücke Enter. Das Programm sollte antworten:
+  // ```
+  // Wie heißt du? Max
+  // Hallo Max! Willkommen zum Python-Kurs.
+  // ```
+
+  // *Das ist bereits ein echtes Python-Programm!* Es nimmt Input entgegen und verarbeitet ihn.
 ]
 
 #pagebreak()
@@ -373,4 +389,17 @@ Hello World!
   *Frage 3 (für Windows-Nutzer):* Warum haben wir WSL installiert, obwohl Python auch direkt auf Windows läuft? Hätte das nicht reichen können?
 
   Denke über diese Fragen nach. Die Antworten werden im nächsten Kapitel wichtig.
+=======
+#import "../lib/helpers.typ"
+
+
+
+== Vorbereitung
+
+#dev[
+    - Installation von WSL/Python
+    - Installation von VS Code / Pycharm
+
+
+]
 ]

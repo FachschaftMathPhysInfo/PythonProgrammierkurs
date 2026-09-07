@@ -39,7 +39,6 @@
 
 =  Unix artige Betriebssysteme
 
-#include "Lektionen/helloworld.typ"
 
 #include "Lektionen/shell.typ"
 
@@ -66,6 +65,7 @@
 
 
 // Hello World + erweitert mit einlesen
+#include "Lektionen/helloworld.typ"
 
 // Variablen und Arithmetik
 
@@ -82,22 +82,3 @@
 // stl, Multifile programs
 
 // Abschlussprojekt
-
-
-#let codesnippet(path, name) = {
-    [#set align(center)
-        #text(gray, style: "italic")[
-            #name]]
-    
-    rect(stroke: gray, width: 100%)[
-        #raw(lang: "Python", read(path), block: true)]
-}
-
-
-//#zebraw(raw(lang: "Python", code, block: true))
-
-
-#Code("helloworld.py")
-
-
-
