@@ -68,6 +68,7 @@
 #include "Lektionen/helloworld.typ"
 
 // Variablen und Arithmetik
+#include "Lektionen/variablen_arithmetik.typ"
 
 // Kontrollfluss
 
