@@ -71,6 +71,7 @@
 #include "Lektionen/variablen_arithmetik.typ"
 
 // Kontrollfluss
+#include "Lektionen/kontrollfluss.typ"
 
 // Schleifen
 
