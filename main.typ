@@ -39,6 +39,7 @@
 
 =  Unix artige Betriebssysteme
 
+#include "Lektionen/Terminal_Naviagation.typ"
 
 #include "Lektionen/shell.typ"
 
@@ -74,7 +75,9 @@
 #include "Lektionen/kontrollfluss.typ"
 
 // Schleifen
+
 #include "Lektionen/schleifen.typ"
+
 // Funktionen
 
 // das Python repl
