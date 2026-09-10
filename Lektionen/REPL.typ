@@ -1,13 +1,13 @@
 #import "../lib/helpers.typ": *
 
-== Lektion: Das REPL – Python im Dialog
+== Lektion: Das REPL 
 
 #Theorie[
   === Ein Brief oder ein Gespräch?
 
   Stell dir vor, du willst jemandem eine Frage stellen. Du hast zwei
   Möglichkeiten: Du schreibst einen Brief, steckst ihn in einen Umschlag,
-  frankierst ihn und wartest auf die Antwort – oder du rufst die Person an
+  frankierst ihn und wartest auf die Antwort  oder du rufst die Person an
   und sprichst direkt mit ihr. Beides führt zum Ziel, aber für eine schnelle
   Frage ("Wie spät ist es?") ist das Telefongespräch eindeutig praktischer.
   Für eine ausführliche, gut überlegte Mitteilung eignet sich dagegen eher
@@ -27,7 +27,7 @@
   Dass das überhaupt möglich ist, liegt genau an der Eigenschaft von
   Python, die du schon aus der Hello-World-Lektion kennst: Python ist eine
   *interpretierte* Sprache. Ein Compiler (wie bei \Cpp oder Java) übersetzt
-  ein ganzes Programm erst vollständig, bevor irgendetwas läuft – dafür
+  ein ganzes Programm erst vollständig, bevor irgendetwas läuft, dafür
   braucht er die ganze Datei. Ein Interpreter dagegen kann eine einzelne
   Zeile lesen, sofort ausführen, und auf die nächste warten. Genau das
   macht das REPL möglich.
@@ -37,23 +37,21 @@
   REPL ist eine Abkürzung und beschreibt genau das, was bei jeder Zeile
   passiert, die du eintippst:
 
-  + *Read* (Lesen) – Python liest die Zeile, die du eingegeben hast. Das
+  + *Read* (Lesen) : Python liest die Zeile, die du eingegeben hast. Das
     kann eine einzelne Zeile sein, aber auch mehrere zusammengehörige
     Zeilen (dazu gleich mehr).
-  + *Eval* (Auswerten) – Python wertet aus, was diese Zeile bedeutet (z. B.
+  + *Eval* (Auswerten) : Python wertet aus, was diese Zeile bedeutet (z. B.
     eine Rechnung wie `2 + 2`).
-  + *Print* (Ausgeben) – Python zeigt dir das Ergebnis direkt an.
-  + *Loop* (Schleife) – Und dann fängt das Ganze von vorne an: Python
+  + *Print* (Ausgeben) : Python zeigt dir das Ergebnis direkt an.
+  + *Loop* (Schleife) : Und dann fängt das Ganze von vorne an: Python
     wartet auf deine nächste Eingabe.
 
-  Read, Eval, Print, Loop – REPL. Es ist also wörtlich eine Dauerschleife:
+  Read, Eval, Print, Loop: REPL. Es ist also wörtlich eine Dauerschleife:
   lesen, auswerten, ausgeben, wieder lesen, wieder auswerten, wieder
   ausgeben … so lange, bis du das REPL beendest.
 
   Der große Vorteil: Das REPL ist Teil jeder Python-Installation. Du musst
-  nichts zusätzlich installieren, es ist immer sofort einsatzbereit – ideal,
-  um schnell einen Codeschnipsel zu testen, ein neues Konzept auszuprobieren
-  oder Zeile für Zeile nachzuvollziehen, warum etwas nicht funktioniert.
+  nichts zusätzlich installieren, es ist immer sofort einsatzbereit. Es ist ideal, um schnell einen Codeschnipsel zu testen, ein neues Konzept auszuprobieren oder Zeile für Zeile nachzuvollziehen, warum etwas nicht funktioniert.
 
   === Das REPL starten
 
@@ -76,7 +74,7 @@
   >>>
   ```
 
-  Diese drei spitzen Klammern `>>>` sind der *Prompt* des REPL – das
+  Diese drei spitzen Klammern `>>>` sind der *Prompt* des REPL, das
   Gegenstück zum Prompt deiner Shell, den du schon kennst. Er sagt dir:
   "Ich bin bereit, gib mir eine Zeile Python-Code."
 
@@ -88,15 +86,14 @@
   - Du drückst die Tastenkombination `Strg + D` (auf einer Zeile ohne
     Eingabe).
 
-  Danach landest du wieder in deiner normalen Shell – erkennbar daran, dass
-  der Prompt sich wieder ändert (kein `>>>` mehr).
+  Danach landest du wieder in deiner normalen Shell, es ist daran erkennbar , dass der Prompt sich wieder ändert (also kein `>>>` mehr).
 ]
 
 #Praxis[
   *Aufgabe 1:*
 
   + Öffne ein Terminal und starte das REPL mit `python3`.
-  + Tippe die folgenden Zeilen einzeln ein – nach *jeder* Zeile Enter
+  + Tippe die folgenden Zeilen einzeln ein, nach *jeder* Zeile Enter
     drücken und schauen, was passiert, bevor du weitermachst:
 
     ```
@@ -107,7 +104,7 @@
   + Verlasse das REPL wieder mit `exit()`.
 
   Du solltest bemerkt haben: Nach jeder Zeile erscheint sofort das
-  Ergebnis – ganz ohne `print()`. Genau das ist der "Print"-Schritt aus
+  Ergebnis, ganz ohne `print()`. Genau das ist der "Print"-Schritt aus
   Read-Eval-*Print*-Loop.
 ]
 
@@ -115,15 +112,15 @@
 
 #Theorie[
   Im REPL zeigt Python dir automatisch das Ergebnis jeder Zeile an. In einem
-  Skript passiert das *nicht* – dort musst du explizit `print()` verwenden,
+  Skript passiert das *nicht*, dort musst du explizit `print()` verwenden,
   so wie du es aus der Hello-World-Lektion kennst.
 
   Der Grund dafür ergibt sich direkt aus dem Zweck der beiden Modi: Ein
   Skript soll ein fertiges Programm sein, das genau das ausgibt, was *du*
-  festlegst – nicht mehr und nicht weniger. Wer dein Programm ausführt,
+  festlegst, nicht mehr und nicht weniger. Wer dein Programm ausführt,
   will schließlich nicht bei jeder internen Zwischenrechnung eine Zeile
   Text sehen. Das REPL hingegen ist ein Werkzeug für *dich* zum
-  Ausprobieren – und beim Ausprobieren willst du bei jeder Zeile sofort das
+  Ausprobieren und beim Ausprobieren willst du bei jeder Zeile sofort das
   Ergebnis sehen, deshalb druckt Python es automatisch mit.
 
   Schau dir das folgende Beispiel an. Es enthält bewusst sowohl Zeilen ohne
@@ -148,7 +145,7 @@
 #Theorie[
   Ein zweiter wichtiger Aspekt des REPL: Es "merkt sich" alles, was du
   innerhalb *einer* laufenden Sitzung eingibst. Legst du eine Variable an,
-  kannst du sie in der nächsten Zeile weiterverwenden – genau wie in einem
+  kannst du sie in der nächsten Zeile weiterverwenden,genau wie in einem
   Skript, nur eben Zeile für Zeile statt auf einmal.
 
   ```
@@ -172,7 +169,7 @@
   _Wichtig, und ein Punkt, an dem viele Anfänger:innen zunächst
   stolpern:_ Dieser Zustand existiert *nur*, solange das REPL läuft.
   Schließt du es (mit `exit()` oder `Strg + D`), sind alle Variablen
-  unwiderruflich weg. Es gibt keine automatische Speicherung – anders als
+  unwiderruflich weg. Es gibt keine automatische Speicherung, anders als
   bei einer `.py`-Datei, die du auf der Festplatte gesichert hast und
   jederzeit wieder öffnen kannst.
 
@@ -188,7 +185,7 @@
 
   Öffne das REPL und arbeite `repl_spielwiese.py` Zeile für Zeile durch.
   Versuche bei jeder Zeile, *bevor* du sie eintippst, kurz vorherzusagen,
-  was passieren wird – und prüfe danach, ob deine Vorhersage gestimmt hat.
+  was passieren wird  und prüfe danach, ob deine Vorhersage gestimmt hat.
 ]
 
 === Häufige Stolpersteine
@@ -196,7 +193,7 @@
 #Theorie[
   Das REPL fühlt sich anfangs ungewohnt an, weil es sich anders verhält als
   ein Editor oder eine Shell. Hier sind die typischsten Stellen, an denen
-  Anfänger:innen ins Straucheln geraten – und was dahintersteckt.
+  Anfänger:innen ins Straucheln geraten  und was dahintersteckt.
 
   *Stolperstein 1: Ein Shell-Befehl landet im REPL*
 
@@ -207,14 +204,14 @@
 
   Das passiert, wenn man vergisst, dass man sich *bereits im REPL*
   befindet, und versucht, den Befehl zum *Starten* von Python noch einmal
-  einzutippen. Das REPL ist aber keine Shell – es versteht nur
+  einzutippen. Das REPL ist aber keine Shell, es versteht nur
   Python-Code, keine Shell-Befehle. Lösung: Erst mit `exit()` das REPL
   verlassen, dann den Befehl in der Shell eingeben.
 
   *Stolperstein 2: Der `...`-Prompt taucht auf und "nichts geht mehr"*
 
-  Tippst du eine unvollständige Zeile ein – zum Beispiel eine offene
-  Klammer, die noch nicht geschlossen wurde –, wechselt der Prompt von
+  Tippst du eine unvollständige Zeile ein, zum Beispiel eine offene
+  Klammer, die noch nicht geschlossen wurde , wechselt der Prompt von
   `>>>` zu `...`:
 
   ```
@@ -230,7 +227,7 @@
   *Stolperstein 3: Eine Variable wird versehentlich überschrieben*
 
   Python beschwert sich nicht, wenn du einer bereits existierenden Variable
-  einen neuen Wert zuweist – der alte Wert ist danach einfach weg:
+  einen neuen Wert zuweist, der alte Wert ist danach einfach weg:
 
   ```
   >>> alter = 19
@@ -248,7 +245,7 @@
 
   Wie oben schon erwähnt: Das REPL speichert nichts dauerhaft. Wenn du beim
   Ausprobieren eine Codezeile findest, die du unbedingt behalten willst,
-  kopiere sie in eine `.py`-Datei – erst dort ist sie wirklich sicher.
+  kopiere sie in eine `.py`-Datei, erst dort ist sie wirklich sicher.
 ]
 
 #Spiel[
@@ -267,7 +264,7 @@
     du? Kommt sie dir bekannt vor?
   - Zum Nachdenken: Warum, glaubst du, zeigt Python im REPL automatisch
     jedes Ergebnis an, aber in einem Skript nicht? Formuliere deine Antwort
-    in einem Satz, bevor du weiterliest – du hast die Antwort in dieser
+    in einem Satz, bevor du weiterliest, du hast die Antwort in dieser
     Lektion bereits gelesen.
 ]
 
@@ -300,6 +297,6 @@
 Damit hast du ein zweites Werkzeug in der Hand: Neben dem Skript-Modus aus
 der Hello-World-Lektion kannst du jetzt auch das REPL nutzen, um Ideen
 schnell auszuprobieren, bevor du sie in ein richtiges Programm packst. Genau
-das werden wir in den kommenden Lektionen immer wieder tun – dort, wo es
+das werden wir in den kommenden Lektionen immer wieder tun, dort, wo es
 etwas Neues zu entdecken gibt, probieren wir es zuerst gemeinsam im REPL
 aus.
