@@ -1,9 +1,17 @@
 
 #import "../lib/helpers.typ": *;
 == Dateirechte
+
+Von Linux hört man immer dass es einem viel mehr freiheiten gibt. Das stimmt. Wir können bereits mit den uns bekannten Mitteln viel über das System erfahren, was unter windows vielleicht nicht so einfach wäre
+
+#Spiel[In der Datei `/etc/passwd` befindet sich eine Liste aller Nutzer dieses Systems. Diese ist auch öffentlich lesbar. Neugierig geworden?
+    //TODO: Check the apple file (if it even exists, not trusting chat)
+    Zusätzlich gibt es noch die datei `/etc/shadow`, bzw. auf Apple ist es `private/var/db/dslocal`. Diese enthält Informationen über die Passwörter der Nutzter. Wenn ihr jetzt aber neugirig seid, müssen wir euch leider enttäuschen. Ihr könnt diese Datei nicht lesen, eurem Nutzer fehlen (hoffentlich) die Rechte dazu. Das alles war die Überleitung zum nächsten Thema.
+
+]
+
+
 #Theorie()[
-Wir machen mal wieder eine kurze Pause von \Cpp um euch ein weiteres wichtiges
-Konzept der Linux-Welt nahe zu bringen: Dateirechte.
 
 Unter Windows seid ihr es wahrscheinlich gewohnt, dass der Dateiname festlegt,
 wie mit der Datei umgegangen wird -- eine `.doc` wird in Word geöffnet,
@@ -57,20 +65,14 @@ Wenn ihr die Berechtigungen von Dateien ändern wollt, könnt ihr dazu
 `chmod` benutzen (wenn ihr wissen wollt, wie man es benutzt: `man
     chmod`), dazu muss sie euch aber gehören. Wenn ihr die Eigentümerin einer Datei
 ändern wollt, könnt ihr dazu `chown` nutzen -- dazu müsst ihr aus
-Sicherheitsgründen allerdings Administratorin sein.
+    Sicherheitsgründen allerdings Administratorin sein. Für Gruppen gibt es den äquivalenten Befehl `chgrp`.
 ]
 
 #Praxis()[
-
-+ Geht in ein Verzeichnis, in dem eine `.cpp`-Datei liegt und
-              kompiliert sie. Macht ein `ls -l` und vergleicht die Rechte der
-              `.cpp`-Datei mit der kompilierten Datei.
-+ In der Datei `/etc/shadow` stehen in verschlüsselter Form
-          gespeichert die Kennwörter aller Benutzerinnen auf dem System. Macht ein
-          `ls -l /etc/shadow` und schaut euch die Dateirechte an. Welche
-          Bits sind gesetzt?
-
-
+    + Erstellt eine Neue Datei mit `touch`. Welche rechte habt ihr auf ihr?
+    + Welche Rechte habt ihr auf den Shell commands?
+    + Welche Rechte habt ihr denn auf der datei `/etc/shadow` (oder dem Apple Äquivalent)?
+  
 ]
 
 #Spiel()[

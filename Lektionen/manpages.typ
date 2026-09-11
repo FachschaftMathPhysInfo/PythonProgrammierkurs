@@ -1,16 +1,19 @@
 #import "../lib/helpers.typ": *
 == Manpages
 
+In dieser Lektion findest du heraus wie du dir selber Wissen über die Shell angeignen kannst.
 
+
+=== Die help flag
+Die meisten Befehle haben die `--help` flag. Sie sorgt dafür das der Befehl seine eigentliche Aufgabe nicht macht, sondern Nützliche Informationen über sich ausgibt. Dort findet ihr meist eine Übersicht über die wichtigsten Flags und wie ihr den Befehl genau verwendet.
+
+
+=== Man Pages
 #Theorie(show-heading: false)[
-Wir machen eine kurze Pause vom \Cpp und schauen uns in der Zwischenzeit
-_man pages_ an. Wie wir bereits fest gestellt haben, kann man diese
-benutzen, um sich mehr Informationen über Befehle anzeigen zu lassen. Wir
-wollen uns jetzt genauer anschauen, wie man all die Informationen in einer man
-page am Besten konsumiert.
 
-Wir schauen uns das am Beispiel der Manpage `man cp` an (`cp` ist
-    der Befehl zum Kopieren von Dateien).]
+    Falls ihr mal mehr Informationen braucht oder euch in irgendwas viel tiefer einlesen müsst, dann sind die Manpages euer bester freund. `man` ist kurz für Manual, und das ist auch der Character dieses Befehls. 
+    
+    Wir schauen uns das am Beispiel von `cp` an, wie so eine _Manpage_ aufgabaut ist und wie man sie am besten liest.]
 
 #Praxis()[
 
@@ -39,7 +42,7 @@ sections:
      Form). Werden mehr Parameter angegeben, wird das letzte als
      Verzeichnis, in das man alle anderen kopieren will interpretiert
      (zweite Form). In der dritten Form (wenn `-t` angegeben wird)
-     wird hingegen der \emph{erste} Parameter als das Zielverzeichnis
+     wird hingegen der _erste_ Parameter als das Zielverzeichnis
      interpretiert, in das alle anderen Dateien kopiert wird.
        
        Es gibt eine Vielzahl von Konventionen für diesen Bereich, eckige
@@ -92,21 +95,11 @@ Und wenn ihr mal wirklich keine Zeit habt, die ganze page zu lesen, könnt ihr m
 + Was ist der Unterschied zwischen `ls -a` und `ls -A`?
       Probiert beides aus. Das ist auf den ersten Blick nicht so leicht zu sehen
                         Fragt uns im einfach wenn ihr es nicht findest.
-+ Nutzt `cp` um eine Datei zu kopieren. Sucht euch dafür
-  irgendeine `.cpp`-Datei aus dem Vorkurs-Programm und kopiert sie
-      in euer Homeverzeichnis (ihr könnt dafür eine Tilde (`\~`)
-      benutzen).
 
 === Spiel
 -  Wie über so gut wie jeden Befehl gibt es auch über `man` eine
               manpage. Schaut euch mal `man` an.
--  Befehle, die für euch im späteren Leben interessant sein könnten sind
-      z.B. `ls`, `cp`, `mkdir`, `grep`, `cat`,
-   `echo`, `mv`,  ... . Ihr könnt ja schon einmal in ein
-      oder zwei dieser manpages hinein schauen, und ein oder zwei Befehle
-      ausprobieren. Aber ihr müsst das jetzt auf keinen fall alles im Kopf
-      behalten.
-
+- Es gibt nicht nur für Shell Befehle man pages. So findet ihr zum Beispiel allerlei nützliche informationen in hinteren Kapiteln. `man 7 path_resolution` zum beispiel erklärt nochmal im Detail wie man von einem Pfad zu einer Datei kommt.
 //TODO: Es gibt vielleicht einen besseren Weg die Quizzes zu gestalten (eventuell mit lösungen oder so)
 // Rotierter Text unten drunter oder am Besten am ende von der Lektion oder dem ganzen Buch
 

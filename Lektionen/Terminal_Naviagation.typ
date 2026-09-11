@@ -57,7 +57,7 @@ Das Argument von cd ist ein _Pfad_. Lasst und damit mal etwas rumspielen.
 
     #colbreak()
 
-
+    //TODO: Diese Ordnerstruktur muss erstellt werden und irgendwie auf die Rechner der Erstis kopiert werden (maybe als zip oder als skript). Das root muss weg, weil das nur auf unseren Rechnern sinn macht..
     #cetz.canvas({
     import cetz.draw: *
 
@@ -109,3 +109,4 @@ Falls ihr euch mal völlig veloren habt, gibt es den Befehll `pwd`. Das steht f�
 ==== ls
 Meistens habt ihr nicht den Luxus das ihr ein Diagram zu eurer Directorystruktur bekommt. Wie finde ich aber nun raus wo ich mit cd überall hinkomme? Dafür gibt es den `ls` Befehl. Das steht für 'list' und gibt an was alles in einem Directory ist. Man kann entweder ein pfad angeben, dann bekommt man alles was sich dort befindet, oder man gibt nichts an, dann bekommt man den Inhalt des working directories.
 
+#Spiel[Das Diagramm von oben war nicht ganz ehrlich. Da sind noch ein paar Dateien ausgelasssen. Findet raus wie sie heissen, ohne dabei `cd` zu verwenden.]

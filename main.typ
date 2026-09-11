@@ -41,7 +41,9 @@
 
 #include "Lektionen/Terminal_Naviagation.typ"
 
-#include "Lektionen/shell.typ"
+#include "Lektionen/shell_commands.typ"
+
+//#include "Lektionen/shell.typ"
 
 #include "Lektionen/manpages.typ"
 
