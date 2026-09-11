@@ -3,4 +3,6 @@
 - [x] REPL — Interpreter-Konzept verstehen
 - [ ] Import — Std-Library + eigene Module
 - [ ] Abschlussprojekt 
-
+- [ ] Easter egg mit Mathphystheo webseite
+- [ ] Aussehen vom Script verbessern
+- [ ] Korrektur lesen
