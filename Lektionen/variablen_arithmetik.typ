@@ -34,6 +34,16 @@ In diese Lektion lernen wir, was Variablen sind rechnen ein bisschen.
 ]
 
 
+=== Etwas Quality of Life: Der Formatstring
+Wir haben jetzt zwei verschiedene Arten von Argumenten für `print` kennengelernt. Einmal die in Anführugnszeichen, die übrigens _Strings_ (auf Deutsch Zeichenkette) heißen, falls wir den genauen wortlaut ausgeben wollen,und einmal ohne, falls wir eine Variable benutzen wollen. Es gibt aber auch eine möglichkeit diese beiden zu kombinieren, der sogenannte _formatstring_.
+
+```python
+variable=42
+print(f"Die Antwort auf alles ist {variable}")
+```
+
+Ein _formatstring_ ist ebenfalls ein String, aber wir schreiben `f`, wie _format_ davor. Das erlaubt es uns Variablen zu nutzen, indem wir sie in geschweifte Klammern packen.
+
 
 
 === Arithmetik

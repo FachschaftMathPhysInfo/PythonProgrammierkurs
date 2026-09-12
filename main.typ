@@ -74,7 +74,7 @@
 #include "Lektionen/kontrollfluss.typ"
 
 // Schleifen
-
+#include "Lektionen/schleifen.typ"
 // Funktionen
 
 // das Python repl

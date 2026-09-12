@@ -122,8 +122,8 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
   ]
 ]
 
-#Theorie[
-  === Der wichtigste Stolperstein: die Endlosschleife
+#Theorie(title_sup: "Der wichtigste Stolperstein: die Endlosschleife")[
+
 
   Schau dir in `countdown.py` die Zeile `sekunden = sekunden - 1` genau an. Sie sieht nebensächlich aus, ist aber das Herzstück der Schleife. Lässt man sie weg, verändert sich `sekunden` nie. Die Bedingung `sekunden > 0` bleibt damit für immer wahr, und das Programm gibt bis in alle Ewigkeit `5` aus.
 
@@ -153,33 +153,33 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
 
   + Verschiebe in `summe_sammeln.py` die Zeile `summe = 0` versuchsweise in den Schleifenrumpf. Welches Ergebnis kommt heraus, und warum?
 ]
+// Wird gekürzt weil: 1. Continuity aus letzter Lektion nicht mehr gegeben. 2. Lektion ist zu lang
+// === Eingaben absichern
 
-=== Eingaben absichern
+// #Theorie[
+//   Jetzt können wir das Problem lösen, an dem wir in der letzten Lektion gescheitert sind: eine Nutzerin so lange fragen, bis die Eingabe brauchbar ist.
 
-#Theorie[
-  Jetzt können wir das Problem lösen, an dem wir in der letzten Lektion gescheitert sind: eine Nutzerin so lange fragen, bis die Eingabe brauchbar ist.
+//   Die Bedingung formuliert dabei den *unerwünschten* Zustand: „Solange die Eingabe noch unsinnig ist, frage weiter.“ Das fühlt sich beim ersten Lesen verdreht an, ist aber genau richtig – die Schleife läuft, *solange etwas nicht stimmt*.
 
-  Die Bedingung formuliert dabei den *unerwünschten* Zustand: „Solange die Eingabe noch unsinnig ist, frage weiter.“ Das fühlt sich beim ersten Lesen verdreht an, ist aber genau richtig – die Schleife läuft, *solange etwas nicht stimmt*.
+//   Ein wenig unschön ist daran der künstliche Startwert (`alter = -1`), den man nur setzt, damit die Bedingung beim ersten Mal überhaupt zutrifft. Für diesen Fall gibt es eine elegantere Schreibweise mit zwei neuen Bausteinen:
 
-  Ein wenig unschön ist daran der künstliche Startwert (`alter = -1`), den man nur setzt, damit die Bedingung beim ersten Mal überhaupt zutrifft. Für diesen Fall gibt es eine elegantere Schreibweise mit zwei neuen Bausteinen:
+//   - `while True:` startet eine Schleife, deren Bedingung *immer* wahr ist – also absichtlich eine Endlosschleife.
+//   - `break` verlässt die Schleife sofort, mitten im Rumpf, und springt hinter sie.
 
-  - `while True:` startet eine Schleife, deren Bedingung *immer* wahr ist – also absichtlich eine Endlosschleife.
-  - `break` verlässt die Schleife sofort, mitten im Rumpf, und springt hinter sie.
+//   Beides zusammen ergibt: „Wiederhole für immer – bis die Eingabe stimmt, dann raus hier.“ Das ist unter Programmiererinnen ein gängiges und gut lesbares Muster.
 
-  Beides zusammen ergibt: „Wiederhole für immer – bis die Eingabe stimmt, dann raus hier.“ Das ist unter Programmiererinnen ein gängiges und gut lesbares Muster.
+//   Ein Verwandter von `break` ist `continue`. Es bricht nicht die ganze Schleife ab, sondern nur den aktuellen Durchlauf und springt sofort zur nächsten Iteration – nützlich, um einzelne Fälle zu überspringen.
+// ]
 
-  Ein Verwandter von `break` ist `continue`. Es bricht nicht die ganze Schleife ab, sondern nur den aktuellen Durchlauf und springt sofort zur nächsten Iteration – nützlich, um einzelne Fälle zu überspringen.
-]
+// #Code("09_schleifen/eingabe_pruefen.py")
 
-#Code("09_schleifen/eingabe_pruefen.py")
+// #Praxis[
+//   + Führe `eingabe_pruefen.py` aus und gib absichtlich erst `-3`, dann `500` und schließlich `20` ein.
 
-#Praxis[
-  + Führe `eingabe_pruefen.py` aus und gib absichtlich erst `-3`, dann `500` und schließlich `20` ein.
+//   + Schreibe ein Programm, das nach einem Passwort fragt und so lange weiterfragt, bis `"heureka"` eingegeben wurde.
 
-  + Schreibe ein Programm, das nach einem Passwort fragt und so lange weiterfragt, bis `"heureka"` eingegeben wurde.
-
-  + Erweitere es: Nach drei Fehlversuchen soll das Programm mit `Zu viele Versuche.` aufgeben. (Du brauchst einen Zähler *und* `and` in der Bedingung.)
-]
+//   + Erweitere es: Nach drei Fehlversuchen soll das Programm mit `Zu viele Versuche.` aufgeben. (Du brauchst einen Zähler *und* `and` in der Bedingung.)
+// ]
 
 === Wenn die Anzahl feststeht: `for`
 
