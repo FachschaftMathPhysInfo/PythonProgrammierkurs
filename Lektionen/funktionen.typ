@@ -11,7 +11,7 @@ stimmt. Und ihr könnt die Maschine beliebig oft benutzen, mit
 unterschiedlichen Mengen an Orangen, ohne sie jedes Mal neu zu bauen.
 
 Genau das ist die Grundidee einer *Funktion* in der Programmierung: ein
-wiederverwendbarer Baustein, dem ihr Werte übergebt (die *Parameter*) und
+wiederverwendbarer Baustein, dem ihr Werte übergebt (die *Arumente*) und
 der euch dafür ein Ergebnis zurückgibt (den *Rückgabewert*). Das Konzept
 kennt ihr bereits aus der Mathematik, zum Beispiel f(x) = x². Dort schreibt
 ihr einfach f(3), wenn ihr eigentlich 3² meint -- die Funktion „versteckt"
@@ -19,54 +19,54 @@ die eigentliche Rechnung hinter einem Namen.
 
 In Python sieht die Bauanleitung für eine Funktion so aus:
 
-```
-def name(parameter1, parameter2):
+```python
+def name(argument1, argument2):
     # Anweisungen
     return ergebnis
 ```
 
-Am Beispiel unserer Potenz-Funktion `potenz(x, n)` sieht das dann konkret
-so aus:
+// Am Beispiel unserer Potenz-Funktion `potenz(x, n)` sieht das dann konkret
+// so aus:
 
-#align(center)[
-  $ underbrace("def", "Schlüsselwort") quad overbrace("potenz", "Name") thin \( underbrace("x", "Parameter 1") , underbrace("n", "Parameter 2") \) : $
-]
+// #align(center)[
+//   $ underbrace("def", "Schlüsselwort") quad overbrace("potenz", "Name") thin \( underbrace("x", "Argument 1") , underbrace("n", "Argument 2") \) : $
+// ]
 
-- `def` (kurz für „define") leitet die Definition ein
+- ```python def``` (kurz für „define") leitet die Definition ein
 - `name` ist ein frei wählbarer, sprechender Name für die Funktion (wie bei
   Variablen: `flaeche_berechnen` statt `f1`)
-- in den Klammern stehen die *Parameter* -- Platzhalter für Werte, die die
+- in den Klammern stehen die *Argument* -- Platzhalter für Werte, die die
   Funktion beim Aufruf entgegennimmt
 - der eingerückte Block darunter ist der *Funktionsrumpf*, der ausgeführt
   wird, sobald die Funktion aufgerufen wird
 
-Ein typischer Stolperstein: Anders als in vielen anderen Sprachen braucht
-Python keine geschweiften Klammern, um zu markieren, was zur Funktion
-gehört. Es zählt allein die *Einrückung* -- genau wie ihr es schon von
-`if` und `while` kennt. Ihr merkt, dass ihr aus dem Funktionsrumpf
-„herausgefallen" seid, sobald eine Zeile wieder auf der ursprünglichen
-Ebene beginnt.
+// Ein typischer Stolperstein: Anders als in vielen anderen Sprachen braucht
+// Python keine geschweiften Klammern, um zu markieren, was zur Funktion
+// gehört. Es zählt allein die *Einrückung* -- genau wie ihr es schon von
+// `if` und `while` kennt. Ihr merkt, dass ihr aus dem Funktionsrumpf
+// „herausgefallen" seid, sobald eine Zeile wieder auf der ursprünglichen
+// Ebene beginnt.
 
-Wichtig ist außerdem die Unterscheidung zwischen *Ausgabe* und *Rückgabe*,
-an der viele anfangs stolpern: `print()` gibt lediglich Text auf dem
-Bildschirm aus, sichtbar für die Nutzerin. `return` gibt hingegen einen
+Wichtig ist die Unterscheidung zwischen *Ausgabe* und *Rückgabe*,
+an der viele anfangs stolpern: ```python print()``` gibt lediglich Text auf dem
+Bildschirm aus, sichtbar für die Nutzerin. ```python return``` gibt hingegen einen
 Wert an die Stelle im Programm zurück, an der die Funktion aufgerufen
 wurde, damit dieser dort in einer Variable gespeichert oder direkt
 weiterverarbeitet werden kann. Ein häufiger Anfängerfehler ist es, eine
 Funktion, die nur druckt, für eine Berechnung weiterverwenden zu wollen --
 probiert im Praxisteil selbst aus, was dabei passiert.
 
-Ruft man eine Funktion auf, z.B. `potenz(3.142, 4)`, so wird der
+Ruft man eine Funktion auf, z.B. ```python potenz(3.142, 4)```, so wird der
 Funktionsaufruf im Programm quasi „durch das Ergebnis ersetzt". Deshalb
 könnt ihr Funktionsaufrufe auch ineinander verschachteln:
-`potenz(5.0 + potenz(3.0, 2), 3)` wird zunächst innen ausgewertet --
-`potenz(3.0, 2)` ergibt `9.0`, damit wird daraus `potenz(14.0, 3)`, und
+```python potenz(5.0 + potenz(3.0, 2), 3)``` wird zunächst innen ausgewertet --
+```python potenz(3.0, 2)``` ergibt `9.0`, damit wird daraus ```python potenz(14.0, 3)```, und
 das ergibt schließlich `2744.0`. Das folgende Beispiel zeigt genau das:
 
 #Code("10_funktionen/funktionen_basics.py")
 
 Unsere Funktion `potenz` wird hier viermal aufgerufen: einmal mit
-konkreten Werten, einmal mit einer Variable als Parameter, und einmal mit
+konkreten Werten, einmal mit einer Variable als Argument, und einmal mit
 dem Ergebnis eines weiteren Funktionsaufrufs -- ohne dass dieses zuerst in
 einer eigenen Variable zwischengespeichert werden muss.
 
@@ -87,15 +87,15 @@ die euch später im Studium noch öfter begegnen wird.
 
 #Praxis()[
 
-+ Schreibt eine Funktion `quadrat(x)`, die eine Zahl mit sich selbst
++ Schreibt eine Funktion ```python quadrat(x)```, die eine Zahl mit sich selbst
   multipliziert und das Ergebnis zurückgibt (ohne den Operator `**` zu
   benutzen). Ruft sie mit mehreren unterschiedlichen Werten auf und gebt
-  euch die Ergebnisse mit `print()` aus.
+  euch die Ergebnisse mit ```python print()``` aus.
 + Verändert eure Funktion testweise so, dass sie statt `return ergebnis`
-  nur `print(ergebnis)` enthält. Versucht anschließend,
-  `x = quadrat(4)` zu schreiben und `x` danach auszugeben. Was passiert,
+  nur ```python print(ergebnis)``` enthält. Versucht anschließend,
+  ```python x = quadrat(4)``` zu schreiben und `x` danach auszugeben. Was passiert,
   und warum? (Tipp: Schaut euch an, welchen Typ `x` jetzt hat, mit
-  `print(type(x))`.)
+  ```python print(type(x))```.)
 
 ]
 
@@ -126,6 +126,8 @@ so aus:
 Damit wir für eine gegebene Zahl nicht jedes Mal von Hand rechnen müssen,
 lagern wir die Rechenregel in eine Funktion `collatz(x)` aus, die uns die
 jeweils nächste Zahl der Folge zurückgibt:
+#h(100%)
+
 
 #Code("10_funktionen/funktionen_collatz.py")
 
@@ -133,14 +135,14 @@ jeweils nächste Zahl der Folge zurückgibt:
 
 + Verändert das Programm in `funktionen_collatz.py` so, dass es nicht die
   einzelnen Zahlen `x1`, `x2` und `x3`, sondern deren Summe ausgibt.
-+ Ergänzt das Programm um eine vierte Zahl `x4 = collatz(x3)` und gebt die
++ Ergänzt das Programm um eine vierte Zahl ```python x4 = collatz(x3)``` und gebt die
   gesamte Folge `eingabe -> x1 -> x2 -> x3 -> x4` aus.
 
 ]
 
 #Spiel()[
 
-+ Schreibt eine Funktion `schritte(x)`, die zählt, wie viele Schritte die
++ Schreibt eine Funktion ```python schritte(x)```, die zählt, wie viele Schritte die
   Collatz-Folge braucht, bis sie bei der 1 ankommt, und diese Anzahl als
   Ganzzahl zurückgibt. Probiert die Funktion mit ein paar Startwerten aus.
 + Fragt zwei Zahlen von der Nutzerin ab und findet mithilfe eurer
@@ -155,11 +157,11 @@ jeweils nächste Zahl der Folge zurückgibt:
   (Anders als in kompilierten Sprachen liest Python eine Datei
   schrittweise von oben nach unten -- eine Funktion muss deshalb *vor*
   ihrem ersten Aufruf definiert sein.)
-+ Implementiert eine rekursive Funktion `fibonacci(n)`, die das n-te
-  Element der Fibonacci-Folge berechnet (`fibonacci(0) = 0`,
-  `fibonacci(1) = 1`, `fibonacci(n) = fibonacci(n-1) + fibonacci(n-2)`).
++ Implementiert eine rekursive Funktion ```python fibonacci(n)```, die das n-te
+  Element der Fibonacci-Folge berechnet (```python fibonacci(0) = 0```,
+  ```python fibonacci(1) = 1```, ```python fibonacci(n) = fibonacci(n-1) + fibonacci(n-2)```).
 + Ruft eure `fakultaet`-Funktion aus dem Theorieteil mit einer sehr großen
-  Zahl auf, z.B. `fakultaet(5000)`. Was passiert? Schaut euch die
+  Zahl auf, z.B. ```python fakultaet(5000)```. Was passiert? Schaut euch die
   Fehlermeldung genau an -- was sagt sie euch über den Call Stack?
 + Schaut euch eure bisherigen Lösungen aus früheren Lektionen an: Findet
   ihr Stellen, an denen ihr wiederkehrenden Code in eine eigene Funktion
@@ -172,7 +174,7 @@ jeweils nächste Zahl der Folge zurückgibt:
   + Eine Funktion muss immer einen Wert zurückgeben
   + Der Funktionsrumpf wird durch Einrückung markiert, nicht durch
     geschweifte Klammern
-  + `print()` innerhalb einer Funktion gibt einen Wert an die aufrufende
+  + ```python print()``` innerhalb einer Funktion gibt einen Wert an die aufrufende
     Stelle zurück
   + Dieselbe Funktion kann mehrmals mit unterschiedlichen Argumenten
     aufgerufen werden
