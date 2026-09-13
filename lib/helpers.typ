@@ -132,11 +132,11 @@ stack(
 }
 
 
-#let MakeSetting(title: "", show-heading: true, body) = {
+#let MakeSetting(title: "", show-heading: true, title_sup: "", body) = {
 
     if show-heading {
         show heading: set text(size: 16pt)
-        heading(level: 3)[#title]}
+        heading(level: 3)[#if title_sup != "" { title + ": " + title_sup} else {title }]}
     body
 } 
 
@@ -147,3 +147,13 @@ stack(
 #let Praxis = MakeSetting.with(title: "Praxis")
 #let Spiel = MakeSetting.with(title: "Spiel")
 #let Theorie = MakeSetting.with(title: "Theorie")
+
+
+
+
+#let Hinweis(content) = {
+
+    [*Hinweis*]
+    rect[
+    #content]
+}
