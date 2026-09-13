@@ -81,6 +81,7 @@
 #include "Lektionen/schleifen.typ"
 
 // Funktionen
+#include "Lektionen/funktionen.typ"
 
 // das Python repl
 

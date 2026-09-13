@@ -6,7 +6,7 @@ Von Linux hört man immer dass es einem viel mehr freiheiten gibt. Das stimmt. W
 
 #Spiel[In der Datei `/etc/passwd` befindet sich eine Liste aller Nutzer dieses Systems. Diese ist auch öffentlich lesbar. Neugierig geworden?
     //TODO: Check the apple file (if it even exists, not trusting chat)
-    Zusätzlich gibt es noch die datei `/etc/shadow`, bzw. auf Apple ist es `private/var/db/dslocal`. Diese enthält Informationen über die Passwörter der Nutzter. Wenn ihr jetzt aber neugirig seid, müssen wir euch leider enttäuschen. Ihr könnt diese Datei nicht lesen, eurem Nutzer fehlen (hoffentlich) die Rechte dazu. Das alles war die Überleitung zum nächsten Thema.
+    Zusätzlich gibt es noch die datei `/etc/shadow`, bzw. auf Apple ist es `var/db/dslocal/nodes/Default/users`. Diese enthält Informationen über die Passwörter der Nutzter. Wenn ihr jetzt aber neugirig seid, müssen wir euch leider enttäuschen. Ihr könnt diese Datei nicht lesen, eurem Nutzer fehlen (hoffentlich) die Rechte dazu. Das alles war die Überleitung zum nächsten Thema.
 
 ]
 
