@@ -78,9 +78,14 @@
 
 // Schleifen
 
+
+// Funktionen
+
+
 #include "Lektionen/schleifen.typ"
 
 // Funktionen
+
 #include "Lektionen/funktionen.typ"
 
 // das Python repl
@@ -88,6 +93,10 @@
 #include "Lektionen/repl.typ"
 
 // list
+
+#include "Lektionen/listen.typ"
+
+
 
 // stl, Multifile programs
 
