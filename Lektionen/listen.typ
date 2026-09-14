@@ -60,7 +60,7 @@ Einträgen hat die Indizes `0` bis `3`. Der Zugriff auf
 Elemente eine Liste gerade enthält, verrät euch die Funktion `len()`
 (kurz für „length“, also Länge) -- der größte gültige Index ist immer
 `len(liste) - 1`. Praktisch ist auch, dass Python negative Indizes
-versteht: `liste[-1]` ist das letzte Element, ganz ohne vorher zu zählen.
+versteht: `list[-1]` ist das letzte Element, ganz ohne vorher zu zählen.
 
 #Code("11_listen/listen_basics.py")
 
@@ -74,24 +74,24 @@ vorstellen wie Funktionen, die fest zu genau dieser einen Liste gehören
 und deshalb wissen, an welchem Zettel sie arbeiten sollen.
 
 #description(format: it => raw(it))[
-/ liste.append(wert): hängt einen Wert hinten an
-/ liste.insert(index, wert): fügt einen Wert an der genannten Position ein
-/ liste.remove(wert): entfernt das erste Vorkommen dieses Werts
-/ liste.pop(): entfernt das letzte Element und gibt es zurück
-/ liste[index] = wert: überschreibt ein vorhandenes Element
+/ list.append(wert): hängt einen Wert hinten an
+/ list.insert(index, wert): fügt einen Wert an der genannten Position ein
+/ list.remove(wert): entfernt das erste Vorkommen dieses Werts
+/ list.pop(): entfernt das letzte Element und gibt es zurück
+/ list[index] = wert: überschreibt ein vorhandenes Element
 / wert in liste: prüft, ob ein Wert enthalten ist (ergibt `True` oder `False`)
 ]
 
 #Code("11_listen/listen_veraendern.py")
 
 Auch hier gibt es einen typischen Anfängerfehler: `append` hängt genau
-*ein* Element an. Schreibt ihr `liste.append(["Apfel", "Banane"])`, so
+*ein* Element an. Schreibt ihr `list.append(["Apfel", "Banane"])`, so
 landet die *ganze zweite Liste* als ein einziges Element in eurer Liste --
 ihr habt dann eine Liste in einer Liste. Wollt ihr stattdessen zwei Listen
-aneinanderhängen, benutzt `+` oder `liste.extend(zusatz)`.
+aneinanderhängen, benutzt `+` oder `list.extend(zusatz)`.
 
-Ein zweiter, verwandter Stolperstein: `liste.append("Milch")` verändert die
-Liste und gibt selbst *nichts* zurück. Wer `liste = liste.append("Milch")`
+Ein zweiter, verwandter Stolperstein: `list.append("Milch")` verändert die
+Liste und gibt selbst *nichts* zurück. Wer `liste = list.append("Milch")`
 schreibt, überschreibt seine Liste mit `None` und wundert sich danach über
 einen `TypeError`. Merkt euch die Faustregel: Methoden, die eine Liste
 verändern, schreibt man ohne Zuweisung.
@@ -137,7 +137,7 @@ draußen gestrichen.
 Das ist kein Fehler, sondern gewollt und ausgesprochen nützlich -- es
 erlaubt einer Funktion, eine große Liste zu bearbeiten, ohne sie
 kopieren zu müssen. Ihr solltet es nur bewusst tun. Wollt ihr das Original
-schützen, übergebt mit `liste[:]` eine echte Kopie.
+schützen, übergebt mit `list[:]` eine echte Kopie.
 
 Damit habt ihr eure erste *Datenstruktur* in der Hand: eine Art, mehrere
 Werte so zu organisieren, dass ein Programm sinnvoll mit ihnen arbeiten
@@ -187,7 +187,7 @@ gelernt habt -- `while`, `if`, Funktionen, `input()` und nun Listen.
 + *Zahlen umdrehen:* Schreibt eine Funktion `umdrehen(liste)`, die eine
   neue Liste mit den Elementen in umgekehrter Reihenfolge zurückgibt --
   von Hand mit einer Schleife, ohne `reverse()`. Vergleicht euer Ergebnis
-  anschließend mit `liste[::-1]`.
+  anschließend mit `list[::-1]`.
 + *Suchen:* Schreibt eine Funktion `finde(liste, gesucht)`, die den Index
   des gesuchten Elements zurückgibt -- oder `-1`, wenn es nicht enthalten
   ist. Warum ist `-1` hier eine sinnvolle Wahl für „nicht gefunden“?
