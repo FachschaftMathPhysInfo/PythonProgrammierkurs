@@ -1,7 +1,10 @@
 - [x] Listen — Erste Datenstruktur
 - [x] Debugger
 - [x] REPL — Interpreter-Konzept verstehen
+- [ ] Keyboard shortcuts im Terminal erklären
 - [ ] Import — Std-Library + eigene Module
+- [ ] Einheitliche Ansprache (singular vs plural)
+- [ ] Generischen Feminimum überall
 - [ ] Abschlussprojekt 
 - [ ] Easter egg mit Mathphystheo webseite
 - [ ] Aussehen vom Script verbessern
@@ -11,8 +14,8 @@
 - [ ] Korrektur lesen
 - [ ] Hinweise zu Footnotes ändern
 - [ ] Continuity sicherstellen
-  - Werden die Gleichen Begrifflichkeiten verwendet
-  - Werden Dinge doppel erklärt
-  - Werden auf Dinge verwiesed die in vorherigen Lektionen nicht behandelt worden sind
+  - Werden die Gleichen Begrifflichkeiten verwendet?
+  - Werden Dinge doppel erklärt?
+  - Werden auf Dinge verwiesed die in vorherigen Lektionen nicht behandelt worden sind?
 
 
