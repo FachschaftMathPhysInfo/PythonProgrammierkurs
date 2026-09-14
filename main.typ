@@ -85,6 +85,8 @@
 
 // das Python repl
 
+#include "Lektionen/repl.typ"
+
 // list
 
 // stl, Multifile programs
