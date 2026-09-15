@@ -2,11 +2,11 @@
 - [x] Debugger
 - [x] REPL — Interpreter-Konzept verstehen
 - [ ] Keyboard shortcuts im Terminal erklären
-- [ ] Import — Std-Library + eigene Module
+- [x] Import — Std-Library + eigene Module
   - [ ] Highlighting inline Python
 - [ ] Einheitliche Ansprache (singular vs plural)
 - [ ] Generischen Feminimum überall
-- [ ] Abschlussprojekt 
+- [ ] Abschlussprojekt (Conways Game of Life)
 - [ ] Easter egg mit Mathphystheo webseite
 - [ ] Aussehen vom Script verbessern
   - Wann verwenden wir **bold**, wann *italic*
@@ -18,5 +18,8 @@
   - Werden die Gleichen Begrifflichkeiten verwendet?
   - Werden Dinge doppel erklärt?
   - Werden auf Dinge verwiesed die in vorherigen Lektionen nicht behandelt worden sind?
-
+- [ ] Inhalt verzeichnis erstellen
+- [ ] Statt lektion level schreiben
+- [ ] Codes in lektionen ordnerns verteilen
+- [ ] 
 
