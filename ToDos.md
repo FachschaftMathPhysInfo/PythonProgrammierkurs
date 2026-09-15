@@ -3,6 +3,7 @@
 - [x] REPL — Interpreter-Konzept verstehen
 - [ ] Keyboard shortcuts im Terminal erklären
 - [ ] Import — Std-Library + eigene Module
+  - [ ] Highlighting inline Python
 - [ ] Einheitliche Ansprache (singular vs plural)
 - [ ] Generischen Feminimum überall
 - [ ] Abschlussprojekt 

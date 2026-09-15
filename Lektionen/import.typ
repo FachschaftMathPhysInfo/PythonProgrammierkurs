@@ -3,12 +3,14 @@
 == Lektion: Imports
 
 #Theorie()[
+    //Haben keine Listen selber geschriebe, muss man anders formulieren.
+// Ihr habt in der letzten Lektion gelernt, wie man eigene Datenstrukturen -- Listen -- baut und damit selbst geschriebene Werkzeuge zusammensetzt. Jetzt geht es einen Schritt weiter: Wie holt man sich fertige, bereits von anderen gebaute Werkzeuge in sein Programm, ohne sie selbst schreiben zu müssen?
 
-Ihr habt in der letzten Lektion gelernt, wie man eigene Datenstrukturen -- Listen -- baut und damit selbst geschriebene Werkzeuge zusammensetzt. Jetzt geht es einen Schritt weiter: Wie holt man sich fertige, bereits von anderen gebaute Werkzeuge in sein Programm, ohne sie selbst schreiben zu müssen?
+    // Stellt euch ein großes Haus vor, in dem jedes Zimmer eine bestimmte Aufgabe hat: die Küche zum Kochen, die Werkstatt zum Schrauben, die Bibliothek zum Lesen. Wenn ihr kochen wollt, geht ihr in die Küche, aber ihr müsst die Küche nicht selbst in eurem Wohnzimmer bauen. Der Zugang ist einfach vorhanden, man muss ihn nur nutzen.
 
-Stellt euch ein großes Haus vor, in dem jedes Zimmer eine bestimmte Aufgabe hat: die Küche zum Kochen, die Werkstatt zum Schrauben, die Bibliothek zum Lesen. Wenn ihr kochen wollt, geht ihr in die Küche, aber ihr müsst die Küche nicht selbst in eurem Wohnzimmer bauen. Der Zugang ist einfach vorhanden, man muss ihn nur nutzen.
+    Wir haben jetzt viele Grundwerkzeuge kennengelernt und können jetz alles Programmieren was man programmieren kann  (das wurde sogar mal bewiesen). Doch alles selber schreiben ist anstrengend. Programmiererinnen sind faul und bedienen sich gerne am Code von anderen. Niemand will immer alles von Grund auf selber schreiben. Es wäre doch toll, wenn wir einfach bestehenden Code nehmen können, und ihn in unserem Programm einfach verwenden können.
 
-Genau so funktionieren *Module* und *Imports* in Python: Andere Programmierer haben bereits nützliche Funktionen und Werkzeuge geschrieben, mathematische Funktionen, Zufallszahlengeneratoren, Dateioperationen und vieles mehr. Diese sind in sogenannten *Modulen* organisiert (wie die Zimmer im Haus). Mit dem Befehl `import` holt ihr euch diese Module ins Programm (betretet das Zimmer) und könnt sie sofort benutzen.
+Genau so funktionieren *Module* und *Imports* in Python: Andere Programmierer haben bereits nützliche Funktionen und Werkzeuge geschrieben, mathematische Funktionen, Zufallszahlengeneratoren, Dateioperationen und vieles mehr. Diese sind in sogenannten *Modulen* organisiert. Mit dem Befehl `import` holt ihr euch diese Module ins Programm und könnt sie sofort benutzen als ob ihr sie selber geschrieben hättet.
 
 Ohne Imports müsste jeder Programmierer alles von Grund auf neu schreiben. Wurzeln berechnen? Zufallszahlen generieren? Listen sortieren? Das würde immer wieder hunderte Zeilen Code bedeuten. Mit Imports könnt ihr auf bewährte, getestete Lösungen zurückgreifen, eine zentrale Stärke von Python.
 
@@ -26,11 +28,11 @@ Python kommt mit einer riesigen *Standard-Bibliothek*, das sind Module, die bere
     [`random`], [Zufallszahlen und Zufallsauswahl],
     [`time`], [Datum, Zeit und Verzögerungen],
     [`string`], [Texte und Zeichenklassen],
-    [`json`], [Daten speichern und lesen],
+//    [`json`], [Daten speichern und lesen],
   )
 ]
-
-Die `math`-Bibliothek ist das perfekte Beispiel: Sie bietet hunderte mathematische Funktionen, die intern in C implementiert sind, also nicht nur schneller, sondern auch besser getestet als alles, das ihr von Hand schreiben könntet.
+//Alles in Python is in C implementiert
+Die `math`-Bibliothek ist das perfekte Beispiel: Sie bietet hunderte mathematische Funktionen, die man immer mal wieder braucht kann.  Warum ist das nicht alles standartmäßig in Python? Ein Grund dafür ist das auf einmal sehr viele Namen für Funktionen blockiert sind.
 
 === Import-Syntax: Verschiedene Wege
 
@@ -42,7 +44,7 @@ Es gibt mehrere Wege, ein Modul zu importieren. Jeder hat seinen Sinn:
 / from math import sqrt: Importiert nur eine einzelne Funktion direkt. Man schreibt dann einfach `sqrt(16)`, kein Präfix nötig
 / from math import sqrt, pi: Mehrere Dinge auf einmal importieren
 ]
-
+//Star Syntax maybe dann im Shell part erklären? Wäre vielleicht sinnvoll
 Ein Anfängerfehler: `from math import *` importiert *alles* aus einem Modul auf einmal. Das funktioniert, kann aber zu Verwechslungen führen, wenn mehrere Module Funktionen mit demselben Namen haben. Besser ist es, genau zu sagen, was man braucht.
 
 === Beispiel: math-Modul für Kreisberechnungen
@@ -101,13 +103,13 @@ Hier verbindet sich alles: `import random`, um eine Zufallszahl zu wählen; `whi
 
 Erinnert euch an die `temperaturen`-Liste aus der Listen-Lektion: Bisher konntet ihr sie nur mit `print()` als Zahlenreihe ausgeben. Mit `matplotlib` macht ihr daraus ein echtes Diagramm:
 
-#Code("13_import/import_matplotlib_beispiel.py")
+//#Code("13_import/import_matplotlib_beispiel.py") // MISSING
 
 Der Import funktioniert genau wie bei den Standard-Modulen -- `import matplotlib.pyplot as plt` -- ist nur ein Kürzel für einen langen Modulnamen, wie ihr es schon von `import math as m` kennt. Der einzige Unterschied ist, dass `matplotlib` vorher installiert werden muss.
 
 Falls `pip install matplotlib` bei euch nicht auf Anhieb klappt (je nach Betriebssystem und Setup kann das unterschiedlich laufen), ist das kein Problem, dieser Abschnitt ist ein Ausblick zum Kennenlernen, keine Voraussetzung für die kommenden Lektionen.
 
-]
+] // Gefährlich. Ich weiss nicht wie sinnvoll wir mathplotlib auf die Cip rechner bekomḿen.
 
 #Praxis()[
 

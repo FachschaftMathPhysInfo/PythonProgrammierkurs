@@ -101,5 +101,6 @@
 #include "Lektionen/import.typ"
 
 // stl, Multifile programs
+#include "Lektionen/import.typ"
 
 // Abschlussprojekt
