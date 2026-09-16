@@ -86,7 +86,7 @@ Wie wir sehen kennt Python die uns bekannte Reihenfolge der Operatoren nicht. Da
     $ x_(1,2) = (-b plus.minus sqrt(b^2 - 4a c))/(2a) $
 
     berechnet.
-    Das Programm soll den Nutzer nach $a,b$ und $c$ fragen und $x_1$ und $x_2$ ausgeben.
+    Das Programm soll die Nutzerin nach $a,b$ und $c$ fragen und $x_1$ und $x_2$ ausgeben.
 
 ]
 

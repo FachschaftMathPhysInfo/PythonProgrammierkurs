@@ -1,6 +1,6 @@
 #import "../lib/helpers.typ": *
 
-== Lektion: Das REPL 
+== Lektion: Das REPL
 
 #Theorie[
   // === Ein Brief oder ein Gespräch?
@@ -41,38 +41,38 @@
   === Was bedeutet REPL?
 
   REPL ist eine Abkürzung und beschreibt genau das, was bei jeder Zeile
-  passiert, die du eintippst:
+  passiert, die ihr eintippt:
 
-  + *Read* (Lesen) : Python liest die Zeile, die du eingegeben hast. Das
+  + *Read* (Lesen) : Python liest die Zeile, die ihr eingegeben habt. Das
     kann eine einzelne Zeile sein, aber auch mehrere zusammengehörige
     Zeilen (dazu gleich mehr).
   + *Eval* (Auswerten) : Python wertet aus, was diese Zeile bedeutet (z. B.
-    eine Rechnung wie `2 + 2`).
-  + *Print* (Ausgeben) : Python zeigt dir das Ergebnis direkt an.
+    eine Rechnung wie ```python 2 + 2```).
+  + *Print* (Ausgeben) : Python zeigt euch das Ergebnis direkt an.
   + *Loop* (Schleife) : Und dann fängt das Ganze von vorne an: Python
-    wartet auf deine nächste Eingabe.
+    wartet auf eure nächste Eingabe.
 
   Read, Eval, Print, Loop: REPL. Es ist also wörtlich eine Dauerschleife:
   lesen, auswerten, ausgeben, wieder lesen, wieder auswerten, wieder
-  ausgeben … so lange, bis du das REPL beendest.
+  ausgeben … so lange, bis ihr das REPL beendet.
 
-  Der große Vorteil: Das REPL ist Teil jeder Python-Installation. Du musst
+  Der große Vorteil: Das REPL ist Teil jeder Python-Installation. Ihr müsst
   nichts zusätzlich installieren, es ist immer sofort einsatzbereit. Es ist ideal, um schnell einen Codeschnipsel zu testen, ein neues Konzept auszuprobieren oder Zeile für Zeile nachzuvollziehen, warum etwas nicht funktioniert.
 
   === Das REPL starten
 
-  Öffne dein Terminal (die Shell, die du schon aus den vorherigen Lektionen
-  kennst) und gib ein:
+  Öffnet euer Terminal (die Shell, die ihr schon aus den vorherigen Lektionen
+  kennt) und gebt ein:
 
   ```bash
   python3
   ```
 
-  _Wichtig:_ Anders als bei `python3 helloworld.py` gibst du hier *keinen*
-  Dateinamen an. Ohne Dateinamen weiß Python, dass du nicht vorhast, eine
-  Datei auszuführen, sondern direkt mit ihm "sprechen" willst.
+  _Wichtig:_ Anders als bei `python3 helloworld.py` gebt ihr hier *keinen*
+  Dateinamen an. Ohne Dateinamen weiß Python, dass ihr nicht vorhabt, eine
+  Datei auszuführen, sondern direkt mit ihm "sprechen" wollt.
 
-  Du solltest jetzt ungefähr so etwas sehen:
+  Ihr solltet jetzt ungefähr so etwas sehen:
 
   ```
   Python 3.10.12 (main, ...)
@@ -81,55 +81,55 @@
   ```
 
   Diese drei spitzen Klammern `>>>` sind der *Prompt* des REPL, das
-  Gegenstück zum Prompt deiner Shell, den du schon kennst. Er sagt dir:
+  Gegenstück zum Prompt eurer Shell, den ihr schon kennt. Er sagt euch:
   "Ich bin bereit, gib mir eine Zeile Python-Code."
 
   === Das REPL wieder verlassen
 
-  Um das REPL zu verlassen, hast du zwei gleichwertige Möglichkeiten:
+  Um das REPL zu verlassen, habt ihr zwei gleichwertige Möglichkeiten:
 
-  - Du tippst `exit()` und drückst Enter.
-  - Du drückst die Tastenkombination `Strg + D` (auf einer Zeile ohne
+  - Ihr tippt ```python exit()``` und drückt Enter.
+  - Ihr drückt die Tastenkombination `Strg + D` (auf einer Zeile ohne
     Eingabe).
 
-  Danach landest du wieder in deiner normalen Shell, es ist daran erkennbar , dass der Prompt sich wieder ändert (also kein `>>>` mehr).
+  Danach landet ihr wieder in eurer normalen Shell, es ist daran erkennbar , dass der Prompt sich wieder ändert (also kein `>>>` mehr).
 ]
 
 #Praxis[
   *Aufgabe 1:*
 
-  + Öffne ein Terminal und starte das REPL mit `python3`.
-  + Tippe die folgenden Zeilen einzeln ein, nach *jeder* Zeile Enter
-    drücken und schauen, was passiert, bevor du weitermachst:
+  + Öffnet ein Terminal und startet das REPL mit `python3`.
+  + Tippt die folgenden Zeilen einzeln ein, drückt nach *jeder* Zeile Enter
+    und schaut, was passiert, bevor ihr weitermacht:
 
     ```
     3 + 4
     "Hallo"
     10 / 3
     ```
-  + Verlasse das REPL wieder mit `exit()`.
+  + Verlasst das REPL wieder mit ```python exit()```.
 
-  Du solltest bemerkt haben: Nach jeder Zeile erscheint sofort das
-  Ergebnis, ganz ohne `print()`. Genau das ist der "Print"-Schritt aus
+  Ihr solltet bemerkt haben: Nach jeder Zeile erscheint sofort das
+  Ergebnis, ganz ohne ```python print()```. Genau das ist der "Print"-Schritt aus
   Read-Eval-*Print*-Loop.
 ]
 
 === Skript vs. REPL: der entscheidende Unterschied
 
 #Theorie[
-  Im REPL zeigt Python dir automatisch das Ergebnis jeder Zeile an. In einem
-  Skript passiert das *nicht*, dort musst du explizit `print()` verwenden,
-  so wie du es aus der Hello-World-Lektion kennst.
+  Im REPL zeigt Python euch automatisch das Ergebnis jeder Zeile an. In einem
+  Skript passiert das *nicht*, dort müsst ihr explizit ```python print()``` verwenden,
+  so wie ihr es aus der Hello-World-Lektion kennt.
 
   Der Grund dafür ergibt sich direkt aus dem Zweck der beiden Modi: Ein
-  Skript soll ein fertiges Programm sein, das genau das ausgibt, was *du*
-  festlegst, nicht mehr und nicht weniger. Wer dein Programm ausführt,
+  Skript soll ein fertiges Programm sein, das genau das ausgibt, was *ihr*
+  festlegt, nicht mehr und nicht weniger. Wer euer Programm ausführt,
   will schließlich nicht bei jeder internen Zwischenrechnung eine Zeile
-  Text sehen. Das REPL hingegen ist ein Werkzeug für *dich* zum
-  Ausprobieren und beim Ausprobieren willst du bei jeder Zeile sofort das
+  Text sehen. Das REPL hingegen ist ein Werkzeug für *euch* zum
+  Ausprobieren, und beim Ausprobieren wollt ihr bei jeder Zeile sofort das
   Ergebnis sehen, deshalb druckt Python es automatisch mit.
 
-  Schau dir das folgende Beispiel an. Es enthält bewusst sowohl Zeilen ohne
+  Schaut euch das folgende Beispiel an. Es enthält bewusst sowohl Zeilen ohne
   `print()` als auch Zeilen mit `print()`.
 ]
 
@@ -138,20 +138,20 @@
 #Praxis[
   *Aufgabe 2:*
 
-  + Tippe die vier Zeilen aus `repl_vs_skript.py` einzeln ins REPL ein.
-    Notiere dir (z. B. auf Papier oder im Kopf), was nach jeder Zeile
+  + Tippt die vier Zeilen aus `repl_vs_skript.py` einzeln ins REPL ein.
+    Notiert euch (z. B. auf Papier oder im Kopf), was nach jeder Zeile
     ausgegeben wird.
-  + Führe danach dieselbe Datei als Skript aus: `python3 repl_vs_skript.py`
-  + Vergleiche: Welche Zeilen haben im Skript *keine* Ausgabe erzeugt,
-    obwohl sie im REPL etwas angezeigt haben? Kannst du erklären, warum?
+  + Führt danach dieselbe Datei als Skript aus: `python3 repl_vs_skript.py`
+  + Vergleicht: Welche Zeilen haben im Skript *keine* Ausgabe erzeugt,
+    obwohl sie im REPL etwas angezeigt haben? Könnt ihr erklären, warum?
 ]
 
 //=== Variablen und Zustand: Was das REPL sich merkt
 
 #Theorie(title_sup: "Variablen und Zustand")[
-  Ein zweiter wichtiger Aspekt des REPL: Es "merkt sich" alles, was du
-  innerhalb *einer* laufenden Sitzung eingibst. Legst du eine Variable an,
-  kannst du sie in der nächsten Zeile weiterverwenden,genau wie in einem
+  Ein zweiter wichtiger Aspekt des REPL: Es "merkt sich" alles, was ihr
+  innerhalb *einer* laufenden Sitzung eingebt. Legt ihr eine Variable an,
+  könnt ihr sie in der nächsten Zeile weiterverwenden, genau wie in einem
   Skript, nur eben Zeile für Zeile statt auf einmal.
 
   ```
@@ -162,7 +162,7 @@
 
   Ein praktisches Detail dabei: Das REPL speichert automatisch das
   *letzte* berechnete Ergebnis in einer speziellen Variable namens `_`
-  (ein einzelner Unterstrich). Damit kannst du weiterrechnen, ohne das
+  (ein einzelner Unterstrich). Damit könnt ihr weiterrechnen, ohne das
   Ergebnis erst selbst in eine Variable zu packen:
 
   ```
@@ -172,16 +172,16 @@
   25
   ```
 
-  _Wichtig, und ein Punkt, an dem viele Anfänger:innen zunächst
+  _Wichtig, und ein Punkt, an dem viele Anfängerinnen zunächst
   stolpern:_ Dieser Zustand existiert *nur*, solange das REPL läuft.
-  Schließt du es (mit `exit()` oder `Strg + D`), sind alle Variablen
+  Schließt ihr es (mit `exit()` oder `Strg + D`), sind alle Variablen
   unwiderruflich weg. Es gibt keine automatische Speicherung, anders als
-  bei einer `.py`-Datei, die du auf der Festplatte gesichert hast und
-  jederzeit wieder öffnen kannst.
+  bei einer `.py`-Datei, die ihr auf der Festplatte gesichert habt und
+  jederzeit wieder öffnen könnt.
 
-  Das ist der Grund, warum du das REPL zum *Ausprobieren* und *Testen*
-  benutzt, aber richtige Programme, die du wiederverwenden willst, immer
-  als Skript in einer Datei speicherst.
+  Das ist der Grund, warum ihr das REPL zum *Ausprobieren* und *Testen*
+  benutzt, aber richtige Programme, die ihr wiederverwenden wollt, immer
+  als Skript in einer Datei speichert.
 ]
 
 #Code("repl_spielwiese.py")
@@ -189,9 +189,9 @@
 #Praxis[
   *Aufgabe 3:*
 
-  Öffne das REPL und arbeite `repl_spielwiese.py` Zeile für Zeile durch.
-  Versuche bei jeder Zeile, *bevor* du sie eintippst, kurz vorherzusagen,
-  was passieren wird  und prüfe danach, ob deine Vorhersage gestimmt hat.
+  Öffnet das REPL und arbeitet `repl_spielwiese.py` Zeile für Zeile durch.
+  Versucht bei jeder Zeile, *bevor* ihr sie eintippt, kurz vorherzusagen,
+  was passieren wird, und prüft danach, ob eure Vorhersage gestimmt hat.
 ]
 
 === Besonderheiten
@@ -212,13 +212,13 @@
 
   // Das passiert, wenn man vergisst, dass man sich *bereits im REPL*
   //   befindet. Falls wir mit dem REPL fertig sind, können wir es durch den Befehl ```python exit()``` wieder verlassen.
-    
+
     *Mehrzeilige Eingaben*
 
     Wie geben wir Anweisungen ein, die sich über mehrere Zeilen erstrecken? Müssen wir alles irgendwie in eine Zeile quetschen? Zum Glück nicht.
 
-  Tippst du eine unvollständige Zeile ein, zum Beispiel eine offene
-  Klammer, die noch nicht geschlossen wurde , wechselt der Prompt von
+  Tippt ihr eine unvollständige Zeile ein, zum Beispiel eine offene
+  Klammer, die noch nicht geschlossen wurde, wechselt der Prompt von
   `>>>` zu `...`:
 
   ```
@@ -253,13 +253,13 @@
     // (einfach ihren Namen eintippen), bevor du weiterrechnest.
 
 
-    *Die help funktion*
+    *Die help Funktion*
 
-    Das REPL bietet uns eine funktion an die es in normalem Python so nicht gibt, die *help()* funktion. Wenn ihr sie einfach so aufruft, landet ihr in einer interaktiven Help anwendung. Alterntiv, wenn ihr wisst wonach ihr sucht, könnt ihr auch direkt Argumente an help geben. 
+    Das REPL bietet uns eine Funktion an, die es in normalem Python so nicht gibt, die ```python help()``` Funktion. Wenn ihr sie einfach so aufruft, landet ihr in einer interaktiven Hilfe-Anwendung. Alternativ, wenn ihr wisst wonach ihr sucht, könnt ihr auch direkt Argumente an help geben.
 
     *Das REPL vergisst #strike("nicht")*
-    
-    Das REPL hat keine Speicherfunktion. Wenn ihr dort ein tolles Programm geschrieben habt müsst ihr es per hand rausschreiben, ansonsten geht es irgendwann verloren. 
+
+    Das REPL hat keine Speicherfunktion. Wenn ihr dort ein tolles Programm geschrieben habt, müsst ihr es per Hand rausschreiben, ansonsten geht es irgendwann verloren.
 
 
 ]
@@ -269,7 +269,7 @@
 
 //   - Python bringt eingebaute Hilfe mit: Tippe `help(print)` ein und lies,
 //     was dir angezeigt wird. (Mit `help()` ganz ohne Klammerinhalt landest du
-//     in einem interaktiven Hilfe-Modus, den du mit `quit` wieder verlässt.) 
+//     in einem interaktiven Hilfe-Modus, den du mit `quit` wieder verlässt.)
 //   // - Tippe `type(5)`, `type("Hallo")` und `type(5.0)` ein. Was bekommst du
 //     //   jeweils zurück? Kannst du dir denken, wofür `type()` gut sein könnte?
 //     // type() wird schon in einer vorherigen Lecture benutzt.e
@@ -291,16 +291,16 @@
 
 
 #Quiz(answer: "Das Ergebnis 7 wird direkt angezeigt")[
-  Was passiert, wenn du im REPL `10 - 3` eingibst und Enter drückst?
+  Was passiert, wenn ihr im REPL `10 - 3` eingebt und Enter drückt?
   + Das Ergebnis 7 wird direkt angezeigt
   + Es passiert gar nichts
   + Es gibt einen SyntaxError
-  + Du musst zuerst `print()` davor schreiben
+  + Ihr müsst zuerst `print()` davor schreiben
 ]
 
 #Quiz(answer: "Sie gehen verloren")[
-  Was passiert mit deinen Variablen, wenn du das REPL mit `exit()`
-  verlässt?
+  Was passiert mit euren Variablen, wenn ihr das REPL mit `exit()`
+  verlasst?
   + Sie werden automatisch in einer Datei gespeichert
   + Sie bleiben im Hintergrund weiter aktiv
   + Sie gehen verloren
@@ -308,7 +308,7 @@
 ]
 
 #Quiz(answer: "Ein Skript (eine .py-Datei), weil es dauerhaft gespeichert wird")[
-  Du willst denselben Code später noch einmal ausführen können, ohne ihn
+  Ihr wollt denselben Code später noch einmal ausführen können, ohne ihn
   neu einzutippen. Was ist dafür die bessere Wahl?
   + Das REPL, weil es schneller ist
   + Ein Skript (eine .py-Datei), weil es dauerhaft gespeichert wird
