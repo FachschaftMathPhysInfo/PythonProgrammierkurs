@@ -133,7 +133,7 @@
   `print()` als auch Zeilen mit `print()`.
 ]
 
-#Code("repl_vs_skript.py")
+#Code("12_repl/repl_vs_skript.py")
 
 #Praxis[
   *Aufgabe 2:*
@@ -184,7 +184,7 @@
   als Skript in einer Datei speichert.
 ]
 
-#Code("repl_spielwiese.py")
+#Code("12_repl/repl_spielwiese.py")
 
 #Praxis[
   *Aufgabe 3:*

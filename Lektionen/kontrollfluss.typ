@@ -26,7 +26,7 @@ In dieser Lektion lernen wir, wie unser Programm unterschiedliche dinge machen k
     ==== Die if-verzweigung
     Wir können nun Optionale Anweisungen in unser Programm einbauen, indem wir sagen, dass sie nur ausgeführt werden sollen, wenn ein boolscher Ausdruck stimmt. Das ganze sieht so aus:
 
-    #Code("if_example.py")
+    #Code("08_kontrollfluss/if_example.py")
 
     Das ganze liest sich sehr gut: Falls (```python if ```) dieser Ausdruck gilt, dann machen folgendes. Damit python auch weiss was alles zu folgendem gehört, _rücken wir das ein_. Das heißt einfach vier Leerzeichen oder einmal Tab.
 
@@ -42,7 +42,7 @@ In dieser Lektion lernen wir, wie unser Programm unterschiedliche dinge machen k
 === Das Else
 Oft haben wir den fall dass wir auch etwas tuen wollen wenn eine Kondition nicht gilt. Also wenn ja, mach dies, sonst, mach das. Dafür gibt es das sogenante Else, und das sieht so aus.
 
-#Code("if_else_example.py")
+#Code("08_kontrollfluss/if_else_example.py")
 
 Beachtet das das ```python else``` auf der selben Tiefe wie das if steht, zu dem es gehört. Sonst denkt python dass das ```python else``` eine Anweisung ist, die nur ausgeführt werden soll wenn die Voraussetzung wahr ist.
 

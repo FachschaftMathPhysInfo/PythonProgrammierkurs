@@ -15,6 +15,7 @@
 
 //TITLEPAGE
 #[
+    #set page(numbering: none)
     #set align(center)
     #image("Assets/SadEmoji.jpg")  //TODO: Platzhalter entfernen
     
@@ -27,6 +28,10 @@
     #v(1fr)
     #datetime.today().display("[month repr:long] [day], [year]")
 ]
+
+#pagebreak()
+
+#outline(title: "Inhaltsverzeichnis", depth: 2)
 
 #pagebreak()
 
@@ -101,6 +106,6 @@
 #include "Lektionen/import.typ"
 
 // stl, Multifile programs
-#include "Lektionen/import.typ"
+//#include "Lektionen/import.typ"
 
 // Abschlussprojekt
