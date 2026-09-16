@@ -1,5 +1,5 @@
 #import "../lib/helpers.typ": *;
-== Lektion: Listen
+== Listen
 
 #Theorie()[
 

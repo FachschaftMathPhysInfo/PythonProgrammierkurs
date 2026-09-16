@@ -136,9 +136,9 @@ stack(
 
     if show-heading {
         show heading: set text(size: 16pt)
-        heading(level: 3)[#if title_sup != "" { title + ": " + title_sup} else {title }]}
+        heading(level: 4)[#if title_sup != "" { title + ": " + title_sup} else {title }]}
     body
-} 
+}
 
 
 

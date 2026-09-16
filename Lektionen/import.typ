@@ -1,6 +1,6 @@
 #import "../lib/helpers.typ": *
 
-== Lektion: Imports
+== Imports
 
 #Theorie()[
     //Haben keine Listen selber geschriebe, muss man anders formulieren.

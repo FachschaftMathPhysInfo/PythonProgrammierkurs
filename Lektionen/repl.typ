@@ -1,6 +1,6 @@
 #import "../lib/helpers.typ": *
 
-== Lektion: Das REPL
+== Das REPL
 
 #Theorie[
   // === Ein Brief oder ein Gespräch?
