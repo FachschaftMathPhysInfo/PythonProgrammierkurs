@@ -1,5 +1,4 @@
 #import "lib/template.typ": conf
-#import "lib/stringformat.typ": stringstyle
 #import "lib/helpers.typ": Quiz_answers_table, Code
 #import "@preview/zebraw:0.6.3": *
 
@@ -9,7 +8,6 @@
 
 #show: conf
 #show: zebraw
-#show: stringstyle 
 
 
 
@@ -17,7 +15,7 @@
 #[
     #set page(numbering: none)
     #set align(center)
-    #image("Assets/SadEmoji.jpg")  //TODO: Platzhalter entfernen
+    #image("Assets/MathPhysLogo.pdf")
     
 //#set align(center)
     #text(size: 36pt, weight: "bold")[#title]

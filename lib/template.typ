@@ -3,7 +3,7 @@
 #let conf(body) = {
   set page(
     paper: "a4",
-    margin: (x: 2.2cm, top: 2.8cm, bottom: 2.5cm),
+    margin: (x: 1.8cm, top: 2.2cm, bottom: 2.3cm),
     numbering: "1",
     number-align: center,
     header: context {
