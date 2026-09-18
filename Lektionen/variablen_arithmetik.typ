@@ -15,7 +15,7 @@ In diese Lektion lernen wir, was Variablen sind rechnen ein bisschen.
     Hier ist $x$ eine Variable.
 
     Variablen in der Informatik verhalten sich änlich. Sie stellen das "Gedächtnis" des Programms dar. Eine Variable ist ein stück Speicher, dem wir einen Namen geben. Wir können dann Werte in einer Variable speichern und später wieder verwenden. Machen wir das mal an unserem Hello World beispiel.
-    #Code("helloworld_variables.py")
+    #Code("07_variablen_arithmetik/helloworld_variables.py")
     Was genau passiert hier?
     - ```python text = "Hello World"```: Das hier nennt sich Variablenzuweisung. Wir weisen der Variable `text` den Wert `"Hello World"` zu.
     - ```python print(text)```: Hier verwenden wir die Variable. Beachtet das wir keine Anführungszeichen verwenden. Das sagt python, dass wir nicht den Wert `text`, sondern eine Variable meinen. Python ersetz dann `text` durch den Wert, den wir vorhin gespeichert haben.
@@ -30,7 +30,7 @@ In diese Lektion lernen wir, was Variablen sind rechnen ein bisschen.
 #Praxis[
     Variablen in der Informatik haben eine Eigenschaft die deren Geschwister aus der Mathe oft nicht haben. Wir können sie wiederverwenden. Betrachtet zum Beispiel folgendes Programm.
 
-    #Code("reuse_variables.py")
+    #Code("07_variablen_arithmetik/reuse_variables.py")
 ]
 
 
@@ -86,7 +86,7 @@ Wie wir sehen kennt Python die uns bekannte Reihenfolge der Operatoren nicht. Da
     $ x_(1,2) = (-b plus.minus sqrt(b^2 - 4a c))/(2a) $
 
     berechnet.
-    Das Programm soll den Nutzer nach $a,b$ und $c$ fragen und $x_1$ und $x_2$ ausgeben.
+    Das Programm soll die Nutzerin nach $a,b$ und $c$ fragen und $x_1$ und $x_2$ ausgeben.
 
 ]
 

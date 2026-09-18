@@ -4,9 +4,9 @@
 
 Von Linux hört man immer dass es einem viel mehr freiheiten gibt. Das stimmt. Wir können bereits mit den uns bekannten Mitteln viel über das System erfahren, was unter windows vielleicht nicht so einfach wäre
 
-#Spiel[In der Datei `/etc/passwd` befindet sich eine Liste aller Nutzer dieses Systems. Diese ist auch öffentlich lesbar. Neugierig geworden?
+#Spiel[In der Datei `/etc/passwd` befindet sich eine Liste aller Nutzerinnen dieses Systems. Diese ist auch öffentlich lesbar. Neugierig geworden?
     //TODO: Check the apple file (if it even exists, not trusting chat)
-    Zusätzlich gibt es noch die datei `/etc/shadow`, bzw. auf Apple ist es `var/db/dslocal/nodes/Default/users`. Diese enthält Informationen über die Passwörter der Nutzter. Wenn ihr jetzt aber neugirig seid, müssen wir euch leider enttäuschen. Ihr könnt diese Datei nicht lesen, eurem Nutzer fehlen (hoffentlich) die Rechte dazu. Das alles war die Überleitung zum nächsten Thema.
+    Zusätzlich gibt es noch die Datei `/etc/shadow`, bzw. auf Apple ist es `var/db/dslocal/nodes/Default/users`. Diese enthält Informationen über die Passwörter der Nutzerinnen. Wenn ihr jetzt aber neugierig seid, müssen wir euch leider enttäuschen. Ihr könnt diese Datei nicht lesen, eurer Nutzerin fehlen (hoffentlich) die Rechte dazu. Das alles war die Überleitung zum nächsten Thema.
 
 ]
 

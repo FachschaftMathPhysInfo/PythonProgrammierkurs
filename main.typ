@@ -1,5 +1,4 @@
 #import "lib/template.typ": conf
-#import "lib/stringformat.typ": stringstyle
 #import "lib/helpers.typ": Quiz_answers_table, Code
 #import "@preview/zebraw:0.6.3": *
 
@@ -9,14 +8,14 @@
 
 #show: conf
 #show: zebraw
-#show: stringstyle 
 
 
 
 //TITLEPAGE
 #[
+    #set page(numbering: none)
     #set align(center)
-    #image("Assets/SadEmoji.jpg")  //TODO: Platzhalter entfernen
+    #image("Assets/MathPhysLogo.pdf")
     
 //#set align(center)
     #text(size: 36pt, weight: "bold")[#title]
@@ -27,6 +26,10 @@
     #v(1fr)
     #datetime.today().display("[month repr:long] [day], [year]")
 ]
+
+#pagebreak()
+
+#outline(title: "Inhaltsverzeichnis", depth: 2)
 
 #pagebreak()
 
@@ -101,6 +104,6 @@
 #include "Lektionen/import.typ"
 
 // stl, Multifile programs
-#include "Lektionen/import.typ"
+//#include "Lektionen/import.typ"
 
 // Abschlussprojekt

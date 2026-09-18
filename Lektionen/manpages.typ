@@ -1,7 +1,7 @@
 #import "../lib/helpers.typ": *
 == Manpages
 
-In dieser Lektion findest du heraus wie du dir selber Wissen über die Shell angeignen kannst.
+In dieser Lektion findet ihr heraus, wie ihr euch selbst Wissen über die Shell aneignen könnt.
 
 
 === Die help flag

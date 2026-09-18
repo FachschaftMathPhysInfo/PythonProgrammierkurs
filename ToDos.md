@@ -4,11 +4,11 @@
 - [ ] Keyboard shortcuts im Terminal erklären
 - [x] Import — Std-Library + eigene Module
   - [ ] Highlighting inline Python
-- [ ] Einheitliche Ansprache (singular vs plural)
-- [ ] Generischen Feminimum überall
-- [ ] Abschlussprojekt (Conways Game of Life)
+- [x] Einheitliche Ansprache (singular vs plural)
+- [x] Generischen Feminimum überall
+- [x] Abschlussprojekt 
 - [ ] Easter egg mit Mathphystheo webseite
-- [ ] Aussehen vom Script verbessern
+- [x] Aussehen vom Script verbessern
   - Wann verwenden wir **bold**, wann *italic*
   - Welche Level sollen Headings haben
   - Syntaxhighlighting für inline Code segemente

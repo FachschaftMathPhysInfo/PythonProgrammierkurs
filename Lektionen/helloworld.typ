@@ -7,8 +7,8 @@ In dieser Lektion wollen wir uns als erstes nochmal mit dem `Hello World` Progra
 
   === Was ist eine Programmiersprache?
 
-  Ein Computer versteht eigentlich nur Maschinencode – eine Abfolge von 0en und 1en. Das ist das `Binär`, von dem du vielleicht schon einmal gehört hast. Für den Computer ist Binär ganz toll. Es gibt nur 2 Werte: 0 und 1, wahr und falsch, Strom oder kein Strom. Er kann damit sehr effizient und sehr schnell Arbeiten. Für den Menschen ist Binär aber sehr unleserlich. Deswegen nutzen wir Programmiersprachen. Eine Programmiersprache ist eine Sprache, sie hat wie Deutsch oder Englisch eine bestimmte Syntax, also Regeln um gültige Sätze zu bilden, und Semantik, also eine Interpretation was diese Sätze auch bedeuten. Die Sätze nennen wir bei uns Anweisungen. Sie sind Elementare Befehle die wir dem Computer stellen. Das Hello World Programm von vorhin:
-  #Code("helloworld.py")
+  Ein Computer versteht eigentlich nur Maschinencode – eine Abfolge von 0en und 1en. Das ist das `Binär`, von dem ihr vielleicht schon einmal gehört habt. Für den Computer ist Binär ganz toll. Es gibt nur 2 Werte: 0 und 1, wahr und falsch, Strom oder kein Strom. Er kann damit sehr effizient und sehr schnell Arbeiten. Für den Menschen ist Binär aber sehr unleserlich. Deswegen nutzen wir Programmiersprachen. Eine Programmiersprache ist eine Sprache, sie hat wie Deutsch oder Englisch eine bestimmte Syntax, also Regeln um gültige Sätze zu bilden, und Semantik, also eine Interpretation was diese Sätze auch bedeuten. Die Sätze nennen wir bei uns Anweisungen. Sie sind Elementare Befehle die wir dem Computer stellen. Das Hello World Programm von vorhin:
+  #Code("02_helloworld/helloworld.py")
   besteht zum Beispiel aus genau einer Anweisung: Drucke die Buchstaben "Hello World" aus. In python haben wir meistens eine Anweisung pro Zeile.
 
   Damit der Computer das jetzt aber auch versteht, müssen wir das erst in Maschinensprache übersetzen. Das macht der Befehlt `python3` für uns. Bei der Übersetzung gibt es zwei verschiedene Strategien

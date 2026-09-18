@@ -1,6 +1,6 @@
 #import "../lib/helpers.typ": *
 
-== Lektion: Imports
+== Imports
 
 #Theorie()[
     //Haben keine Listen selber geschriebe, muss man anders formulieren.
@@ -10,9 +10,9 @@
 
     Wir haben jetzt viele Grundwerkzeuge kennengelernt und können jetz alles Programmieren was man programmieren kann  (das wurde sogar mal bewiesen). Doch alles selber schreiben ist anstrengend. Programmiererinnen sind faul und bedienen sich gerne am Code von anderen. Niemand will immer alles von Grund auf selber schreiben. Es wäre doch toll, wenn wir einfach bestehenden Code nehmen können, und ihn in unserem Programm einfach verwenden können.
 
-Genau so funktionieren *Module* und *Imports* in Python: Andere Programmierer haben bereits nützliche Funktionen und Werkzeuge geschrieben, mathematische Funktionen, Zufallszahlengeneratoren, Dateioperationen und vieles mehr. Diese sind in sogenannten *Modulen* organisiert. Mit dem Befehl `import` holt ihr euch diese Module ins Programm und könnt sie sofort benutzen als ob ihr sie selber geschrieben hättet.
+Genau so funktionieren *Module* und *Imports* in Python: Andere Programmiererinnen haben bereits nützliche Funktionen und Werkzeuge geschrieben, mathematische Funktionen, Zufallszahlengeneratoren, Dateioperationen und vieles mehr. Diese sind in sogenannten *Modulen* organisiert. Mit dem Befehl `import` holt ihr euch diese Module ins Programm und könnt sie sofort benutzen als ob ihr sie selber geschrieben hättet.
 
-Ohne Imports müsste jeder Programmierer alles von Grund auf neu schreiben. Wurzeln berechnen? Zufallszahlen generieren? Listen sortieren? Das würde immer wieder hunderte Zeilen Code bedeuten. Mit Imports könnt ihr auf bewährte, getestete Lösungen zurückgreifen, eine zentrale Stärke von Python.
+Ohne Imports müsste jede Programmiererin alles von Grund auf neu schreiben. Wurzeln berechnen? Zufallszahlen generieren? Listen sortieren? Das würde immer wieder hunderte Zeilen Code bedeuten. Mit Imports könnt ihr auf bewährte, getestete Lösungen zurückgreifen, eine zentrale Stärke von Python.
 
 === Die Standard-Bibliothek
 

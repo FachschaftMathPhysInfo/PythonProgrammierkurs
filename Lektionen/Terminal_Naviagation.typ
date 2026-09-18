@@ -18,7 +18,7 @@ Vor eurem Cursor stehen als immer ein paar Statusinfos, die sogenante Prompt. Be
 Das Terminal befindet sich immer in einem Ordner, dem sogenannten _Working Directory_. Das sind die selben Ordner (In Unix nennen wir Ordner _Directory_ ) die wir sehen wenn wir den Fileexploer öffnen. Alle Befehle die wir ausführen werden standartmäßig im Working Directory ausgeführt. 
 
 Ein paar wichtige Fakten zu Dateipfaden:
-- `~` ist das Directory eures Benutzers. Fast alles was ihr mach findet in diesem Directory statt.
+- `~` ist das Directory eurer Benutzerin. Fast alles was ihr macht, findet in diesem Directory statt.
 - Pfade nutzen `/` zum Trennen. `mein/pfad/zur/datei.txt` bedeutet das die Datei `datei.txt` im Directory `zur` liegt, was wiederum im Directory `pfad` und das schließlich `mein` liegt. 
 - `..` ist ein besonderes Directory. Es existiert in jedem Directory und stellt das Elter directory dar. In `zur` ist es `mein/pfad`, und in `pfad` ist es nur `mein`.
 - Wir unterscheiden zwischen relativen und absoluten Pfaden. Relative Pfade beginnen von aktuellen Directory, absolute Pfade von der sogenannten Wurzel `/`. Beginnt ein Pfad mit `/`, dann ist es immer ein absoluter Pfad. `~` zum Beispiel ist der absolute Pfad zu unserem Home Directory.

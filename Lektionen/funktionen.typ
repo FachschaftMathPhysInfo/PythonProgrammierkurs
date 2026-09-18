@@ -1,5 +1,5 @@
 #import "../lib/helpers.typ": *;
-== Lektion: Funktionen
+== Funktionen
 
 #Theorie()[
 

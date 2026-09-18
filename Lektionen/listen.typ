@@ -1,5 +1,5 @@
 #import "../lib/helpers.typ": *;
-== Lektion: Listen
+== Listen
 
 #Theorie()[
 
@@ -62,7 +62,7 @@ Elemente eine Liste gerade enthält, verrät euch die Funktion `len()`
 `len(liste) - 1`. Praktisch ist auch, dass Python negative Indizes
 versteht: `list[-1]` ist das letzte Element, ganz ohne vorher zu zählen.
 
-#Code("11_listen/listen_basics.py")
+#Code("12_listen/listen_basics.py")
 
 === Listen verändern
 
@@ -82,7 +82,7 @@ und deshalb wissen, an welchem Zettel sie arbeiten sollen.
 / wert in liste: prüft, ob ein Wert enthalten ist (ergibt `True` oder `False`)
 ]
 
-#Code("11_listen/listen_veraendern.py")
+#Code("12_listen/listen_veraendern.py")
 
 Auch hier gibt es einen typischen Anfängerfehler: `append` hängt genau
 *ein* Element an. Schreibt ihr `list.append(["Apfel", "Banane"])`, so
@@ -112,7 +112,7 @@ Wenn ihr zusätzlich die *Position* braucht -- etwa um „Tag 3“ auszugeben --
 lauft ihr stattdessen über die Indizes: `range(len(temperaturen))` liefert
 genau die Zahlen `0` bis `len - 1`, also exakt die gültigen Indizes.
 
-#Code("11_listen/listen_schleife.py")
+#Code("12_listen/listen_schleife.py")
 
 Achtet auf das letzte Muster in diesem Beispiel: Wir starten mit einer
 *leeren* Liste und füllen sie in der Schleife Schritt für Schritt mit
@@ -132,7 +132,7 @@ Funktion keine Kopie, sondern gewissermaßen die *Adresse* des Zettels.
 Beide arbeiten am selben Blatt Papier: Was die Funktion streicht, ist auch
 draußen gestrichen.
 
-#Code("11_listen/listen_funktionen.py")
+#Code("12_listen/listen_funktionen.py")
 
 Das ist kein Fehler, sondern gewollt und ausgesprochen nützlich -- es
 erlaubt einer Funktion, eine große Liste zu bearbeiten, ohne sie
@@ -170,7 +170,7 @@ Wir bauen ein kleines, vollständiges Programm: eine Einkaufsliste, die
 zur Laufzeit wächst und schrumpft. Es kombiniert alles, was ihr bisher
 gelernt habt -- `while`, `if`, Funktionen, `input()` und nun Listen.
 
-#Code("11_listen/listen_einkaufsliste.py")
+#Code("12_listen/listen_einkaufsliste.py")
 
 + Tippt das Programm ab und probiert es aus. Was passiert, wenn ihr die
   Prüfung `if artikel in einkaufsliste:` entfernt und dann versucht,
