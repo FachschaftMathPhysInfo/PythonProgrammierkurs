@@ -2,7 +2,7 @@
 - [x] Debugger
 - [x] REPL — Interpreter-Konzept verstehen
 - [ ] Keyboard shortcuts im Terminal erklären
-- [ ] Import — Std-Library + eigene Module
+- [x] Import — Std-Library + eigene Module
   - [ ] Highlighting inline Python
 - [x] Einheitliche Ansprache (singular vs plural)
 - [x] Generischen Feminimum überall
@@ -18,5 +18,8 @@
   - Werden die Gleichen Begrifflichkeiten verwendet?
   - Werden Dinge doppel erklärt?
   - Werden auf Dinge verwiesed die in vorherigen Lektionen nicht behandelt worden sind?
-
+- [ ] Inhalt verzeichnis erstellen
+- [ ] Statt lektion level schreiben
+- [ ] Codes in lektionen ordnerns verteilen
+- [ ] 
 
