@@ -19,13 +19,12 @@ In dieser Lektion wollen wir uns als erstes nochmal mit dem `Hello World` Progra
   / Interpretieren: Der Code wird dynamisch dann übersetzt wenn er benötigt wird. Das ist langsamer als die Compilation, aber um einiges handhabbarer
 
   Python verwendet dabei letzteres. Unser Interpreter ist dabei einfach Python.
-  
-  //TODO: Warum ist das hier???
-// === Warum Python?
 
-// Python ist die vermutlich die Programmiersprache, die am häufigstem als Anfängersprache empfohlen wird. Das hat ganz viele Gründe. Für uns interressant ist aber nur einer. Ihr werdet es brauchen.
+//   === Warum Python?
 
-// Python ist in der Wissenschaft sehr verbreitet. Viele Programme sind in Python geschrieben oder liegen als sogenannte Bibilotheken (libraries, dazu später mehr) vor. So werdet ihr sehr Wahrscheinlich in der Einführung in die Numerik mit Python arbeiten, und in der IPI sowieso.
+//   Python ist vermutlich die Programmiersprache, die am häufigsten als Anfängersprache empfohlen wird. Das hat ganz viele Gründe. Für uns interessant ist aber nur einer. Ihr werdet es brauchen.
+
+//   Python ist in der Wissenschaft sehr verbreitet. Viele Programme sind in Python geschrieben oder liegen als sogenannte Bibliotheken (libraries, dazu später mehr) vor. So werdet ihr sehr wahrscheinlich in der Einführung in die Numerik mit Python arbeiten, und in der IPI sowieso.
 
 
 === Das “Hello World”-Ritual
@@ -84,8 +83,28 @@ Das funktioniert schonmal ganz gut, aber nicht jede merkt wann man was eingeben 
 ]
 
 
-#Quiz(answer: "")[
-    - Das Quizz ist Scheiße //TODO: Fixen
+#Quiz(answer: "b)")[
+    Was passiert, wenn ihr die Anführungszeichen weglasst, also ```python print(Hello World)``` schreibt?
+    + Python druckt einfach "Hello World" wie gewohnt
+    + Es gibt einen `SyntaxError`, weil Python nicht weiß, was `Hello` und `World` sein sollen
+    + Python druckt "Hello" und "World" jeweils in eine neue Zeile
+    + Das Programm läuft, gibt aber nichts aus
+]
+
+#Quiz(answer: "c)")[
+    Ihr schreibt ```python print("Hallo", "Welt")``` mit einem Komma statt eines einzelnen Strings. Was gibt Python aus?
+    + `HalloWelt` (ohne Leerzeichen)
+    + Einen `TypeError`, weil `print` nur ein Argument akzeptiert
+    + `Hallo Welt` (Python fügt automatisch ein Leerzeichen zwischen den Argumenten ein)
+    + Nur `Hallo`, das zweite Argument wird ignoriert
+]
+
+#Quiz(answer: "a)")[
+    Ihr schreibt ```python name = input("Wie heißt du? ")``` und tippt anschließend `Anna` ein. Welche Aussage stimmt?
+    + In der Variable `name` steht jetzt der Text `"Anna"`
+    + `input()` gibt eine Zahl zurück, kein Text
+    + Der Text `"Wie heißt du? "` wird nirgends angezeigt
+    + `name` bleibt leer, bis das Programm ein zweites Mal ausgeführt wird
 ]
 
 // #Spiel[
