@@ -103,13 +103,13 @@ Hier verbindet sich alles: `import random`, um eine Zufallszahl zu wählen; `whi
 
 Erinnert euch an die `temperaturen`-Liste aus der Listen-Lektion: Bisher konntet ihr sie nur mit `print()` als Zahlenreihe ausgeben. Mit `matplotlib` macht ihr daraus ein echtes Diagramm:
 
-//#Code("13_import/import_matplotlib_beispiel.py") // MISSING
+#Code("13_import/import_matplotlib_beispiel.py") 
 
 Der Import funktioniert genau wie bei den Standard-Modulen -- `import matplotlib.pyplot as plt` -- ist nur ein Kürzel für einen langen Modulnamen, wie ihr es schon von `import math as m` kennt. Der einzige Unterschied ist, dass `matplotlib` vorher installiert werden muss.
 
 Falls `pip install matplotlib` bei euch nicht auf Anhieb klappt (je nach Betriebssystem und Setup kann das unterschiedlich laufen), ist das kein Problem, dieser Abschnitt ist ein Ausblick zum Kennenlernen, keine Voraussetzung für die kommenden Lektionen.
 
-] // Gefährlich. Ich weiss nicht wie sinnvoll wir mathplotlib auf die Cip rechner bekomḿen.
+] 
 
 #Praxis()[
 

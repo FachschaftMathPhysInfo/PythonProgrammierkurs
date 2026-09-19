@@ -133,7 +133,7 @@ VSCode öffnet sich jetzt im WSL-Modus. Oben sollte es "WSL: Ubuntu" anzeigen.
 // Kopiert diesen Code rein:
 
 
-#Code("02_helloworld/helloworld.py")
+#Code("06_helloworld/helloworld.py")
 
 
 // Speichern (Ctrl+S), dann im Terminal:
@@ -207,7 +207,7 @@ brew install python3 git
 // Erstellt eine neue Datei `helloworld.py` mit:
 
 
-#Code("02_helloworld/helloworld.py")
+#Code("06_helloworld/helloworld.py")
 
 
 // Speichern (Cmd+S), dann im Terminal:
@@ -276,7 +276,7 @@ Das öffnet VSCode im `Programmiervorkurs` Ordner.
 // Kopiert diesen Code rein:
 
 
-#Code("02_helloworld/helloworld.py")
+#Code("06_helloworld/helloworld.py")
 
 
 // Speichern (Ctrl+S), dann im Terminal:

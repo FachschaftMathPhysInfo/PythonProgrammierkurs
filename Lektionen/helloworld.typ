@@ -54,7 +54,7 @@ Jetzt aber endlich zurück zu etwas Prakischem. Ihr habt vielleicht gefragt waru
   Speichere und führe das Programm aus. Die Ausgabe sollte sein: `Hello World!`
 ]
 
-#Code("02_helloworld/helloworld.py")
+#Code("06_helloworld/helloworld.py")
 
 === Anatomie des Befehls
 
