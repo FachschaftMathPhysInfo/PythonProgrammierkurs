@@ -3,18 +3,18 @@
 
 #Theorie()[
 
-Stellt euch eine Küchenmaschine vor, die Orangen zu Saft presst: Ihr gebt
+Stell dir eine Küchenmaschine vor, die Orangen zu Saft presst: Du gibst
 Orangen hinein (die Eingabe), die Maschine tut ihre Arbeit, und am Ende
-bekommt ihr ein Glas Saft heraus (die Ausgabe). Ihr müsst nicht wissen, wie
+bekommst du ein Glas Saft heraus (die Ausgabe). Du musst nicht wissen, wie
 die Maschine im Inneren genau funktioniert -- Hauptsache, das Ergebnis
-stimmt. Und ihr könnt die Maschine beliebig oft benutzen, mit
+stimmt. Und du kannst die Maschine beliebig oft benutzen, mit
 unterschiedlichen Mengen an Orangen, ohne sie jedes Mal neu zu bauen.
 
 Genau das ist die Grundidee einer *Funktion* in der Programmierung: ein
-wiederverwendbarer Baustein, dem ihr Werte übergebt (die *Arumente*) und
-der euch dafür ein Ergebnis zurückgibt (den *Rückgabewert*). Das Konzept
-kennt ihr bereits aus der Mathematik, zum Beispiel f(x) = x². Dort schreibt
-ihr einfach f(3), wenn ihr eigentlich 3² meint -- die Funktion „versteckt"
+wiederverwendbarer Baustein, dem du Werte übergibst (die *Arumente*) und
+der dir dafür ein Ergebnis zurückgibt (den *Rückgabewert*). Das Konzept
+kennst du bereits aus der Mathematik, zum Beispiel f(x) = x². Dort schreibst
+du einfach f(3), wenn du eigentlich 3² meinst -- die Funktion „versteckt"
 die eigentliche Rechnung hinter einem Namen.
 
 In Python sieht die Bauanleitung für eine Funktion so aus:
@@ -42,9 +42,9 @@ def name(argument1, argument2):
 
 // Ein typischer Stolperstein: Anders als in vielen anderen Sprachen braucht
 // Python keine geschweiften Klammern, um zu markieren, was zur Funktion
-// gehört. Es zählt allein die *Einrückung* -- genau wie ihr es schon von
-// `if` und `while` kennt. Ihr merkt, dass ihr aus dem Funktionsrumpf
-// „herausgefallen" seid, sobald eine Zeile wieder auf der ursprünglichen
+// gehört. Es zählt allein die *Einrückung* -- genau wie du es schon von
+// `if` und `while` kennst. Du merkst, dass du aus dem Funktionsrumpf
+// „herausgefallen" bist, sobald eine Zeile wieder auf der ursprünglichen
 // Ebene beginnt.
 
 Wichtig ist die Unterscheidung zwischen *Ausgabe* und *Rückgabe*,
@@ -54,11 +54,11 @@ Wert an die Stelle im Programm zurück, an der die Funktion aufgerufen
 wurde, damit dieser dort in einer Variable gespeichert oder direkt
 weiterverarbeitet werden kann. Ein häufiger Anfängerfehler ist es, eine
 Funktion, die nur druckt, für eine Berechnung weiterverwenden zu wollen --
-probiert im Praxisteil selbst aus, was dabei passiert.
+probier im Praxisteil selbst aus, was dabei passiert.
 
 Ruft man eine Funktion auf, z.B. ```python potenz(3.142, 4)```, so wird der
 Funktionsaufruf im Programm quasi „durch das Ergebnis ersetzt". Deshalb
-könnt ihr Funktionsaufrufe auch ineinander verschachteln:
+kannst du Funktionsaufrufe auch ineinander verschachteln:
 ```python potenz(5.0 + potenz(3.0, 2), 3)``` wird zunächst innen ausgewertet --
 ```python potenz(3.0, 2)``` ergibt `9.0`, damit wird daraus ```python potenz(14.0, 3)```, und
 das ergibt schließlich `2744.0`. Das folgende Beispiel zeigt genau das:
@@ -80,21 +80,21 @@ Entscheidend ist hier der *Basisfall* (`n == 0`), der die Rekursion
 beendet. Ohne ihn würde sich die Funktion unendlich oft selbst aufrufen.
 Da jeder Funktionsaufruf Speicher belegt (den sogenannten *Call Stack*),
 führt eine zu tiefe oder endlose Rekursion in Python irgendwann zu einem
-`RecursionError` -- probiert das im Spielteil gerne selbst aus. Das ist
+`RecursionError` -- probier das im Spielteil gerne selbst aus. Das ist
 kein Beinbruch, sondern eine ganz natürliche Grenze rekursiver Lösungen,
-die euch später im Studium noch öfter begegnen wird.
+die dir später im Studium noch öfter begegnen wird.
 ]
 
 #Praxis()[
 
-+ Schreibt eine Funktion ```python quadrat(x)```, die eine Zahl mit sich selbst
++ Schreib eine Funktion ```python quadrat(x)```, die eine Zahl mit sich selbst
   multipliziert und das Ergebnis zurückgibt (ohne den Operator `**` zu
-  benutzen). Ruft sie mit mehreren unterschiedlichen Werten auf und gebt
-  euch die Ergebnisse mit ```python print()``` aus.
-+ Verändert eure Funktion testweise so, dass sie statt `return ergebnis`
-  nur ```python print(ergebnis)``` enthält. Versucht anschließend,
+  benutzen). Ruf sie mit mehreren unterschiedlichen Werten auf und gib
+  dir die Ergebnisse mit ```python print()``` aus.
++ Verändere deine Funktion testweise so, dass sie statt `return ergebnis`
+  nur ```python print(ergebnis)``` enthält. Versuche anschließend,
   ```python x = quadrat(4)``` zu schreiben und `x` danach auszugeben. Was passiert,
-  und warum? (Tipp: Schaut euch an, welchen Typ `x` jetzt hat, mit
+  und warum? (Tipp: Schau dir an, welchen Typ `x` jetzt hat, mit
   ```python print(type(x))```.)
 
 ]
@@ -133,39 +133,39 @@ jeweils nächste Zahl der Folge zurückgibt:
 
 #Praxis()[
 
-+ Verändert das Programm in `funktionen_collatz.py` so, dass es nicht die
++ Verändere das Programm in `funktionen_collatz.py` so, dass es nicht die
   einzelnen Zahlen `x1`, `x2` und `x3`, sondern deren Summe ausgibt.
-+ Ergänzt das Programm um eine vierte Zahl ```python x4 = collatz(x3)``` und gebt die
++ Ergänze das Programm um eine vierte Zahl ```python x4 = collatz(x3)``` und gib die
   gesamte Folge `eingabe -> x1 -> x2 -> x3 -> x4` aus.
 
 ]
 
 #Spiel()[
 
-+ Schreibt eine Funktion ```python schritte(x)```, die zählt, wie viele Schritte die
++ Schreib eine Funktion ```python schritte(x)```, die zählt, wie viele Schritte die
   Collatz-Folge braucht, bis sie bei der 1 ankommt, und diese Anzahl als
-  Ganzzahl zurückgibt. Probiert die Funktion mit ein paar Startwerten aus.
-+ Fragt zwei Zahlen von der Nutzerin ab und findet mithilfe eurer
+  Ganzzahl zurückgibt. Probier die Funktion mit ein paar Startwerten aus.
++ Frag zwei Zahlen von der Nutzerin ab und finde mithilfe deiner
   `schritte`-Funktion heraus, welche der beiden mehr Schritte bis zur 1
   benötigt.
-+ Was passiert, wenn ihr in einer Funktion mehrere `return`-Anweisungen
-  hintereinander benutzt? Probiert es aus -- welche wird tatsächlich
++ Was passiert, wenn du in einer Funktion mehrere `return`-Anweisungen
+  hintereinander benutzt? Probier es aus -- welche wird tatsächlich
   ausgeführt?
-+ Verschiebt die Definition von `collatz` in `funktionen_collatz.py` ans
++ Verschiebe die Definition von `collatz` in `funktionen_collatz.py` ans
   Ende der Datei, also *hinter* die Zeile, in der sie zum ersten Mal
-  aufgerufen wird. Führt das Programm aus. Welcher Fehler tritt auf?
+  aufgerufen wird. Führe das Programm aus. Welcher Fehler tritt auf?
   (Anders als in kompilierten Sprachen liest Python eine Datei
   schrittweise von oben nach unten -- eine Funktion muss deshalb *vor*
   ihrem ersten Aufruf definiert sein.)
-+ Implementiert eine rekursive Funktion ```python fibonacci(n)```, die das n-te
++ Implementiere eine rekursive Funktion ```python fibonacci(n)```, die das n-te
   Element der Fibonacci-Folge berechnet (```python fibonacci(0) = 0```,
   ```python fibonacci(1) = 1```, ```python fibonacci(n) = fibonacci(n-1) + fibonacci(n-2)```).
-+ Ruft eure `fakultaet`-Funktion aus dem Theorieteil mit einer sehr großen
-  Zahl auf, z.B. ```python fakultaet(5000)```. Was passiert? Schaut euch die
-  Fehlermeldung genau an -- was sagt sie euch über den Call Stack?
-+ Schaut euch eure bisherigen Lösungen aus früheren Lektionen an: Findet
-  ihr Stellen, an denen ihr wiederkehrenden Code in eine eigene Funktion
-  auslagern könntet?
++ Ruf deine `fakultaet`-Funktion aus dem Theorieteil mit einer sehr großen
+  Zahl auf, z.B. ```python fakultaet(5000)```. Was passiert? Schau dir die
+  Fehlermeldung genau an -- was sagt sie dir über den Call Stack?
++ Schau dir deine bisherigen Lösungen aus früheren Lektionen an: Findest
+  du Stellen, an denen du wiederkehrenden Code in eine eigene Funktion
+  auslagern könntest?
 
 ]
 

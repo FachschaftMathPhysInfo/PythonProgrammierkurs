@@ -11,17 +11,17 @@
 // Das Terminal an sich ist erstmal nur ein Anwendung wie VSCode oder Firefox. Es zeigt standartmäßig nur reinen Text an, also erwartet keine Bilder. Und anstatt ins Internet zu gehen, erlaubt uns das Terminal eine _SHELL_ zu nutzen. Das ganze passiert indem wir Befehle in das Terminal schreiben. Schicken wir diese danach ab mit `Enter`, führt die Shell diese aus und schreibt das ergebniss ebenfalls in das Terminal.
 
 // ==== Die Prompt
-// Vor eurem Cursor stehen als immer ein paar Statusinfos, die sogenante Prompt. Bei uns ist das euer Nutzername `@` Name der Maschine und dann das Working Directory.
+// Vor deinem Cursor stehen als immer ein paar Statusinfos, die sogenante Prompt. Bei dir ist das dein Nutzername `@` Name der Maschine und dann das Working Directory.
 
 
 // ==== Das working Directory
-// Das Terminal befindet sich immer in einem Ordner, dem sogenannten _Working Directory_. Das sind die selben Ordner (In Unix nennen wir Ordner _Directory_ ) die wir sehen wenn wir den Fileexploer öffnen. Alle Befehle die wir ausführen werden standartmäßig im Working Directory ausgeführt. 
+// Das Terminal befindet sich immer in einem Ordner, dem sogenannten _Working Directory_. Das sind die selben Ordner (In Unix nennen wir Ordner _Directory_ ) die wir sehen wenn wir den Fileexploer öffnen. Alle Befehle die wir ausführen werden standartmäßig im Working Directory ausgeführt.
 
 // Ein paar wichtige Fakten zu Dateipfaden:
-// - `~` ist das Directory eures Benutzers. Fast alles was ihr mach findet in diesem Directory statt.
-// - Pfade nutzen `/` zum Trennen. `mein/pfad/zur/datei.txt` bedeutet das die Datei `datei.txt` im Directory `zur` liegt, was wiederum im Directory `pfad` und das schließlich `mein` liegt. 
+// - `~` ist das Directory deines Benutzers. Fast alles was du machst findet in diesem Directory statt.
+// - Pfade nutzen `/` zum Trennen. `mein/pfad/zur/datei.txt` bedeutet das die Datei `datei.txt` im Directory `zur` liegt, was wiederum im Directory `pfad` und das schließlich `mein` liegt.
 // - `..` ist ein besonderes Directory. Es existiert in jedem Directory und stellt das Elter directory dar. In `zur` ist es `mein/pfad`, und in `pfad` ist es nur `mein`.
-// - Wir unterscheiden zwischen relativen und absoluten Pfaden. Relative Pfade beginnen von aktuellen Directory, absolute Pfade von der sogenannten Wurzel `/`. Beginnt ein Pfad mit `/`, dann ist es immer ein absoluter Pfad. `~` zum Beispiel ist der absolute Pfad zu unserem Home Directory.
+// - Wir unterscheiden zwischen relativen und absoluten Pfaden. Relative Pfade beginnen von aktuellen Directory, absolute Pfade von der sogenannten Wurzel `/`. Beginnt ein Pfad mit `/`, dann ist es immer ein absoluter Pfad. `~` zum Beispiel ist der absolute Pfad zu deinem Home Directory.
 
 
 // #cetz.canvas({
@@ -37,7 +37,7 @@
 //     content((-2, -4), "pfad", name: "pfad")
 //     content((-2, -5), "zur", name: "zur")
 //     content((-2, -6), "Datei.txt", name: "datei")
-    
+
 //     content((0, -4), "anderer", name: "anderer")
 //     content((0, -5), "pfad", name: "pfad2")
 //     content((0, -6), "zur", name: "zur2")
@@ -60,7 +60,7 @@
 //     line("anderer", "pfad2")
 //     line("pfad2", "zur2")
 //     line("zur2", "datei2")
-    
+
 // })
 
 // === Was ist jetzt eine Shell
@@ -77,12 +77,12 @@
 // cd mydir # Wechsle in das Directory mydir
 // ```
 
-// Das Argument von cd ist ein _Pfad_. Lasst und damit mal etwas rumspielen.
+// Das Argument von cd ist ein _Pfad_. Lass uns damit mal etwas rumspielen.
 
 
 // #Spiel[
-//     + Öffnet ein neues Terminal. Ihr solltet in `~` sein.
-//     + Nutzt `cd` mit dem Pfad `mein/weg/zur`, um zur Datei `Datei.txt` zu gelangen.
+//     + Öffne ein neues Terminal. Du solltest in `~` sein.
+//     + Nutz `cd` mit dem Pfad `mein/weg/zur`, um zur Datei `Datei.txt` zu gelangen.
 //     + Wie kommen wir zurück ins Home Directory?
 //         + Was bedeutet `..` nochmal?
 //         + Können wir absolute Pfade angeben?
@@ -93,12 +93,13 @@
 
 
 // ==== pwd
-// Falls ihr euch mal völlig veloren habt, gibt es den Befehll `pwd`. Das steht für _path towards directory_ und gibt euch den Absoluten Pfad zum Working Directory.
+// Falls du dich mal völlig verloren hast, gibt es den Befehll `pwd`. Das steht für _path towards directory_ und gibt dir den Absoluten Pfad zum Working Directory.
 
 
 
 // ==== ls
-// Meistens habt ihr nicht den Luxus das ihr ein Diagram zu eurer Directorystruktur bekommt. Wie finde ich aber nun raus wo ich mit cd überall hinkomme? Dafür gibt es den `ls` Befehl. Das steht für 'list' und gibt an was alles in einem Directory ist. Man kann entweder ein pfad angeben, dann bekommt man alles was sich dort befindet, oder man gibt nichts an, dann bekommt man den Inhalt des working directories.
+// Meistens hast du nicht den Luxus das du ein Diagram zu deiner Directorystruktur bekommst. Wie finde ich aber nun raus wo ich mit cd überall hinkomme? Dafür gibt es den `ls` Befehl. Das steht für 'list' und gibt an was alles in einem Directory ist. Man kann entweder ein pfad angeben, dann bekommt man alles was sich dort befindet, oder man gibt nichts an, dann bekommt man den Inhalt des working directories.
+
 
 
 
@@ -112,7 +113,7 @@
 // ]
 
 // #Theorie(show-heading: false )[
-// Wenn ihr bisher nur mit Windows oder Mac gearbeitet habt, habt ihr
+// Wenn du bisher nur mit Windows oder Mac gearbeitet hast, hast du
 // wahrscheinlich in der letzten Lektion nebenbei etwas neues Kennen gelernt: Die
 // Shell.
 
@@ -120,76 +121,76 @@
 // kommerziellen Betriebssystemen kennt verbreiten, bleibt die Shell immer noch das
 // Mittel der Wahl, wenn man sich mit dem System auseinander setzen, oder auch
 // allgemein arbeiten will. Wir erachten zumindest die Shell als wichtig genug, um
-// euch direkt zu Beginn damit zu konfrontieren.
+// dich direkt zu Beginn damit zu konfrontieren.
 
-// Wann immer ihr über die Anwendungen ein Terminal startet, wird dort drin
+// Wann immer du über die Anwendungen ein Terminal startest, wird dort drin
 // automatisch auch eine Shell gestartet. Die beiden Konzepte sind tatsächlich so
-// eng miteinander verknüpft, dass ihr euch um die Unterschiede erst einmal keine
-// Gedanken machen müsst - wann immer ihr Shell oder Terminal hört, denkt einfach
+// eng miteinander verknüpft, dass du dir um die Unterschiede erst einmal keine
+// Gedanken machen musst - wann immer du Shell oder Terminal hörst, denk einfach
 // an das schwarze Fenster mit dem Text. Das ist auch das wesentliche Merkmal der
-// Shell, sie ist ein Textbasiertes interface zu eurem Computer. Ihr gebt Befehle
-// ein, sie gibt euch Text zurück und auf diese Weise könnt ihr eigentlich alles
-// machen, was ihr sonst gewohnterweise mit der Maus und grafischen Oberflächen
-// tun würdet.
+// Shell, sie ist ein Textbasiertes interface zu deinem Computer. Du gibst Befehle
+// ein, sie gibt dir Text zurück und auf diese Weise kannst du eigentlich alles
+// machen, was du sonst gewohnterweise mit der Maus und grafischen Oberflächen
+// tun würdest.
 
-// Wenn die Shell auf eure Befehle wartet, zeigt sie euch den so genannten
-// _Prompt_ an. Er enthält unter anderem euren Nutzernamen und das aktuelle
-// Verzeichnis (#sym.tilde steht dabei für euer Nutzerverzeichnis, ein spezieller
-// Ordner, der eurem Account zugeordnet ist und in dem ihr alle Rechte besitzt,
+// Wenn die Shell auf deine Befehle wartet, zeigt sie dir den so genannten
+// _Prompt_ an. Er enthält unter anderem deinen Nutzernamen und das aktuelle
+// Verzeichnis (#sym.tilde steht dabei für dein Nutzerverzeichnis, ein spezieller
+// Ordner, der deinem Account zugeordnet ist und in dem du alle Rechte besitzt,
 // dieser wird auch _home_ genannt).
 
-// Wenn ihr in ein anderes Verzeichnis wechseln wollt, könnt ihr das (wie ihr
-// bereits in der ersten Lektion gelernt habt) mit dem Befehl `cd` tun,
-// gefolgt von dem Namen des Verzeichnis. Um zurück zu gehen, könnt ihr das
+// Wenn du in ein anderes Verzeichnis wechseln willst, kannst du das (wie du
+// bereits in der ersten Lektion gelernt hast) mit dem Befehl `cd` tun,
+// gefolgt von dem Namen des Verzeichnis. Um zurück zu gehen, kannst du das
 // spezielle Verzeichnis `..` (also zwei Punkte) angeben, welches für das
-// nächst höher liegende Verzeichnis steht. Wenn ihr euch den Inhalt des
-// Verzeichnisses anschauen wollt, könnt ihr dafür den Befehl `ls`
-// benutzen. Um herauszufinden, in welchem Verzeichnis ihr euch befindet, könnt
-// nihr  `pwd` nutzen, zum Kompilieren von \Cpp-Programmen habt ihr den Befehl
-// `g++` kennengelernt. Solltet ihr Hilfe zu irgendeinem Befehl benötigen,
-// könnt ihr den Befehl `man` (für „Manual“) geben, gefolgt von dem Befehl,
-// zu dem ihr Hilfe braucht (über `man` werden wir später noch
+// nächst höher liegende Verzeichnis steht. Wenn du dir den Inhalt des
+// Verzeichnisses anschauen willst, kannst du dafür den Befehl `ls`
+// benutzen. Um herauszufinden, in welchem Verzeichnis du dich befindest, kannst
+// du `pwd` nutzen, zum Kompilieren von \Cpp-Programmen hast du den Befehl
+// `g++` kennengelernt. Solltest du Hilfe zu irgendeinem Befehl benötigen,
+// kannst du den Befehl `man` (für „Manual“) geben, gefolgt von dem Befehl,
+// zu dem du Hilfe brauchst (über `man` werden wir später noch
 // ausführlicher reden).
 // ]
 
 // #pagebreak()
 // #Praxis()[
 
-// + Öffnet ein Terminal und gebt die folgenden Befehle ein
+// + Öffne ein Terminal und gib die folgenden Befehle ein
 // + [Insert file]
 // ]
 // #Spiel()[
 
-// + Versucht selbst durch euer Nutzerverzeichnis (_home_) zu navigieren.
+// + Versuch selbst durch dein Nutzerverzeichnis (_home_) zu navigieren.
 //               Wie viele Lektionen hat der Vorkurs in diesem Verzeichnis?
-//     + Was passiert, wenn ihr euer Homeverzeichnis verlasst (`cd ..`
-//       während ihr darin seid)?
-//     + Versucht in der manpage von ls (`man ls`)  zu stöbern und die
-//       verschiedenen Parameter, mit denen ihr das Verhalten steuern könnt zu
-//       erforschen. Findet ihr heraus, wie ihr den Verzeichnisinhalt in einem
-//       langen Listenformat (long listing format) anzeigen lassen könnt (in dem
-//       unter anderem auch die Dateigröße zu jeder Datei steht). 
+//     + Was passiert, wenn du dein Homeverzeichnis verlässt (`cd ..`
+//       während du darin bist)?
+//     + Versuch in der manpage von ls (`man ls`)  zu stöbern und die
+//       verschiedenen Parameter, mit denen du das Verhalten steuern kannst zu
+//       erforschen. Findest du heraus, wie du den Verzeichnisinhalt in einem
+//       langen Listenformat (long listing format) anzeigen lassen kannst (in dem
+//       unter anderem auch die Dateigröße zu jeder Datei steht).
 //       Hinweis: mit `/Suchbegriff` kann innerhalb von `man` gesucht werden.
-// + Um schnell mit der Shell zu arbeiten gibt es einige Tricks. 
+// + Um schnell mit der Shell zu arbeiten gibt es einige Tricks.
 
-//   Damit lange Dateinamen nicht immer komplett eingegeben werden müssen, gibt es die sogenannte `tap completion`. 
+//   Damit lange Dateinamen nicht immer komplett eingegeben werden müssen, gibt es die sogenannte `tap completion`.
 //         Um bereits eingegebene Befehle nochmals auszuführen die `history`. Finde heraus wie diese funktionieren!
 // ]
 
 
-// Falls euch das alles verwirrt, fragt entweder direkt nach oder wartet auf
+// Falls dich das alles verwirrt, frag entweder direkt nach oder warte auf
 // Lektion 6, da geht es zu Manpages noch mal ins Detail.
 
-// Ihr findet unter #link("https://blog.ezelo.de/basic-linux-befehle/") auch noch mal
+// Du findest unter #link("https://blog.ezelo.de/basic-linux-befehle/") auch noch mal
 // die wichtigsten Befehle zusammengefasst.
 
 
-// #Quiz(answer: "Ihr bleibt im gleichen Verzeichnis")[
-//     Was passiert wenn ihr `cd . ` ausführt?
-//     + Ihr geht in ein zufälliges Unterverzeichnis
-//     + Ihr bleibt im gleichen Verzeichnis
-//     + Ihr verlasst euer aktuelles Verzeichnis
-//     + Ihr geht direkt in euer Homeverzeichnis
+// #Quiz(answer: "Du bleibst im gleichen Verzeichnis")[
+//     Was passiert wenn du `cd . ` ausführst?
+//     + Du gehst in ein zufälliges Unterverzeichnis
+//     + Du bleibst im gleichen Verzeichnis
+//     + Du verlässt dein aktuelles Verzeichnis
+//     + Du gehst direkt in dein Homeverzeichnis
 
 // ]
 

@@ -3,10 +3,10 @@
 == Boss level: Conway's Game of Life
 
 Das war's mit neuen Werkzeugen. Variablen, Kontrollfluss, Schleifen,
-Funktionen, Listen, Imports -- alles da. Jetzt wird kombiniert: euer
+Funktionen, Listen, Imports -- alles da. Jetzt wird kombiniert: dein
 Abschlussprojekt ist *Conway's Game of Life*, eine Simulation, bei der aus
 ein paar simplen Regeln überraschend komplexe Muster entstehen. Diese
-Lektion ist eure Anleitung dafür: die Regeln, ein neues Werkzeug
+Lektion ist deine Anleitung dafür: die Regeln, ein neues Werkzeug
 (`dataclass`), und der Fahrplan in drei Phasen.
 
 === Die Regeln
@@ -30,7 +30,7 @@ die Nachbarn falsch.
 
 === dataclass: Felder mit Namen
 
-Bisher hättet ihr ein Spielfeld z.B. als drei einzelne Variablen
+Bisher hättest du ein Spielfeld z.B. als drei einzelne Variablen
 `breite`, `hoehe`, `zellen` durch den Code geschleift, oder als Tupel
 `(breite, hoehe, zellen)`, bei dem man sich merken muss, welche Position
 welche Bedeutung hat. `dataclass` löst genau das: ein benannter Container
@@ -39,15 +39,15 @@ für zusammengehörige Werte.
 #Code("14_Boss_Level/dataclass_beispiel.py")
 
 `@dataclass` steht direkt über der Klasse und generiert automatisch die
-Grundausstattung (Konstruktor, lesbare Ausgabe, Vergleich per `==`). Ihr
-schreibt nur die Felder mit ihrem Typ hin, den Rest übernimmt Python.
+Grundausstattung (Konstruktor, lesbare Ausgabe, Vergleich per `==`). Du
+schreibst nur die Felder mit ihrem Typ hin, den Rest übernimmt Python.
 
 #Hinweis[
   Das ist *kein* Einstieg in klassisches OOP mit Methoden. Eine
   `dataclass` hier ist nichts weiter als eine Liste/ein Dict mit
   Namensschildern an den Werten. Die eigentliche Logik (Regeln, Zählen,
-  Anzeigen) bleibt in ganz normalen Funktionen, so wie ihr es schon
-  kennt.
+  Anzeigen) bleibt in ganz normalen Funktionen, so wie du es schon
+  kennst.
 ]
 
 === Projektstruktur
@@ -66,43 +66,43 @@ entgegennehmen:
 #Code("14_Boss_Level/conways.py")
 
 #Praxis(title_sup: "Phase 1 -- Grundlogik")[
-  + Implementiert `ist_lebendig()`. Denkt an Koordinaten außerhalb des
+  + Implementiere `ist_lebendig()`. Denk an Koordinaten außerhalb des
     Feldes.
-  + Implementiert `zaehle_lebende_nachbarn()` mit den 8 Nachbarn
+  + Implementiere `zaehle_lebende_nachbarn()` mit den 8 Nachbarn
     (`x-1` bis `x+1`, `y-1` bis `y+1`, außer `(x, y)` selbst).
-  + Implementiert `naechste_generation()` mit den 4 Regeln von oben.
-  + Implementiert `zeige_feld()`. Testet mit ein paar von Hand gesetzten
+  + Implementiere `naechste_generation()` mit den 4 Regeln von oben.
+  + Implementiere `zeige_feld()`. Teste mit ein paar von Hand gesetzten
     Zellen, ob eine Generation korrekt weitergerechnet wird.
 ]
 
 #Praxis(title_sup: "Phase 2 -- Eingabe & Loop")[
-  + Baut eine `while`-Schleife, die `zeige_feld()` und
+  + Bau eine `while`-Schleife, die `zeige_feld()` und
     `naechste_generation()` abwechselnd aufruft, bis die Nutzerin
     abbricht.
-  + Lasst die Nutzerin am Anfang eintippen, welche Zellen lebendig
+  + Lass die Nutzerin am Anfang eintippen, welche Zellen lebendig
     starten sollen (Koordinaten durch Kommata getrennt einlesen).
-  + Nutzt `time.sleep(0.3)` zwischen den Generationen, damit man die
+  + Nutze `time.sleep(0.3)` zwischen den Generationen, damit man die
     Animation im Terminal sehen kann.
 ]
 
 #Praxis(title_sup: "Phase 3 -- Polish")[
-  + Zählt und zeigt an, in welcher Generation ihr gerade seid.
-  + Erkennt, wenn sich zwei aufeinanderfolgende Generationen nicht mehr
-    unterscheiden (stabiler Zustand), und beendet das Programm dann mit
+  + Zähle und zeige an, in welcher Generation du gerade bist.
+  + Erkenne, wenn sich zwei aufeinanderfolgende Generationen nicht mehr
+    unterscheiden (stabiler Zustand), und beende das Programm dann mit
     einer Meldung.
-  + Räumt den Code auf: sprechende Namen, keine Wiederholungen, kurze
+  + Räum den Code auf: sprechende Namen, keine Wiederholungen, kurze
     Funktionen.
 ]
 
 #Spiel[
-  + *Glider:* Setzt die 5 Zellen `(1,0) (2,1) (0,2) (1,2) (2,2)` lebendig.
+  + *Glider:* Setze die 5 Zellen `(1,0) (2,1) (0,2) (1,2) (2,2)` lebendig.
     Dieses Muster wandert über Generationen diagonal über das Feld.
-  + *Oszillator:* Setzt drei Zellen in eine Reihe. Was passiert?
-  + *Größeres Feld:* Probiert 30x30 statt 10x10. Ab wann wird das
+  + *Oszillator:* Setze drei Zellen in eine Reihe. Was passiert?
+  + *Größeres Feld:* Probier 30x30 statt 10x10. Ab wann wird das
     Terminal unübersichtlich?
-  + *Zufallsstart:* Nutzt `random.random()`, um jede Zelle mit z.B. 20%
+  + *Zufallsstart:* Nutze `random.random()`, um jede Zelle mit z.B. 20%
     Wahrscheinlichkeit lebendig zu starten, statt Koordinaten von Hand
     einzutippen.
-  + *Eigene Regeln:* Ändert die Zahlen in den 4 Regeln (z.B.
+  + *Eigene Regeln:* Ändere die Zahlen in den 4 Regeln (z.B.
     Reproduktion bei 2 statt 3 Nachbarn). Was ändert sich am Verhalten?
 ]

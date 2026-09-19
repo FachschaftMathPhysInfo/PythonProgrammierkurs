@@ -4,13 +4,13 @@
 
 == Shell Befehle
 
-In dieser Lektion wollen wir uns einige weitere wichtige Anschauen. Das gibt es so einige, schnallt euch also an.
+In dieser Lektion wollen wir uns einige weitere wichtige Anschauen. Das gibt es so einige, schnall dich also an.
 
 
 
 #Theorie(title_sup: "Anatomie eines Befehls")[
     Ein Shell Command ist immer gleich aufgebaut:
-    / Der Eigentliche Command: Das erste Wort das ihr eingibt ist der Command. 
+    / Der Eigentliche Command: Das erste Wort das du eingibst ist der Command.
     / Argumete: Alles nach dem Command sind Argumente. Sie werden untereinander durch Leerzeichen getrennt. Geben an auf was der Befehl operieren soll.
     / Flaggen: Auch das sind Argumente, sind aber meistens optional und beeinflussen das Verhalten des Commands. Flags beginnen immer mit einem `-`, wenn sie nur aus einem Buchstaben bestehen, oder `--` wenn sie länger sind.
 
@@ -26,13 +26,13 @@ In dieser Lektion wollen wir uns einige weitere wichtige Anschauen. Das gibt es 
 === The essentials
 // touch, mkdir, rm, cp, mv, cat
 
-Die folgenden Befehle sind sehr essentiell. Falls ihr irgendwann mal komplett auf das Terminal umsteigt werdet ihr sie täglich nutzen.
+Die folgenden Befehle sind sehr essentiell. Falls du irgendwann mal komplett auf das Terminal umsteigst wirst du sie täglich nutzen.
 ==== touch
 `touch [Datei]` erstellt eine neue, leere Datei.
 
 
 ==== mkdir
-`mkdir [Verzeichnis]` Erstell ein neues Verzeichnis. Falls es schon existiert meckert er.
+`mkdir [Verzeichnis]` Erstellt ein neues Verzeichnis, falls es schon existiert meckert er.
 
 
 
@@ -52,11 +52,11 @@ cp [Quelldatei1] [Quelldatei2] [Quelldatei3] ...  [Zielverzeichniss]
 
 #Spiel[ //Eine Ordnerstruktur erstellen, rausfinden warum man -r braucht
 
-    + Erstellt einen Ordner Namens `Mein_Verzeichniss`
-    + Erstellt in diesem Ordner die Dateien `datei1`, `datei2` und `datei3`
-    + Erstellt einen Ordner `Mein_Verzeichniss2` im Ordner `Mein_Verzeichniss`
-    + Kopiert `datei` in `Mein_Verzeichniss2`
-    + Kopiert `Mein_Verzeichniss` nach `Mein_Verzeichniss3`
+    + Erstell einen Ordner Namens `Mein_Verzeichniss`
+    + Erstell in diesem Ordner die Dateien `datei1`, `datei2` und `datei3`
+    + Erstell einen Ordner `Mein_Verzeichniss2` im Ordner `Mein_Verzeichniss`
+    + Kopier `datei` in `Mein_Verzeichniss2`
+    + Kopier `Mein_Verzeichniss` nach `Mein_Verzeichniss3`
 
 
     Das letzte hat nicht funktioniert. `cp` funktioniert standartmäßig nicht mit ganzen Verzeichnissen. Dafür brauchen wir unsere erste Flag, `-r`, was für rekursiv steht. Probiere es mal mit der Flag.
@@ -70,7 +70,7 @@ cp [Quelldatei1] [Quelldatei2] [Quelldatei3] ...  [Zielverzeichniss]
 
 
 ==== rm
-Zum schluss wollen wir Dateien und Verzeichnisse auch löschen wollen. Das geht mit `rm` (remove). *Warnung:* Es gibt hier keinen Papierkorb. Wenn ihr etwas löscht dann ist es wirklich weg. Genauso wie bei `cp` brauchen wir `-r` für Verzeichnisse.
+Zum schluss wollen wir Dateien und Verzeichnisse auch löschen wollen. Das geht mit `rm` (remove). *Warnung:* Es gibt hier keinen Papierkorb. Wenn du etwas löschst dann ist es wirklich weg. Genauso wie bei `cp` brauchen wir `-r` für Verzeichnisse.
 
 
 ==== cat
@@ -78,7 +78,7 @@ Bevor wir dateien Löschen wollen wäre es vielleicht sinvoll rauszufinden, ob d
 
 
 #Spiel[
-    Was steht eigentlich in den Dateien drin die ihr vorhin gefunden habt? Macht es einen Unterschied ob die Datein in `.txt` oder `.py` endet? Was passiert wenn ihr `cat` auf dieser PDF ausführt? Oder auf dem `png`? //TODO: Secret Image einfügen, z.b. XKCD oder Fachschaftler
+    Was steht eigentlich in den Dateien drin die du vorhin gefunden hast? Macht es einen Unterschied ob die Datein in `.txt` oder `.py` endet? Was passiert wenn du `cat` auf dieser PDF ausführst? Oder auf dem `png`? //TODO: Secret Image einfügen, z.b. XKCD oder Fachschaftler
 ]
 
 
@@ -98,7 +98,7 @@ grep "Passswort: " meine_datei
 
 gibt alle Zeilen der Datei aus, in denen "Passswort: " vorkommt.
 
-`grep` hat sehr viele nützliche Flaggen. Hier mal eine kleine Auswahl, damit ihr euch von der mächtigkeit dieses tool überzeugen lasssen könnnt.
+`grep` hat sehr viele nützliche Flaggen. Hier mal eine kleine Auswahl, damit du dich von der mächtigkeit dieses tool überzeugen lassen kannst.
 
 - `-c` Gibt nur die Anzahl an gefundenen Zeilen aus
 - `-n` Gibt zusätzlich noch die Zeilennummer des Treffers aus
@@ -117,7 +117,7 @@ grep -C 2 "Passswort: " meine_datei
 
 
 #Spiel[
-    Die folgenden Befehle sind auch recht nützlich aber auch recht selbst erklärend. Versucht mal selber herauszufinden was sie machen. *Tipp:* Um einen befehl abzubrechen, drückt STRG+C.
+    Die folgenden Befehle sind auch recht nützlich aber auch recht selbst erklärend. Versuch mal selber herauszufinden was sie machen. *Tipp:* Um einen befehl abzubrechen, drück STRG+C.
 
 ```bash
 which [Befehl] 

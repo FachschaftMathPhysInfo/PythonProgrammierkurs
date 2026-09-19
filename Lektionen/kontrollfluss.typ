@@ -36,7 +36,7 @@ In dieser Lektion lernen wir, wie unser Programm unterschiedliche dinge machen k
    
 ]
 
-#Spiel[Erinnern wir uns zurück an die Mitternachtsformel. Manchmal kommt es vor, dass es nur eine Lösung gibt. Erweitert das Programm, so das in diesem Fall eine kleine Meldung kommt.]
+#Spiel[Erinnern wir uns zurück an die Mitternachtsformel. Manchmal kommt es vor, dass es nur eine Lösung gibt. Erweitere das Programm, sodass in diesem Fall eine kleine Meldung kommt.]
 
 
 === Das Else
@@ -44,7 +44,7 @@ Oft haben wir den fall dass wir auch etwas tuen wollen wenn eine Kondition nicht
 
 #Code("08_kontrollfluss/if_else_example.py")
 
-Beachtet das das ```python else``` auf der selben Tiefe wie das if steht, zu dem es gehört. Sonst denkt python dass das ```python else``` eine Anweisung ist, die nur ausgeführt werden soll wenn die Voraussetzung wahr ist.
+Beachte, dass das ```python else``` auf der selben Tiefe wie das if steht, zu dem es gehört. Sonst denkt python dass das ```python else``` eine Anweisung ist, die nur ausgeführt werden soll wenn die Voraussetzung wahr ist.
 
 
 

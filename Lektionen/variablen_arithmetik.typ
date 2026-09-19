@@ -10,7 +10,7 @@ In diese Lektion lernen wir, was Variablen sind rechnen ein bisschen.
 === Variablen
 
 #Theorie[
-    Den Begriff _Variable_ kennt ihr vermutlich schon aus der Mathematik. Zum Beispiel haben wir funktionen so geschrieben
+    Den Begriff _Variable_ kennst du vermutlich schon aus der Mathematik. Zum Beispiel haben wir funktionen so geschrieben
     $ f(x) = x^2 + 1 $
     Hier ist $x$ eine Variable.
 
@@ -18,17 +18,17 @@ In diese Lektion lernen wir, was Variablen sind rechnen ein bisschen.
     #Code("07_variablen_arithmetik/helloworld_variables.py")
     Was genau passiert hier?
     - ```python text = "Hello World"```: Das hier nennt sich Variablenzuweisung. Wir weisen der Variable `text` den Wert `"Hello World"` zu.
-    - ```python print(text)```: Hier verwenden wir die Variable. Beachtet das wir keine Anführungszeichen verwenden. Das sagt python, dass wir nicht den Wert `text`, sondern eine Variable meinen. Python ersetz dann `text` durch den Wert, den wir vorhin gespeichert haben.
+    - ```python print(text)```: Hier verwenden wir die Variable. Beachte, dass wir keine Anführungszeichen verwenden. Das sagt python, dass wir nicht den Wert `text`, sondern eine Variable meinen. Python ersetz dann `text` durch den Wert, den wir vorhin gespeichert haben.
     
 ]
 
 #Spiel[
-    Das Programm, das ihr in der letzten Lektion am ende geschrieben habt war schon sehr unübersichtlich. Schreibt das mal neu und verwendet variablen. //TODO: Wissen sie das input einen wert zurückgibt? Meiner Meinung nach sollten sie den Transfer hinbekommen. Zu not sollen sie nachfragen.
+    Das Programm, das du in der letzten Lektion am Ende geschrieben hast, war schon sehr unübersichtlich. Schreib das mal neu und verwende Variablen. //TODO: Wissen sie das input einen wert zurückgibt? Meiner Meinung nach sollten sie den Transfer hinbekommen. Zu not sollen sie nachfragen.
 ]
 
 
 #Praxis[
-    Variablen in der Informatik haben eine Eigenschaft die deren Geschwister aus der Mathe oft nicht haben. Wir können sie wiederverwenden. Betrachtet zum Beispiel folgendes Programm.
+    Variablen in der Informatik haben eine Eigenschaft die deren Geschwister aus der Mathe oft nicht haben. Wir können sie wiederverwenden. Betrachte zum Beispiel folgendes Programm.
 
     #Code("07_variablen_arithmetik/reuse_variables.py")
 ]
@@ -57,7 +57,7 @@ Natürlich kann python auch Mathe. Zumindest rechnen kann python ganz ordentlich
 
 ]
 
-#Praxis[ Die folgenden Zeilen stellen die Arithmetik in Python vor. Überprüft mal ob das so alles sinn ergibt:
+#Praxis[ Die folgenden Zeilen stellen die Arithmetik in Python vor. Überprüfe mal, ob das so alles Sinn ergibt:
 
     - ```python print(1 + 1)```
     - ```python print(42 - 2)```
@@ -75,14 +75,14 @@ Wie wir sehen kennt Python die uns bekannte Reihenfolge der Operatoren nicht. Da
     - ```python **```
     - ```python //```
     - ```python %```
-    Eure Aufgabe ist herauszufinden was diese Machen. *Ein kleiner Tipp:* Der Letzte Operator macht nur bei ganzen Zahlen Sinn.
+    Deine Aufgabe ist herauszufinden, was diese machen. *Ein kleiner Tipp:* Der Letzte Operator macht nur bei ganzen Zahlen Sinn.
     
     
 ]
 
 #Spiel[ Jetzt kombinieren wir mal alles was wir in diese Lektion gelernt haben.
 
-    Schreibt ein Programm, was die Mitternachtsformel
+    Schreib ein Programm, das die Mitternachtsformel
     $ x_(1,2) = (-b plus.minus sqrt(b^2 - 4a c))/(2a) $
 
     berechnet.

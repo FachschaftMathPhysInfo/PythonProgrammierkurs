@@ -11,17 +11,17 @@ In dieser Lektion werden wir ein wichtiges Konzept kennenlernen, was uns diesen 
 Das Terminal an sich ist erstmal nur ein Anwendung wie VSCode oder Firefox. Es zeigt standartmäßig nur reinen Text an, also erwartet keine Bilder. Und anstatt ins Internet zu gehen, erlaubt uns das Terminal eine _SHELL_ zu nutzen. Das ganze passiert indem wir Befehle in das Terminal schreiben. Schicken wir diese danach ab mit `Enter`, führt die Shell diese aus und schreibt das ergebniss ebenfalls in das Terminal.
 
 ==== Die Prompt
-Vor eurem Cursor stehen als immer ein paar Statusinfos, die sogenante Prompt. Bei uns ist das euer Nutzername `@` Name der Maschine und dann das Working Directory.
+Vor deinem Cursor stehen als immer ein paar Statusinfos, die sogenante Prompt. Bei dir ist das dein Nutzername `@` Name der Maschine und dann das Working Directory.
 
 
 ==== Das working Directory
 Das Terminal befindet sich immer in einem Ordner, dem sogenannten _Working Directory_. Das sind die selben Ordner (In Unix nennen wir Ordner _Directory_ ) die wir sehen wenn wir den Fileexploer öffnen. Alle Befehle die wir ausführen werden standartmäßig im Working Directory ausgeführt. 
 
 Ein paar wichtige Fakten zu Dateipfaden:
-- `~` ist das Directory eurer Benutzerin. Fast alles was ihr macht, findet in diesem Directory statt.
+- `~` ist das Directory deiner Benutzerin. Fast alles was du machst, findet in diesem Directory statt.
 - Pfade nutzen `/` zum Trennen. `mein/pfad/zur/datei.txt` bedeutet das die Datei `datei.txt` im Directory `zur` liegt, was wiederum im Directory `pfad` und das schließlich `mein` liegt. 
 - `..` ist ein besonderes Directory. Es existiert in jedem Directory und stellt das Elter directory dar. In `zur` ist es `mein/pfad`, und in `pfad` ist es nur `mein`.
-- Wir unterscheiden zwischen relativen und absoluten Pfaden. Relative Pfade beginnen von aktuellen Directory, absolute Pfade von der sogenannten Wurzel `/`. Beginnt ein Pfad mit `/`, dann ist es immer ein absoluter Pfad. `~` zum Beispiel ist der absolute Pfad zu unserem Home Directory.
+- Wir unterscheiden zwischen relativen und absoluten Pfaden. Relative Pfade beginnen von aktuellen Directory, absolute Pfade von der sogenannten Wurzel `/`. Beginnt ein Pfad mit `/`, dann ist es immer ein absoluter Pfad. `~` zum Beispiel ist der absolute Pfad zu deinem Home Directory.
 
 
 
@@ -39,19 +39,19 @@ Mit das wichtigste was wir in der Shell machen ist uns auf der Directorystruktur
 cd mydir # Wechsle in das Directory mydir
 ```
 
-Das Argument von cd ist ein _Pfad_. Lasst und damit mal etwas rumspielen.
+Das Argument von cd ist ein _Pfad_. Lass uns damit mal etwas rumspielen.
 
 
 #columns(2)[
 
 
 #Spiel[
-    + Öffnet ein neues Terminal. Ihr solltet in `~` sein.
-    + Nutzt `cd` mit dem Pfad `mein/weg/zur`, um zur Datei `Datei.txt` zu gelangen.
-    + Wie kommen wir zurück ins Home Directory?
+    + Öffne ein neues Terminal. Du solltest in `~` sein.
+    + Nutz `cd` mit dem Pfad `mein/weg/zur`, um zur Datei `Datei.txt` zu gelangen.
+    + Wie kommst du zurück ins Home Directory?
         + Was bedeutet `..` nochmal?
-        + Können wir absolute Pfade angeben?
-        + Was passiert wenn wir `cd` ohne Argument nutzen?
+        + Kannst du absolute Pfade angeben?
+        + Was passiert wenn du `cd` ohne Argument nutzt?
 
 ]
 
@@ -102,11 +102,11 @@ Das Argument von cd ist ein _Pfad_. Lasst und damit mal etwas rumspielen.
 
 
 ==== pwd
-Falls ihr euch mal völlig veloren habt, gibt es den Befehll `pwd`. Das steht für _path towards directory_ und gibt euch den Absoluten Pfad zum Working Directory.
+Falls du dich mal völlig verloren hast, gibt es den Befehll `pwd`. Das steht für _path towards directory_ und gibt dir den Absoluten Pfad zum Working Directory.
 
 
 
 ==== ls
-Meistens habt ihr nicht den Luxus das ihr ein Diagram zu eurer Directorystruktur bekommt. Wie finde ich aber nun raus wo ich mit cd überall hinkomme? Dafür gibt es den `ls` Befehl. Das steht für 'list' und gibt an was alles in einem Directory ist. Man kann entweder ein pfad angeben, dann bekommt man alles was sich dort befindet, oder man gibt nichts an, dann bekommt man den Inhalt des working directories.
+Meistens hast du nicht den Luxus das du ein Diagram zu deiner Directorystruktur bekommst. Wie finde ich aber nun raus wo ich mit cd überall hinkomme? Dafür gibt es den `ls` Befehl. Das steht für 'list' und gibt an was alles in einem Directory ist. Man kann entweder ein pfad angeben, dann bekommt man alles was sich dort befindet, oder man gibt nichts an, dann bekommt man den Inhalt des working directories.
 
-#Spiel[Das Diagramm von oben war nicht ganz ehrlich. Da sind noch ein paar Dateien ausgelasssen. Findet raus wie sie heissen, ohne dabei `cd` zu verwenden.]
+#Spiel[Das Diagramm von oben war nicht ganz ehrlich. Da sind noch ein paar Dateien ausgelasssen. Find raus wie sie heissen, ohne dabei `cd` zu verwenden.]

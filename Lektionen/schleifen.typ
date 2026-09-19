@@ -39,7 +39,7 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
 #Theorie[
   === Solange noch etwas zu tun ist
 
-  Stellt euch vor, ihr schält Kartoffeln für ein Abendessen. Niemand sagt euch vorher: „Schäle genau vierzehn Kartoffeln.“ Die Anweisung lautet vielmehr: *Solange noch ungeschälte Kartoffeln im Korb liegen, nimm eine heraus und schäle sie.* Vor jedem Griff in den Korb schaut ihr kurz nach, ob es noch weitergeht. Irgendwann ist der Korb leer, und ihr hört auf.
+  Stell dir vor, du schälst Kartoffeln für ein Abendessen. Niemand sagt dir vorher: „Schäle genau vierzehn Kartoffeln.“ Die Anweisung lautet vielmehr: *Solange noch ungeschälte Kartoffeln im Korb liegen, nimm eine heraus und schäle sie.* Vor jedem Griff in den Korb schaust du kurz nach, ob es noch weitergeht. Irgendwann ist der Korb leer, und du hörst auf.
 
   Dieses Muster gibt es in Python wörtlich. Es heißt `while` (englisch für „solange“):
 
@@ -125,7 +125,7 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
 #Theorie(title_sup: "Der wichtigste Stolperstein: die Endlosschleife")[
 
 
-  Schaut euch in `countdown.py` die Zeile `sekunden = sekunden - 1` genau an. Sie sieht nebensächlich aus, ist aber das Herzstück der Schleife. Lässt man sie weg, verändert sich `sekunden` nie. Die Bedingung `sekunden > 0` bleibt damit für immer wahr, und das Programm gibt bis in alle Ewigkeit `5` aus.
+  Schau dir in `countdown.py` die Zeile `sekunden = sekunden - 1` genau an. Sie sieht nebensächlich aus, ist aber das Herzstück der Schleife. Lässt man sie weg, verändert sich `sekunden` nie. Die Bedingung `sekunden > 0` bleibt damit für immer wahr, und das Programm gibt bis in alle Ewigkeit `5` aus.
 
   Das nennt man eine *Endlosschleife*. Sie ist kein Fehler, den Python melden könnte – syntaktisch ist alles korrekt, das Programm tut ja genau das, was dort steht. Deshalb erscheint keine Fehlermeldung; das Programm hängt einfach.
 
@@ -133,9 +133,9 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
 
   #align(center)[*Im Rumpf muss sich etwas ändern, das in der Bedingung vorkommt.*]
 
-  Beim Schreiben einer Schleife lohnt sich deshalb jedes Mal die Frage: _Wodurch wird diese Bedingung irgendwann falsch?_ Findet ihr keine Antwort, läuft die Schleife ewig.
+  Beim Schreiben einer Schleife lohnt sich deshalb jedes Mal die Frage: _Wodurch wird diese Bedingung irgendwann falsch?_ Findest du keine Antwort, läuft die Schleife ewig.
 
-  *Und wenn es doch passiert?* Das wird es, und zwar allen. Ein hängendes Programm brecht ihr im Terminal mit `Strg` + `C` ab (auf macOS ebenfalls `Ctrl` + `C`, nicht `Cmd`). Das ist kein Absturz, sondern der reguläre Weg, ein laufendes Programm zu beenden.
+  *Und wenn es doch passiert?* Das wird es, und zwar allen. Ein hängendes Programm brichst du im Terminal mit `Strg` + `C` ab (auf macOS ebenfalls `Ctrl` + `C`, nicht `Cmd`). Das ist kein Absturz, sondern der reguläre Weg, ein laufendes Programm zu beenden.
 
   === Ein Muster: sammeln
 
@@ -145,13 +145,13 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
 #Code("09_schleifen/summe_sammeln.py")
 
 #Praxis[
-  + Führt `countdown.py` aus. Löscht anschließend die Zeile `sekunden = sekunden - 1` und startet erneut. Beendet das Programm mit `Strg` + `C`. Stellt die Zeile danach wieder her.
+  + Führe `countdown.py` aus. Lösche anschließend die Zeile `sekunden = sekunden - 1` und starte erneut. Beende das Programm mit `Strg` + `C`. Stelle die Zeile danach wieder her.
 
-  + Ändert `countdown.py` so, dass von `10` heruntergezählt wird und immer zwei Schritte auf einmal gemacht werden (`10`, `8`, `6`, …).
+  + Ändere `countdown.py` so, dass von `10` heruntergezählt wird und immer zwei Schritte auf einmal gemacht werden (`10`, `8`, `6`, …).
 
-  + Schreibt ein Programm, das die Zahlen von `1` bis `20` ausgibt, aber nur die geraden. (Tipp: `zahl % 2 == 0` aus der letzten Lektion.)
+  + Schreib ein Programm, das die Zahlen von `1` bis `20` ausgibt, aber nur die geraden. (Tipp: `zahl % 2 == 0` aus der letzten Lektion.)
 
-  + Verschiebt in `summe_sammeln.py` die Zeile `summe = 0` versuchsweise in den Schleifenrumpf. Welches Ergebnis kommt heraus, und warum?
+  + Verschiebe in `summe_sammeln.py` die Zeile `summe = 0` versuchsweise in den Schleifenrumpf. Welches Ergebnis kommt heraus, und warum?
 ]
 // Wird gekürzt weil: 1. Continuity aus letzter Lektion nicht mehr gegeben. 2. Lektion ist zu lang
 // === Eingaben absichern
@@ -184,7 +184,7 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
 === Wenn die Anzahl feststeht: `for`
 
 #Theorie[
-  Bei den Kartoffeln wusstet ihr nicht im Voraus, wie viele es sind – ihr habt vor jedem Griff nachgesehen. Nun stellt euch eine andere Aufgabe vor: Ihr sollt zehn Briefumschläge beschriften. Hier steht die Anzahl von Anfang an fest. Niemand prüft nach jedem Umschlag, ob noch welche da sind; man arbeitet einfach den Stapel ab.
+  Bei den Kartoffeln wusstest du nicht im Voraus, wie viele es sind – du hast vor jedem Griff nachgesehen. Nun stell dir eine andere Aufgabe vor: Du sollst zehn Briefumschläge beschriften. Hier steht die Anzahl von Anfang an fest. Niemand prüft nach jedem Umschlag, ob noch welche da sind; man arbeitet einfach den Stapel ab.
 
   Für genau diesen Fall gibt es die zweite Schleifenart, die `for`-Schleife. Sie läuft nicht, *solange etwas gilt*, sondern *einmal für jedes Element* einer vorgegebenen Folge:
 
@@ -193,7 +193,7 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
       print(i)
   ```
 
-  Gelesen: „Für jede Zahl `i` aus `range(5)`: gib `i` aus.“ Die Variable `i` heißt *Schleifenvariable*. Sie wird bei jedem Durchlauf automatisch auf den nächsten Wert gesetzt – hier müsst ihr also nichts selbst hochzählen, und eine Endlosschleife kann gar nicht erst entstehen.
+  Gelesen: „Für jede Zahl `i` aus `range(5)`: gib `i` aus.“ Die Variable `i` heißt *Schleifenvariable*. Sie wird bei jedem Durchlauf automatisch auf den nächsten Wert gesetzt – hier musst du also nichts selbst hochzählen, und eine Endlosschleife kann gar nicht erst entstehen.
 ]
 
 #Abbildung(caption: [Die Folge steht schon fest, bevor die Schleife beginnt. Aus ihr wird bei jedem Durchlauf der nächste Wert in die Schleifenvariable `zahl` gelegt, und der Rumpf läuft damit einmal durch. Sind alle Werte aufgebraucht, endet die Schleife von selbst.])[
@@ -229,7 +229,7 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
 
   *Zwei Eigenheiten, über die anfangs fast alle stolpern:*
 
-  1. Gibt man nur eine Zahl an, beginnt die Zählung bei *`0`*, nicht bei `1`. Das ist in der Informatik durchgehend so und wird euch noch häufig begegnen.
+  1. Gibt man nur eine Zahl an, beginnt die Zählung bei *`0`*, nicht bei `1`. Das ist in der Informatik durchgehend so und wird dir noch häufig begegnen.
 
   2. Die *obere Grenze gehört nicht dazu*. `range(1, 6)` endet bei `5`. Merkhilfe: Die zweite Zahl ist nicht das letzte Element, sondern die Stelle, an der abgebrochen wird. Praktisch daran ist, dass `range(5)` genau fünf Werte liefert – die Zahl in den Klammern ist immer die Anzahl der Durchläufe.
 ]
@@ -267,7 +267,7 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
 
   Eine `for`-Schleife kann über alles laufen, was aus mehreren Teilen besteht – Fachwort: über alles *Iterierbare*. Eine Zeichenkette ist so ein Fall, denn sie besteht aus einzelnen Zeichen. `for zeichen in "Python":` liefert nacheinander `P`, `y`, `t`, `h`, `o`, `n`.
 
-  Damit lassen sich Texte untersuchen, ohne über Positionen und Zählerstände nachdenken zu müssen. In Lektion 11 werdet ihr die *Liste* kennenlernen, und diese Schreibweise wird dort unverändert weiterfunktionieren.
+  Damit lassen sich Texte untersuchen, ohne über Positionen und Zählerstände nachdenken zu müssen. In Lektion 11 wirst du die *Liste* kennenlernen, und diese Schreibweise wird dort unverändert weiterfunktionieren.
 ]
 
 #Code("09_schleifen/for_zeichenkette.py")
@@ -300,13 +300,13 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
 ]
 
 #Praxis[
-  + Gebt mit einer `for`-Schleife die Quadratzahlen von `1` bis `10` aus (`1`, `4`, `9`, …).
+  + Gib mit einer `for`-Schleife die Quadratzahlen von `1` bis `10` aus (`1`, `4`, `9`, …).
 
-  + Schreibt das Programm aus der ersten Praxis-Aufgabe (gerade Zahlen von 1 bis 20) mit `for` statt `while`. Welche Fassung liest sich besser?
+  + Schreib das Programm aus der ersten Praxis-Aufgabe (gerade Zahlen von 1 bis 20) mit `for` statt `while`. Welche Fassung liest sich besser?
 
-  + Lasst ein Programm die Buchstaben eures Namens einzeln untereinander ausgeben.
+  + Lass ein Programm die Buchstaben deines Namens einzeln untereinander ausgeben.
 
-  + Was gibt `for i in range(10, 1):` aus? Überlegt erst, probiert dann.
+  + Was gibt `for i in range(10, 1):` aus? Überlege erst, probiere dann.
 ]
 
 === Schleifen in Schleifen
@@ -343,11 +343,11 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
 #Code("09_schleifen/einmaleins.py")
 
 #Praxis[
-  + Lasst `einmaleins.py` laufen. Ändert die innere Schleife auf `range(1, 6)` – was passiert mit der Tabelle?
+  + Lass `einmaleins.py` laufen. Ändere die innere Schleife auf `range(1, 6)` – was passiert mit der Tabelle?
 
-  + Gebt ein Dreieck aus Sternchen aus, das in jeder Zeile ein Sternchen mehr hat (fünf Zeilen). Tipp: `print("*" * anzahl)` wiederholt einen Text.
+  + Gib ein Dreieck aus Sternchen aus, das in jeder Zeile ein Sternchen mehr hat (fünf Zeilen). Tipp: `print("*" * anzahl)` wiederholt einen Text.
 
-  + Rückt in `einmaleins.py` das abschließende leere `print()` um vier Leerzeichen weiter ein, sodass es zur inneren Schleife gehört. Erklärt die Ausgabe.
+  + Rücke in `einmaleins.py` das abschließende leere `print()` um vier Leerzeichen weiter ein, sodass es zur inneren Schleife gehört. Erkläre die Ausgabe.
 ]
 
 #Spiel[
@@ -355,13 +355,13 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
 
   Zum Ausprobieren:
 
-  + Erhöht `MAX_VERSUCHE` und beobachtet, wie sich das Spiel anfühlt. Wie viele Versuche sind fair für Zahlen von 1 bis 10?
+  + Erhöhe `MAX_VERSUCHE` und beobachte, wie sich das Spiel anfühlt. Wie viele Versuche sind fair für Zahlen von 1 bis 10?
 
-  + Schreibt das Programm mit `while True` und `break` um, statt die Hilfsvariable `geraten` zu verwenden. Welche Fassung findet ihr klarer?
+  + Schreib das Programm mit `while True` und `break` um, statt die Hilfsvariable `geraten` zu verwenden. Welche Fassung findest du klarer?
 
-  + Baut es andersherum: *Ihr* denkt euch eine Zahl aus, und das Programm rät. Nach jedem Tipp gebt ihr „zu klein“, „zu groß“ oder „richtig“ ein.
+  + Bau es andersherum: *Du* denkst dir eine Zahl aus, und das Programm rät. Nach jedem Tipp gibst du „zu klein“, „zu groß“ oder „richtig“ ein.
 
-  + Lasst ein Programm die Zahlen von 1 bis 100 durchlaufen und dabei nur die ausgeben, die sowohl durch 3 als auch durch 5 teilbar sind.
+  + Lass ein Programm die Zahlen von 1 bis 100 durchlaufen und dabei nur die ausgeben, die sowohl durch 3 als auch durch 5 teilbar sind.
 ]
 
 #Code("09_schleifen/zahlenraten_schleife.py")
@@ -396,7 +396,7 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
 ]
 
 #Quiz(answer: "a)")[
-  Ihr möchtet so lange nach einer Zahl fragen, bis die Eingabe positiv ist. Welche Schleife passt?
+  Du möchtest so lange nach einer Zahl fragen, bis die Eingabe positiv ist. Welche Schleife passt?
   + `while`, weil das Ende von der Eingabe abhängt und vorher nicht feststeht.
   + `for`, weil jede Eingabe ein Element einer Folge ist.
   + `for` mit `range(3)`, weil drei Versuche üblich sind.
@@ -440,13 +440,13 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
 
   *`ValueError` mitten in der Schleife*
 
-  `int(input(...))` bricht ab, sobald jemand etwas eingibt, das keine Zahl ist. Die Schleife schützt nur vor Werten im falschen *Bereich*, nicht vor der falschen *Art* von Eingabe. Wie man auch das abfängt, lernt ihr später.
+  `int(input(...))` bricht ab, sobald jemand etwas eingibt, das keine Zahl ist. Die Schleife schützt nur vor Werten im falschen *Bereich*, nicht vor der falschen *Art* von Eingabe. Wie man auch das abfängt, lernst du später.
 ]
 
 #Theorie[
   === Ausblick
 
-  Euer Programm kann jetzt entscheiden *und* wiederholen. Damit habt ihr alle Bausteine beisammen, um im Prinzip jede Berechnung zu formulieren, die ein Computer ausführen kann – das ist eine bemerkenswerte Grenze, die ihr gerade überschritten habt.
+  Dein Programm kann jetzt entscheiden *und* wiederholen. Damit hast du alle Bausteine beisammen, um im Prinzip jede Berechnung zu formulieren, die ein Computer ausführen kann – das ist eine bemerkenswerte Grenze, die du gerade überschritten hast.
 
-  Praktisch fehlt aber noch etwas: Bislang wächst jedes Programm als ein einziger langer Block von oben nach unten. Wollt ihr dieselbe Prüfung an drei Stellen durchführen, müsst ihr sie dreimal hinschreiben. In der nächsten Lektion lernt ihr *Funktionen* – die Möglichkeit, einem Stück Code einen Namen zu geben und es von überall aufzurufen. Ab da baut ihr Programme aus wiederverwendbaren Bausteinen statt aus einer durchgehenden Textwand.
+  Praktisch fehlt aber noch etwas: Bislang wächst jedes Programm als ein einziger langer Block von oben nach unten. Willst du dieselbe Prüfung an drei Stellen durchführen, musst du sie dreimal hinschreiben. In der nächsten Lektion lernst du *Funktionen* – die Möglichkeit, einem Stück Code einen Namen zu geben und es von überall aufzurufen. Ab da baust du Programme aus wiederverwendbaren Bausteinen statt aus einer durchgehenden Textwand.
 ]

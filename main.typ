@@ -2,7 +2,7 @@
 #import "lib/helpers.typ": Quiz_answers_table, Code
 #import "@preview/zebraw:0.6.3": *
 
- #set document(author: "Xenia Herr", description: "Python Programmierkurs der Fachschaft MathPhysInfo " )
+ #set document(author: "Xenia Herr, Federico Alesiani", description: "Python Programmierkurs der Fachschaft MathPhysInfo " )
 #let title = "Programmiervorkurs"
 #let subtitle = "Fachschaft MathPhysInfo" 
 

@@ -154,8 +154,5 @@ stack(
 
 
 #let Hinweis(content) = {
-
-    [*Hinweis*]
-    rect[
-    #content]
+    footnote[*Hinweis:* #content]
 }

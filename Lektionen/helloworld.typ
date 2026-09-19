@@ -7,7 +7,7 @@ In dieser Lektion wollen wir uns als erstes nochmal mit dem `Hello World` Progra
 
   === Was ist eine Programmiersprache?
 
-  Ein Computer versteht eigentlich nur Maschinencode – eine Abfolge von 0en und 1en. Das ist das `Binär`, von dem ihr vielleicht schon einmal gehört habt. Für den Computer ist Binär ganz toll. Es gibt nur 2 Werte: 0 und 1, wahr und falsch, Strom oder kein Strom. Er kann damit sehr effizient und sehr schnell Arbeiten. Für den Menschen ist Binär aber sehr unleserlich. Deswegen nutzen wir Programmiersprachen. Eine Programmiersprache ist eine Sprache, sie hat wie Deutsch oder Englisch eine bestimmte Syntax, also Regeln um gültige Sätze zu bilden, und Semantik, also eine Interpretation was diese Sätze auch bedeuten. Die Sätze nennen wir bei uns Anweisungen. Sie sind Elementare Befehle die wir dem Computer stellen. Das Hello World Programm von vorhin:
+  Ein Computer versteht eigentlich nur Maschinencode – eine Abfolge von 0en und 1en. Das ist das `Binär`, von dem du vielleicht schon einmal gehört hast. Für den Computer ist Binär ganz toll. Es gibt nur 2 Werte: 0 und 1, wahr und falsch, Strom oder kein Strom. Er kann damit sehr effizient und sehr schnell Arbeiten. Für den Menschen ist Binär aber sehr unleserlich. Deswegen nutzen wir Programmiersprachen. Eine Programmiersprache ist eine Sprache, sie hat wie Deutsch oder Englisch eine bestimmte Syntax, also Regeln um gültige Sätze zu bilden, und Semantik, also eine Interpretation was diese Sätze auch bedeuten. Die Sätze nennen wir bei uns Anweisungen. Sie sind Elementare Befehle die wir dem Computer stellen. Das Hello World Programm von vorhin:
   #Code("06_helloworld/helloworld.py")
   besteht zum Beispiel aus genau einer Anweisung: Drucke die Buchstaben "Hello World" aus. In python haben wir meistens eine Anweisung pro Zeile.
 
@@ -22,14 +22,14 @@ In dieser Lektion wollen wir uns als erstes nochmal mit dem `Hello World` Progra
 
 //   === Warum Python?
 
-//   Python ist vermutlich die Programmiersprache, die am häufigsten als Anfängersprache empfohlen wird. Das hat ganz viele Gründe. Für uns interessant ist aber nur einer. Ihr werdet es brauchen.
+//   Python ist vermutlich die Programmiersprache, die am häufigsten als Anfängersprache empfohlen wird. Das hat ganz viele Gründe. Für uns interessant ist aber nur einer. Du wirst es brauchen.
 
-//   Python ist in der Wissenschaft sehr verbreitet. Viele Programme sind in Python geschrieben oder liegen als sogenannte Bibliotheken (libraries, dazu später mehr) vor. So werdet ihr sehr wahrscheinlich in der Einführung in die Numerik mit Python arbeiten, und in der IPI sowieso.
+//   Python ist in der Wissenschaft sehr verbreitet. Viele Programme sind in Python geschrieben oder liegen als sogenannte Bibliotheken (libraries, dazu später mehr) vor. So wirst du sehr wahrscheinlich in der Einführung in die Numerik mit Python arbeiten, und in der IPI sowieso.
 
 
 === Das “Hello World”-Ritual
 
-Jetzt aber endlich zurück zu etwas Prakischem. Ihr habt vielleicht gefragt warum wir ausgerechnet "Hello World" gedruckt haben. Das hat traditionelle Gründe. Es ist ein Ritual der Informatikerinnen, dass das erste was man in einer Neuen Programmiersprache macht, ist, einmal Hello World auszugeben.
+Jetzt aber endlich zurück zu etwas Prakischem. Du hast dich vielleicht gefragt warum wir ausgerechnet "Hello World" gedruckt haben. Das hat traditionelle Gründe. Es ist ein Ritual der Informatikerinnen, dass das erste was man in einer Neuen Programmiersprache macht, ist, einmal Hello World auszugeben.
 
     
 
@@ -51,40 +51,40 @@ Das ganze nennt sich Funktionsaufruf. Das erinnert stark an die (Schul-) Mathe m
 ]
 
 #Spiel[
-    Eine beliebte Übung ist es herauszufinden, was alles kaputt gehen kann. Baut mal fehler in euer Programm ein:
-    - Vertippt euch bei Hello oder World.
-    - Lasst die Anführungszeichen weg
-    - Schließt die Klammern nicht
-    - Vertippt euch bei Print.
+    Eine beliebte Übung ist es herauszufinden, was alles kaputt gehen kann. Bau mal Fehler in dein Programm ein:
+    - Vertipp dich bei Hello oder World.
+    - Lass die Anführungszeichen weg
+    - Schließ die Klammern nicht
+    - Vertipp dich bei Print.
 
     Was passiert alles? Worüber beschwert sich Python?
 ]
 
-Eine weitere tolle Eigenschaft von `print` ist es das es mehrere Argumente nimmt. Versucht mal mehrere Dinge auszugeben. *TIPP*, Argumente trennt ihr mit einem Komma voneinander.
+Eine weitere tolle Eigenschaft von `print` ist es das es mehrere Argumente nimmt. Versuch mal mehrere Dinge auszugeben. *TIPP*, Argumente trennst du mit einem Komma voneinander.
 
 
 
 === Eingabe (der input Befehl)
 
-Bis jetzt ist die Kommunikation recht einseitig. Das Programm redet mit uns, wir aber nicht mit ihm. Lasst uns das ändern.
+Bis jetzt ist die Kommunikation recht einseitig. Das Programm redet mit dir, du aber nicht mit ihm. Lass uns das ändern.
 
 
-    Wir wissen ja bereits, dass wir die Worte in ```python "Hello World"``` mithilfe eines Kommas trennen können. Ersetzt nun mal das "World" in ```python print("Hello", "World")``` durch ```python input()``` Was passiert?
-    - Das Terminal hat nun einen blinkenden Cursor. Gebt mal euren Namen ein und drückt Enter.
+    Wir wissen ja bereits, dass wir die Worte in ```python "Hello World"``` mithilfe eines Kommas trennen können. Ersetz nun mal das "World" in ```python print("Hello", "World")``` durch ```python input()``` Was passiert?
+    - Das Terminal hat nun einen blinkenden Cursor. Gib mal deinen Namen ein und drück Enter.
 
-Das funktioniert schonmal ganz gut, aber nicht jede merkt wann man was eingeben muss. Zum Glück akzeptiert `input` auch Argumente. Können wir das Problem dadurch lösen? Probiert es aus.
+Das funktioniert schonmal ganz gut, aber nicht jede merkt wann man was eingeben muss. Zum Glück akzeptiert `input` auch Argumente. Kannst du das Problem dadurch lösen? Probier es aus.
 
 
 
 #Spiel[
-    1. Wie weit können wir das auf die Spitze treiben? Schreibt ein Programm, das die Nutzerin nach ihrem Namen, ihrem Alter und Ihrem Studienfach fragt und das ganze ausgibt.
-    2. Unsere Programme bestehen bis jetzt nur aus einer Anweisung. Schreibt mal ein Programm mit mehreren Anweisungen.
+    1. Wie weit können wir das auf die Spitze treiben? Schreib ein Programm, das die Nutzerin nach ihrem Namen, ihrem Alter und ihrem Studienfach fragt und das ganze ausgibt.
+    2. Unsere Programme bestehen bis jetzt nur aus einer Anweisung. Schreib mal ein Programm mit mehreren Anweisungen.
 
 ]
 
 
 #Quiz(answer: "b)")[
-    Was passiert, wenn ihr die Anführungszeichen weglasst, also ```python print(Hello World)``` schreibt?
+    Was passiert, wenn du die Anführungszeichen weglässt, also ```python print(Hello World)``` schreibt?
     + Python druckt einfach "Hello World" wie gewohnt
     + Es gibt einen `SyntaxError`, weil Python nicht weiß, was `Hello` und `World` sein sollen
     + Python druckt "Hello" und "World" jeweils in eine neue Zeile
@@ -92,7 +92,7 @@ Das funktioniert schonmal ganz gut, aber nicht jede merkt wann man was eingeben 
 ]
 
 #Quiz(answer: "c)")[
-    Ihr schreibt ```python print("Hallo", "Welt")``` mit einem Komma statt eines einzelnen Strings. Was gibt Python aus?
+    Du schreibst ```python print("Hallo", "Welt")``` mit einem Komma statt eines einzelnen Strings. Was gibt Python aus?
     + `HalloWelt` (ohne Leerzeichen)
     + Einen `TypeError`, weil `print` nur ein Argument akzeptiert
     + `Hallo Welt` (Python fügt automatisch ein Leerzeichen zwischen den Argumenten ein)
@@ -100,7 +100,7 @@ Das funktioniert schonmal ganz gut, aber nicht jede merkt wann man was eingeben 
 ]
 
 #Quiz(answer: "a)")[
-    Ihr schreibt ```python name = input("Wie heißt du? ")``` und tippt anschließend `Anna` ein. Welche Aussage stimmt?
+    Du schreibst ```python name = input("Wie heißt du? ")``` und tippst anschließend `Anna` ein. Welche Aussage stimmt?
     + In der Variable `name` steht jetzt der Text `"Anna"`
     + `input()` gibt eine Zahl zurück, kein Text
     + Der Text `"Wie heißt du? "` wird nirgends angezeigt
@@ -108,18 +108,18 @@ Das funktioniert schonmal ganz gut, aber nicht jede merkt wann man was eingeben 
 ]
 
 // #Spiel[
-//   Ihr könnt nun versuchen, den Quellcode selbst zu verändern und damit ein wenig herumzuspielen. Öffnet dazu einen Editor und öffnet die Datei. Denkt daran, nach jeder Änderung die Datei zu speichern und im Terminal neu auszuführen.
+//   Du kannst nun versuchen, den Quellcode selbst zu verändern und damit ein wenig herumzuspielen. Öffne dazu einen Editor und öffne die Datei. Denk daran, nach jeder Änderung die Datei zu speichern und im Terminal neu auszuführen.
 
-//   Dinge, die ihr ausprobieren könntet sind zum Beispiel:
+//   Dinge, die du ausprobieren könntest sind zum Beispiel:
 
-//   - Was passiert, wenn ihr „Hello world!" in etwas anderes ändert?
-//   - Was passiert, wenn ihr die Anführungszeichen löscht?
-//   - Was passiert, wenn ihr zwei `print()`-Befehle hintereinander schreibt?
+//   - Was passiert, wenn du „Hello world!" in etwas anderes änderst?
+//   - Was passiert, wenn du die Anführungszeichen löschst?
+//   - Was passiert, wenn du zwei `print()`-Befehle hintereinander schreibst?
 //   - Wie könnte man mehrere Sätze in einer Zeile ausgeben?
 
-//   Experimentiert! Das Schöne an Python ist, dass ihr sofort Feedback bekommt, wenn etwas schiefläuf
+//   Experimentier! Das Schöne an Python ist, dass du sofort Feedback bekommst, wenn etwas schiefläuf
 // ]
-// #Quiz(answer: "Das andere wird ausgegeben" )[Was passiert, wenn ihr Hello world durch etwas anderes ersetzt?
+// #Quiz(answer: "Das andere wird ausgegeben" )[Was passiert, wenn du Hello world durch etwas anderes ersetzt?
 // + Das andere wird ausgegeben
 // + Es gibt einen Fehler
 // + Das Programm tut garnichts mehr
