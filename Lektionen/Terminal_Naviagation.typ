@@ -8,7 +8,7 @@ In dieser Lektion werden wir ein wichtiges Konzept kennenlernen, was uns diesen 
 
 
 === Das Terminal
-Das Terminal an sich ist erstmal nur ein Anwendung wie VSCode oder Firefox. Es zeigt standartmäßig nur reinen Text an, also erwartet keine Bilder. Und anstatt ins Internet zu gehen, erlaubt uns das Terminal eine _SHELL_ zu nutzen. Das ganze passiert indem wir Befehle in das Terminal schreiben. Schicken wir diese danach ab mit `Enter`, führt die Shell diese aus und schreibt das Ergebniss ebenfalls in das Terminal.
+Das Terminal an sich ist erstmal nur ein Anwendung wie VSCode oder Firefox. Es zeigt standartmäßig nur reinen Text an, also erwartet keine Bilder. Und anstatt ins Internet zu gehen, erlaubt uns das Terminal eine _SHELL_ zu nutzen. Das ganze passiert indem wir Befehle in das Terminal schreiben. Schicken wir diese danach ab mit `Enter`, führt die Shell diese aus und schreibt das Ergebnis ebenfalls in das Terminal.
 
 ==== Der Prompt
 Vor deinem Cursor stehen als immer ein paar Statusinfos, der sogenante Prompt. Bei dir ist das dein Nutzername `@` Name der Maschine und dann das Working Directory.
