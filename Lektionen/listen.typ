@@ -7,7 +7,7 @@ Stell dir deinen Einkaufszettel vor: ein Blatt Papier, auf dem
 untereinander „Milch“, „Brot“, „Eier“ und „Käse“ stehen. Der Zettel ist
 *ein einziges* Ding, das du in die Tasche steckst -- und trotzdem enthält
 er vier Informationen, die in einer festen Reihenfolge stehen. Du kannst
-sagen „der zweite Eintrag“ und jede und jeder weiß, was gemeint ist. Du
+sagen „der zweite Eintrag“ und jede weiß, was gemeint ist. Du
 kannst unten etwas anhängen, etwas durchstreichen, oder zählen, wie viel
 noch offen ist.
 
@@ -15,7 +15,7 @@ Genau dieses Blatt Papier ist eine *Liste*: ein Behälter, der beliebig
 viele Werte in einer festen Reihenfolge unter *einem* Namen zusammenfasst.
 Bisher hattest du für jeden Wert eine eigene Variable -- `x1`, `x2`, `x3`.
 Das funktioniert für drei Werte. Bei den Temperaturmesswerten eines
-ganzen Jahres wird es unmöglich, und spätestens dann, wenn du beim
+ganzen Jahres wird es sehr schwierig, und spätestens dann, wenn du beim
 Schreiben des Programms noch gar nicht weißt, wie viele Werte es sein
 werden, geht es überhaupt nicht mehr. Die Liste löst genau dieses Problem:
 Sie wächst und schrumpft, während dein Programm läuft.
@@ -48,7 +48,7 @@ erste und mit Abstand häufigste Stolperstein: Python zählt ab *null*.
   )
 ]
 
-`einkaufsliste[0]` ist also „Milch“, nicht „Brot“. Das wirkt zunächst
+`einkaufsliste[1]` ist also „Brot“, nicht „Milch“. Das wirkt zunächst
 unnatürlich, hat aber einen praktischen Grund: Der Index beschreibt
 eigentlich nicht die Nummer des Elements, sondern seinen *Abstand zum
 Anfang* der Liste. Das erste Element hat vom Anfang aus gesehen den
@@ -197,11 +197,10 @@ gelernt hast -- `while`, `if`, Funktionen, `input()` und nun Listen.
 + *Verschachtelt:* Eine Liste darf selbst Listen enthalten. Leg ein
   Spielfeld `feld = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]`
   an und schreib `feld[1][1] = "X"`. Gib das Feld zeilenweise aus.
-  Damit hast du das Grundgerüst für das Abschlussprojekt bereits gebaut.
 + *Falle mit Ansage:* Führe `a = [1, 2, 3]`, dann `b = a`, dann
   `b.append(4)` aus und gib danach `a` aus. Erkläre deiner Sitznachbarin,
   warum `a` jetzt vier Elemente hat.
-+ *Fortgeschritten:* Sortiere eine Liste von Zahlen von Hand: Suche immer
++ *Fortgeschritten:* Sortiere eine Liste von Zahlen: Suche immer
   das kleinste verbleibende Element und hänge es an eine neue Liste an.
   Wie viele Durchläufe brauchst du bei zehn Elementen?
 

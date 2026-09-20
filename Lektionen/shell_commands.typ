@@ -4,29 +4,29 @@
 
 == Shell Befehle
 
-In dieser Lektion wollen wir uns einige weitere wichtige Anschauen. Das gibt es so einige, schnall dich also an.
+In dieser Lektion wollen wir uns einige weitere wichtige Befehle anschauen. Das gibt es so einige, schnall dich also an.
 
 
 
 #Theorie(title_sup: "Anatomie eines Befehls")[
     Ein Shell Command ist immer gleich aufgebaut:
     / Der Eigentliche Command: Das erste Wort das du eingibst ist der Command.
-    / Argumete: Alles nach dem Command sind Argumente. Sie werden untereinander durch Leerzeichen getrennt. Geben an auf was der Befehl operieren soll.
-    / Flaggen: Auch das sind Argumente, sind aber meistens optional und beeinflussen das Verhalten des Commands. Flags beginnen immer mit einem `-`, wenn sie nur aus einem Buchstaben bestehen, oder `--` wenn sie länger sind.
+    / Argumete: Alles nach dem Command sind Argumente. Sie werden untereinander durch Leerzeichen getrennt und geben an, auf was der Befehl operieren soll.
+    / Flaggen: Auch das sind Argumente, sind aber meistens optional und beeinflussen das Verhalten des Commands. Flags beginnen immer mit einem `-`, wenn sie nur aus einem Buchstaben bestehen, oder mit `--`, wenn sie länger sind.
 
-    Damit wir uns Sinvoll unterhalten können brauchen wir noch etwas Notation.
+    Damit wir uns sinnvoll unterhalten können brauchen wir noch etwas Notation.
     - Argumente kennzeichnen wir mit `[]`.
-    // - Falls wir optional weiter Argumente angeben können schreiben wir `[]...`
+    - Falls wir optional weitere Argumente angeben können schreiben wir `[]...`
     
 ]
 
 
 
 
-=== The essentials
+=== The Essentials
 // touch, mkdir, rm, cp, mv, cat
 
-Die folgenden Befehle sind sehr essentiell. Falls du irgendwann mal komplett auf das Terminal umsteigst wirst du sie täglich nutzen.
+Die folgenden Befehle sind sehr essentiell. Falls du irgendwann mal komplett auf das Terminal umsteigst, wirst du sie täglich nutzen.
 ==== touch
 `touch [Datei]` erstellt eine neue, leere Datei.
 
@@ -43,12 +43,14 @@ Die folgenden Befehle sind sehr essentiell. Falls du irgendwann mal komplett auf
 ```bash
 cp [Quelldatei] [Zieldatei]
 ```
-Und copiert den Inhalt von `Quelldatei` nach `Zieldatei`. `Zieldatei` muss dabei noch gar nicht existieren.
+und kopieren den Inhalt von `Quelldatei` nach `Zieldatei`. `Zieldatei` muss dabei noch gar nicht existieren.
 
-Alternativ können wir anstatt einer Zieldatei auch ein Verzeichnis angeben. In diesem Fall hat die Neue Datei den gleichen Namen wie die alte und wir können sogar mehrere Dateien gleichzeitig kopieren, der Befehl sieht dann also so aus:
+Alternativ können wir anstatt einer Zieldatei auch ein Verzeichnis angeben. In diesem Fall hat die neue Datei den gleichen Namen wie die alte und wir können sogar mehrere Dateien gleichzeitig kopieren, der Befehl sieht dann also so aus:
 ```bash
 cp [Quelldatei1] [Quelldatei2] [Quelldatei3] ...  [Zielverzeichniss]
 ```
+
+#pagebreak()
 
 #Spiel[ //Eine Ordnerstruktur erstellen, rausfinden warum man -r braucht
 
@@ -59,22 +61,26 @@ cp [Quelldatei1] [Quelldatei2] [Quelldatei3] ...  [Zielverzeichniss]
     + Kopier `Mein_Verzeichniss` nach `Mein_Verzeichniss3`
 
 
-    Das letzte hat nicht funktioniert. `cp` funktioniert standartmäßig nicht mit ganzen Verzeichnissen. Dafür brauchen wir unsere erste Flag, `-r`, was für rekursiv steht. Probiere es mal mit der Flag.
+    Das letzte hat nicht funktioniert, da `cp` standartmäßig nicht mit ganzen Verzeichnissen funktioniert. Dafür brauchen wir unsere erste Flag, `-r`, was für rekursiv steht. Probiere es mal mit der Flag.
+
+    ```bash
+    cp -r ...
+    ```
 ]
 
 
 
 ==== mv
 
-`mv` (move) verhält sich fast identisch zu `cp` mit einem kleinen aber feinen Unterschied. Die Ursprüngliche Datei wird gelöscht. Damit haben wir ein tolles Tool um Dinge umzubennen.
+`mv` (move) verhält sich fast identisch zu `cp` mit einem kleinen aber feinen Unterschied. Die ursprüngliche Datei wird gelöscht. Damit haben wir ein tolles Tool um Dinge umzubennen und zu verschieben.
 
 
 ==== rm
-Zum schluss wollen wir Dateien und Verzeichnisse auch löschen wollen. Das geht mit `rm` (remove). *Warnung:* Es gibt hier keinen Papierkorb. Wenn du etwas löschst dann ist es wirklich weg. Genauso wie bei `cp` brauchen wir `-r` für Verzeichnisse.
+Zum schluss wollen wir Dateien und Verzeichnisse auch löschen wollen. Das geht mit `rm` (remove). *Warnung:* Es gibt hier keinen Papierkorb. Wenn du etwas löschst dann ist es wirklich weg. Genau wie bei `cp` brauchen wir `-r` für Verzeichnisse.
 
 
 ==== cat
-Bevor wir dateien Löschen wollen wäre es vielleicht sinvoll rauszufinden, ob da noch was wichtiges drinn steht. Dafür gibt es den `cat` Befehl. Diese Druckt einfach den Inhalt einer Datei in das Terminal. Der Name kommt von `concatenate`, was zusammenfügen bedeutet und ist ein Hinweis darauf, dass man damit auch Dateien auch zusammenfügen kann. Das macht aber (fast) niemand damit.
+Bevor wir Dateien löschen wollen, wäre es vielleicht sinnvoll rauszufinden, ob da noch was wichtiges drin steht. Dafür gibt es den `cat` Befehl. Diese Druckt einfach den Inhalt einer Datei in das Terminal. Der Name kommt von `concatenate`, was zusammenfügen bedeutet und ist ein Hinweis darauf, dass man damit auch Dateien zusammenfügen kann. Das macht aber (fast) niemand damit.
 
 
 #Spiel[
@@ -89,7 +95,7 @@ Der nächste Befehl ist etwas komplizierter, dafür aber umso mächtiger.
 
 ==== grep
 
-Oft interessiert uns nur ein kleiner Teil einer Datei, vielleicht ist sie eine Liste und wir wollen nur einen eintrag Wissen, oder wir wollen erfahren wie oft etwas in einem Text genannt wird. Dafür gibt es den `grep` Befehl. Er nimmt mind. zwei Argumente, als erstes ein Muster, nach dem Gesucht werden soll, und dann Dateien, in denen Gesucht werden soll. Für unsere Zwecke reicht es aus, wenn wir als Muster einfach ein (Teil eines) Wortes nehmen. Das ganze sieht man an einem Beispiel am Besten.
+Oft interessiert uns nur ein kleiner Teil einer Datei, vielleicht ist sie eine Liste und wir wollen nur einen Eintrag daraus wissen, oder wir wollen erfahren wie oft etwas in einem Text genannt wird. Dafür gibt es den `grep` Befehl. Er nimmt mind. zwei Argumente, als erstes ein Muster, nach dem gesucht werden soll, und dann Dateien, in denen gesucht werden soll. Für unsere Zwecke reicht es aus, wenn wir als Muster einfach ein Wort, oder einen Teil davon nehmen. Das ganze sieht man an einem Beispiel am Besten.
 
 
 ```bash
@@ -98,12 +104,12 @@ grep "Passswort: " meine_datei
 
 gibt alle Zeilen der Datei aus, in denen "Passswort: " vorkommt.
 
-`grep` hat sehr viele nützliche Flaggen. Hier mal eine kleine Auswahl, damit du dich von der mächtigkeit dieses tool überzeugen lassen kannst.
+`grep` hat sehr viele nützliche Flaggen. Hier mal eine kleine Auswahl, damit du dich von der Mächtigkeit dieses Tools überzeugen lassen kannst.
 
 - `-c` Gibt nur die Anzahl an gefundenen Zeilen aus
 - `-n` Gibt zusätzlich noch die Zeilennummer des Treffers aus
 - `-i` Ignoriere Groß und Kleinschreibung
-- `-A, -B, -C` Gebe zusätzlich auch Zeilen die danach (`-A`), davor (-B) oder drum herum (`-C`) sind. Diese Flaggen unterscheiden sich von anderen, da diese selber ein Argument benötigen, nämlich wie viele extra Zeilen ausgegeben werden sollen. Argumente von Flaggen kommen immer direkt nach diesen.
+- `-A, -B, -C` Gebe zusätzlich auch Zeilen die danach (`-A`), davor (`-B`) oder drum herum (`-C`) sind. Diese Flaggen unterscheiden sich von anderen, da diese selber ein Argument benötigen, nämlich wie viele extra Zeilen ausgegeben werden sollen. Argumente von Flaggen kommen immer direkt nach diesen.
 
 In diesem Beispiel suchen wir erneut nach "Passwort: ", geben jetzt aber zu jedem Treffer zusätzlich die zwei Zeilen davor und danach aus.
 
@@ -125,7 +131,6 @@ whoami
 hostname
 date
 yes
-
 ```
 
 ]

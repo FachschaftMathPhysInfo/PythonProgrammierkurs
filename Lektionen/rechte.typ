@@ -2,7 +2,7 @@
 #import "../lib/helpers.typ": *;
 == Dateirechte
 
-Von Linux hört man immer dass es einem viel mehr freiheiten gibt. Das stimmt. Wir können bereits mit den uns bekannten Mitteln viel über das System erfahren, was unter windows vielleicht nicht so einfach wäre
+Von Linux hört man immer dass es einem viel mehr Freiheiten gibt. Das stimmt. Wir können bereits mit den uns bekannten Mitteln viel über das System erfahren, was unter Windows vielleicht nicht so einfach wäre
 
 #Spiel[In der Datei `/etc/passwd` befindet sich eine Liste aller Nutzerinnen dieses Systems. Diese ist auch öffentlich lesbar. Neugierig geworden?
     //TODO: Check the apple file (if it even exists, not trusting chat)
@@ -26,7 +26,7 @@ schreibbar sein, oder nicht. Nicht nur das, jede Datei gehört auch einer
 bestimmten Nutzerin und einer bestimmten Nutzerinnengruppe und Ausführbarkeit,
 Lesbarkeit oder Schreibbarkeit ist getrennt eingestellt für die Besitzerin der
 Datei, der Gruppe, der die Datei gehört und für alle anderen. Eine Datei kann
-also z.B. lesbar sein, für alle Nutzerinnen, aber nur eine bestimmte Gruppe von
+also z.B. für alle Nutzerinnen lesbar sein, aber nur eine bestimmte Gruppe von
 Nutzerinnen darf sie ausführen und nur eine einzige Nutzerin sie bearbeiten. All
 dies wird in neun so genannten *Permission bits* festgehalten (ein
 *Bit* ist die kleinste Einheit an Information, es kodiert genau „ja“ und
@@ -62,8 +62,7 @@ mehreren Spalten angeordnet:
 
 
 Wenn du die Berechtigungen von Dateien ändern willst, kannst du dazu
-`chmod` benutzen (wenn du wissen willst, wie man es benutzt: `man
-    chmod`), dazu muss sie dir aber gehören. Wenn du die Eigentümerin einer Datei
+`chmod` benutzen (wenn du wissen willst, wie man es benutzt: `man chmod`), dazu muss sie dir aber gehören. Wenn du die Eigentümerin einer Datei
 ändern willst, kannst du dazu `chown` nutzen -- dazu musst du aus
     Sicherheitsgründen allerdings Administratorin sein. Für Gruppen gibt es den äquivalenten Befehl `chgrp`.
 ]
@@ -79,10 +78,9 @@ Wenn du die Berechtigungen von Dateien ändern willst, kannst du dazu
 
 
 +  Versuche, `/etc/shadow` in einem Editor zu öffnen.
-+  Lege (z.B. mit dem Texteditor) eine Datei (Es geht nicht um
-    Kompilierung, also muss das keine `.cpp`-Datei sein. Gib der
-    Datei am Besten die Erweiterung `.txt`) in deinem Homeverzeichnis
-    an und mache sie dann mit `chmod a+w` world-writable
++  Lege (z.B. mit dem Texteditor) eine Datei in deinem Homeverzeichnis
+    an  (Gib der
+    Datei am Besten die Erweiterung `.txt`) und mache sie dann mit `chmod a+w` world-writable
     (`a+w` heißt „füge das Recht Schreibbarkeit für alle Nutzerinnen
     hinzu“).  Lass deine Sitznachbarin die Datei an ihrem Rechner öffnen
     (du kannst mittels `pwd` herausfinden, in welchem Ordner sie

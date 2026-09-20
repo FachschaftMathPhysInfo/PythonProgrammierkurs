@@ -41,7 +41,6 @@ für zusammengehörige Werte.
 `@dataclass` steht direkt über der Klasse und generiert automatisch die
 Grundausstattung (Konstruktor, lesbare Ausgabe, Vergleich per `==`). Du
 schreibst nur die Felder mit ihrem Typ hin, den Rest übernimmt Python.
-
 #Hinweis[
   Das ist *kein* Einstieg in klassisches OOP mit Methoden. Eine
   `dataclass` hier ist nichts weiter als eine Liste/ein Dict mit

@@ -7,16 +7,16 @@ In dieser Lektion wollen wir uns als erstes nochmal mit dem `Hello World` Progra
 
   === Was ist eine Programmiersprache?
 
-  Ein Computer versteht eigentlich nur Maschinencode – eine Abfolge von 0en und 1en. Das ist das `Binär`, von dem du vielleicht schon einmal gehört hast. Für den Computer ist Binär ganz toll. Es gibt nur 2 Werte: 0 und 1, wahr und falsch, Strom oder kein Strom. Er kann damit sehr effizient und sehr schnell Arbeiten. Für den Menschen ist Binär aber sehr unleserlich. Deswegen nutzen wir Programmiersprachen. Eine Programmiersprache ist eine Sprache, sie hat wie Deutsch oder Englisch eine bestimmte Syntax, also Regeln um gültige Sätze zu bilden, und Semantik, also eine Interpretation was diese Sätze auch bedeuten. Die Sätze nennen wir bei uns Anweisungen. Sie sind Elementare Befehle die wir dem Computer stellen. Das Hello World Programm von vorhin:
+  Ein Computer versteht eigentlich nur Maschinencode – eine Abfolge von 0en und 1en. Das ist das `Binär`, von dem du vielleicht schon einmal gehört hast. Für den Computer ist Binär ganz toll. Es gibt nur 2 Werte: 0 und 1, wahr und falsch, Strom oder kein Strom. Er kann damit sehr effizient und sehr schnell arbeiten. Für den Menschen ist Binär aber sehr unleserlich. Deswegen nutzen wir Programmiersprachen als Abstraktion. Eine Programmiersprache ist eine Sprache, sie hat wie Deutsch oder Englisch eine bestimmte Syntax, also Regeln um gültige Sätze zu bilden, und Semantik, also eine Interpretation was diese Sätze dann bedeuten. Die Sätze nennen wir bei uns Anweisungen. Sie sind elementare Befehle die wir dem Computer geben. Das Hello World Programm von vorhin:
   #Code("06_helloworld/helloworld.py")
-  besteht zum Beispiel aus genau einer Anweisung: Drucke die Buchstaben "Hello World" aus. In python haben wir meistens eine Anweisung pro Zeile.
+  besteht zum Beispiel aus genau einer Anweisung: Gebe die Buchstaben "Hello World" aus. In python haben wir meistens eine Anweisung pro Zeile.
 
-  Damit der Computer das jetzt aber auch versteht, müssen wir das erst in Maschinensprache übersetzen. Das macht der Befehlt `python3` für uns. Bei der Übersetzung gibt es zwei verschiedene Strategien
+  Damit der Computer das jetzt aber auch versteht, müssen wir das erst in Maschinensprache übersetzen. Das macht der Befehl `python3` für uns. Bei der Übersetzung gibt es zwei verschiedene Strategien
 
 
 
-  / Compilieren: Der Code wird einmal Übersetzt und der Maschinencode wird gespeichert. Das hat den Vorteil das er danach direkt vorhanden ist, musss aber teilweise für verschiedene Computer erneut gemacht werden.
-  / Interpretieren: Der Code wird dynamisch dann übersetzt wenn er benötigt wird. Das ist langsamer als die Compilation, aber um einiges handhabbarer
+  / Compilieren: Der Code wird einmal übersetzt und der Maschinencode wird gespeichert. Das hat den Vorteil, dass er danach direkt vorhanden ist, musss aber teilweise für verschiedene Computer erneut gemacht werden.
+  / Interpretieren: Der Code wird dynamisch dann übersetzt, wenn er benötigt wird. Das ist langsamer als die Compilation, aber um einiges handhabbarer
 
   Python verwendet dabei letzteres. Unser Interpreter ist dabei einfach Python.
 
@@ -29,11 +29,7 @@ In dieser Lektion wollen wir uns als erstes nochmal mit dem `Hello World` Progra
 
 === Das “Hello World”-Ritual
 
-Jetzt aber endlich zurück zu etwas Prakischem. Du hast dich vielleicht gefragt warum wir ausgerechnet "Hello World" gedruckt haben. Das hat traditionelle Gründe. Es ist ein Ritual der Informatikerinnen, dass das erste was man in einer Neuen Programmiersprache macht, ist, einmal Hello World auszugeben.
-
-    
-
-
+Jetzt aber endlich zurück zu etwas prakischem. Du hast dich vielleicht gefragt warum wir ausgerechnet "Hello World" gedruckt haben. Das hat traditionelle Gründe. Es ist ein Ritual der Informatikerinnen, dass das erste was man in einer neuen Programmiersprache macht, ist, einmal Hello World auszugeben.
 
 === Der Print Befehl
 
@@ -41,8 +37,8 @@ Jetzt aber endlich zurück zu etwas Prakischem. Du hast dich vielleicht gefragt 
 
     Die Semantik von ```python print("Hello World")``` haben wir gerade kennengelernt. Schauen wir uns einmal die Syntax an.
 
-1. ```python print```: Das ist der Name des Befehls den Wir nutzen wollen. Der ist Python bekannt und kann einfach so benutzt werden.
-2. (...): Die Klammern haben zwei Bedeutungen. Zum einen sagen sie Python das es irgendeine Handlung machen soll, zum anderen beinhalten sie die Argumente. Das sind dinge, mit denen der Befehltarbeiten soll. 
+1. ```python print```: Das ist der Name des Befehls den wir nutzen wollen. Der ist Python bekannt und kann einfach so benutzt werden.
+2. (...): Die Klammern haben zwei Bedeutungen. Zum einen sagen sie Python das es irgendeine Handlung machen soll, zum anderen beinhalten sie die Argumente. Das sind Dinge, mit denen der Befehl arbeiten soll. 
 3. ```python "Hello World"```: Das ist unser Argument. Wir wollen das, was wir reinschreiben, auch genau so wieder ausgegeben haben. Deshalb packen wir das ganze in Anführungszeichen.
 
 Das ganze nennt sich Funktionsaufruf. Das erinnert stark an die (Schul-) Mathe mit $f(x)$.
@@ -72,7 +68,7 @@ Bis jetzt ist die Kommunikation recht einseitig. Das Programm redet mit dir, du 
     Wir wissen ja bereits, dass wir die Worte in ```python "Hello World"``` mithilfe eines Kommas trennen können. Ersetz nun mal das "World" in ```python print("Hello", "World")``` durch ```python input()``` Was passiert?
     - Das Terminal hat nun einen blinkenden Cursor. Gib mal deinen Namen ein und drück Enter.
 
-Das funktioniert schonmal ganz gut, aber nicht jede merkt wann man was eingeben muss. Zum Glück akzeptiert `input` auch Argumente. Kannst du das Problem dadurch lösen? Probier es aus.
+Das funktioniert schonmal ganz gut, aber nicht jede, merkt wann man etwas eingeben muss. Zum Glück akzeptiert `input` auch Argumente. Kannst du das Problem dadurch lösen? Probier es aus.
 
 
 
@@ -97,14 +93,6 @@ Das funktioniert schonmal ganz gut, aber nicht jede merkt wann man was eingeben 
     + Einen `TypeError`, weil `print` nur ein Argument akzeptiert
     + `Hallo Welt` (Python fügt automatisch ein Leerzeichen zwischen den Argumenten ein)
     + Nur `Hallo`, das zweite Argument wird ignoriert
-]
-
-#Quiz(answer: "a)")[
-    Du schreibst ```python name = input("Wie heißt du? ")``` und tippst anschließend `Anna` ein. Welche Aussage stimmt?
-    + In der Variable `name` steht jetzt der Text `"Anna"`
-    + `input()` gibt eine Zahl zurück, kein Text
-    + Der Text `"Wie heißt du? "` wird nirgends angezeigt
-    + `name` bleibt leer, bis das Programm ein zweites Mal ausgeführt wird
 ]
 
 // #Spiel[

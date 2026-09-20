@@ -205,10 +205,10 @@
     // *Wie verlasse ich das REPL*
     // Es kann häufig vorkommen, das du solche fehler siehst.
 
-  ```
-  >>> python3 helloworld.py
-  SyntaxError: invalid syntax
-  ```
+  // ```
+  // >>> python3 helloworld.py
+  // SyntaxError: invalid syntax
+  // ```
 
   // Das passiert, wenn man vergisst, dass man sich *bereits im REPL*
   //   befindet. Falls wir mit dem REPL fertig sind, können wir es durch den Befehl ```python exit()``` wieder verlassen.
@@ -316,7 +316,7 @@
   + Keins von beidem funktioniert dauerhaft
 ]
 
-Das REPL ist extrem nützlich um kurz dinge auszuprobieren. REPL's gibt es nicht nur in Python, nahezu jede interpretierbare Sprache liefert ein REPL. Wir haben sogar schon eins benutzt. Das was in unserem Terminal passiert ist auch ein REPL, nur nicht in `python`, sondern in der Sprache `bash`. Das bedeutet auch das du im Terminal Variablen, Schleifen, Funktionen und dergleichen nutzen kannst.
+Das REPL ist extrem nützlich um kurz Dinge auszuprobieren. REPL's gibt es nicht nur in Python, nahezu jede interpretierbare Sprache liefert ein REPL. Wir haben sogar schon eins benutzt. Das was in unserem Terminal passiert ist auch ein REPL, nur nicht in `python`, sondern in der Sprache `bash`. Das bedeutet auch das du im Terminal Variablen, Schleifen, Funktionen und dergleichen nutzen kannst.
 // Damit hast du ein zweites Werkzeug in der Hand: Neben dem Skript-Modus aus
 // der Hello-World-Lektion kannst du jetzt auch das REPL nutzen, um Ideen
 // schnell auszuprobieren, bevor du sie in ein richtiges Programm packst. Genau

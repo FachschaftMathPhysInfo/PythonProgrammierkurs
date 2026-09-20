@@ -10,20 +10,27 @@ In diese Lektion lernen wir, was Variablen sind rechnen ein bisschen.
 === Variablen
 
 #Theorie[
-    Den Begriff _Variable_ kennst du vermutlich schon aus der Mathematik. Zum Beispiel haben wir funktionen so geschrieben
+    Den Begriff _Variable_ kennst du vermutlich schon aus der Mathematik. Zum Beispiel haben wir Funktionen so geschrieben
     $ f(x) = x^2 + 1 $
     Hier ist $x$ eine Variable.
 
-    Variablen in der Informatik verhalten sich änlich. Sie stellen das "Gedächtnis" des Programms dar. Eine Variable ist ein stück Speicher, dem wir einen Namen geben. Wir können dann Werte in einer Variable speichern und später wieder verwenden. Machen wir das mal an unserem Hello World beispiel.
+    Variablen in der Informatik verhalten sich ähnlich. Sie stellen das "Gedächtnis" des Programms dar. Eine Variable ist ein Stück Speicher, dem wir einen Namen geben. Wir können dann Werte in einer Variable speichern und später wieder verwenden. Machen wir das mal an unserem Hello World Beispiel.
     #Code("07_variablen_arithmetik/helloworld_variables.py")
     Was genau passiert hier?
     - ```python text = "Hello World"```: Das hier nennt sich Variablenzuweisung. Wir weisen der Variable `text` den Wert `"Hello World"` zu.
-    - ```python print(text)```: Hier verwenden wir die Variable. Beachte, dass wir keine Anführungszeichen verwenden. Das sagt python, dass wir nicht den Wert `text`, sondern eine Variable meinen. Python ersetz dann `text` durch den Wert, den wir vorhin gespeichert haben.
+    - ```python print(text)```: Hier verwenden wir die Variable. Beachte, dass wir keine Anführungszeichen verwenden. Das sagt python, dass wir nicht das Wort `text`, sondern eine Variable meinen. Python ersetz dann `text` durch den Wert, den wir vorhin gespeichert haben.
     
+]
+#Quiz(answer: "a)")[
+    Du schreibst ```python name = input("Wie heißt du? ")``` und tippst beim ausführen `Anna` ein. Welche Aussage stimmt?
+    + In der Variable `name` steht jetzt der Text `"Anna"`
+    + `input()` gibt eine Zahl zurück, kein Text
+    + Der Text `"Wie heißt du? "` wird nirgends angezeigt
+    + `name` bleibt leer, bis das Programm ein zweites Mal ausgeführt wird
 ]
 
 #Spiel[
-    Das Programm, das du in der letzten Lektion am Ende geschrieben hast, war schon sehr unübersichtlich. Schreib das mal neu und verwende Variablen. //TODO: Wissen sie das input einen wert zurückgibt? Meiner Meinung nach sollten sie den Transfer hinbekommen. Zu not sollen sie nachfragen.
+    Das Programm, das du in der letzten Lektion am Ende geschrieben hast, war schon recht unübersichtlich. Schreib das mal neu und verwende Variablen. //TODO: Wissen sie das input einen wert zurückgibt? Meiner Meinung nach sollten sie den Transfer hinbekommen. Zu not sollen sie nachfragen.
 ]
 
 
@@ -35,10 +42,10 @@ In diese Lektion lernen wir, was Variablen sind rechnen ein bisschen.
 
 
 === Etwas Quality of Life: Der Formatstring
-Wir haben jetzt zwei verschiedene Arten von Argumenten für `print` kennengelernt. Einmal die in Anführugnszeichen, die übrigens _Strings_ (auf Deutsch Zeichenkette) heißen, falls wir den genauen wortlaut ausgeben wollen,und einmal ohne, falls wir eine Variable benutzen wollen. Es gibt aber auch eine möglichkeit diese beiden zu kombinieren, der sogenannte _formatstring_.
+Wir haben jetzt zwei verschiedene Arten von Argumenten für `print` kennengelernt. Einmal die in Anführugnszeichen, die übrigens _Strings_ (auf Deutsch Zeichenkette) heißen, falls wir den genauen Wortlaut ausgeben wollen, und einmal ohne, falls wir eine Variable benutzen wollen. Es gibt aber auch eine Möglichkeit diese beiden zu kombinieren, der sogenannte _formatstring_.
 
 ```python
-variable=42
+variable = 42
 print(f"Die Antwort auf alles ist {variable}")
 ```
 
@@ -48,12 +55,12 @@ Ein _formatstring_ ist ebenfalls ein String, aber wir schreiben `f`, wie _format
 
 === Arithmetik
 
-Natürlich kann python auch Mathe. Zumindest rechnen kann python ganz ordentlich. Da es ganz umstäntlich wäre, Arithmetik wie in und output über Befehle zu machen, können wir hierfür einfach symbole benutzen
+Natürlich kann python auch Mathe. Zumindest rechnen kann python ganz ordentlich. Da es ganz umstäntlich wäre, Arithmetik wie in- und output über Befehle zu machen, können wir hierfür einfach Symbole benutzen
 
 
 
 #Theorie[
-    Um Arithmetik zu betreiben brauchen wir erstmal Zahlen. Zum Glück ist das ganz einfach. Wir schreiben die Zahlen einfach direkt in das Programm. Einzige besonderheit: Wir verwenden bei Kommazahlen einen Punkt, wie man es im Englischen auch macht.
+    Um Arithmetik zu betreiben brauchen wir erstmal Zahlen. Zum Glück ist das ganz einfach. Wir schreiben die Zahlen einfach direkt in das Programm. Einzige Besonderheit: Wir verwenden bei Kommazahlen einen Punkt, wie man es im Englischen auch macht.
 
 ]
 
@@ -65,10 +72,10 @@ Natürlich kann python auch Mathe. Zumindest rechnen kann python ganz ordentlich
     - ```python print(64 / 3)```
     - ```python print(12 - 4 * 4 )```
 
-Wie wir sehen kennt Python die uns bekannte Reihenfolge der Operatoren nicht. Das heißt wir müssen mit klammern nachhelfen. 
+Wie wir sehen, kennt Python die uns bekannte Reihenfolge der Operatoren nicht. Das heißt wir müssen mit Klammern nachhelfen. 
 ]
 
-
+#pagebreak()
 #Spiel[
     Neben den uns bekannten Symbolen gibt es noch ein paar weitere, die wir so nicht direkt kennen.
     Das sind

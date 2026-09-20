@@ -137,7 +137,7 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
 
   *Und wenn es doch passiert?* Das wird es, und zwar allen. Ein hängendes Programm brichst du im Terminal mit `Strg` + `C` ab (auf macOS ebenfalls `Ctrl` + `C`, nicht `Cmd`). Das ist kein Absturz, sondern der reguläre Weg, ein laufendes Programm zu beenden.
 
-  === Ein Muster: sammeln
+  === Ein Muster: Sammeln
 
   Sehr oft dient eine Schleife dazu, ein Ergebnis Stück für Stück *aufzusammeln*. Dafür legt man vor der Schleife eine Variable als „Sammelbehälter“ an und füllt sie im Rumpf immer weiter auf. Entscheidend ist die Reihenfolge: Der Behälter wird *vor* der Schleife auf einen Startwert gesetzt, nicht darin. Stünde `summe = 0` im Rumpf, würde die Summe bei jedem Durchlauf wieder geleert.
 ]
@@ -260,12 +260,12 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
   )
 ]
 
-#Code("09_schleifen/for_range.py")
+// #Code("09_schleifen/for_range.py")
 
 #Theorie[
   === Nicht nur Zahlen
 
-  Eine `for`-Schleife kann über alles laufen, was aus mehreren Teilen besteht – Fachwort: über alles *Iterierbare*. Eine Zeichenkette ist so ein Fall, denn sie besteht aus einzelnen Zeichen. `for zeichen in "Python":` liefert nacheinander `P`, `y`, `t`, `h`, `o`, `n`.
+  Eine `for`-Schleife kann über alles laufen, was aus mehreren Teilen besteht – Fachwort: über alles *iterierbare*. Eine Zeichenkette ist so ein Fall, denn sie besteht aus einzelnen Zeichen. ```python for zeichen in "Python":``` liefert nacheinander `P`, `y`, `t`, `h`, `o`, `n`.
 
   Damit lassen sich Texte untersuchen, ohne über Positionen und Zählerstände nachdenken zu müssen. In Lektion 11 wirst du die *Liste* kennenlernen, und diese Schreibweise wird dort unverändert weiterfunktionieren.
 ]
@@ -319,6 +319,8 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
   Entscheidend ist wieder die Einrückung: Sie allein legt fest, was zur inneren und was noch zur äußeren Schleife gehört.
 ]
 
+#Code("09_schleifen/einmaleins.py")
+
 #Abbildung(caption: [Die innere Schleife beginnt bei jedem Schritt der äußeren wieder von vorn. Zehn äußere Durchläufe mit je zehn inneren ergeben $10 dot 10 = 100$ Ausführungen des Rumpfes – die vollständige Einmaleins-Tabelle.])[
   #text(size: 9pt)[
     #table(
@@ -339,8 +341,6 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
     )
   ]
 ]
-
-#Code("09_schleifen/einmaleins.py")
 
 #Praxis[
   + Lass `einmaleins.py` laufen. Ändere die innere Schleife auf `range(1, 6)` – was passiert mit der Tabelle?
@@ -438,9 +438,9 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
 
   Kein Absturz, nur ein falsches Ergebnis: Die Sammelvariable (`summe = 0`) steht versehentlich *im* Rumpf statt davor. Sie muss vor der Schleife angelegt werden, sonst beginnt sie jede Iteration von vorn.
 
-  *`ValueError` mitten in der Schleife*
+  // *`ValueError` mitten in der Schleife*
 
-  `int(input(...))` bricht ab, sobald jemand etwas eingibt, das keine Zahl ist. Die Schleife schützt nur vor Werten im falschen *Bereich*, nicht vor der falschen *Art* von Eingabe. Wie man auch das abfängt, lernst du später.
+  // `int(input(...))` bricht ab, sobald jemand etwas eingibt, das keine Zahl ist. Die Schleife schützt nur vor Werten im falschen *Bereich*, nicht vor der falschen *Art* von Eingabe. Wie man auch das abfängt, lernst du später.
 ]
 
 #Theorie[
@@ -448,5 +448,5 @@ In der letzten Lektion hat unser Programm gelernt, an einer Weggabelung den pass
 
   Dein Programm kann jetzt entscheiden *und* wiederholen. Damit hast du alle Bausteine beisammen, um im Prinzip jede Berechnung zu formulieren, die ein Computer ausführen kann – das ist eine bemerkenswerte Grenze, die du gerade überschritten hast.
 
-  Praktisch fehlt aber noch etwas: Bislang wächst jedes Programm als ein einziger langer Block von oben nach unten. Willst du dieselbe Prüfung an drei Stellen durchführen, musst du sie dreimal hinschreiben. In der nächsten Lektion lernst du *Funktionen* – die Möglichkeit, einem Stück Code einen Namen zu geben und es von überall aufzurufen. Ab da baust du Programme aus wiederverwendbaren Bausteinen statt aus einer durchgehenden Textwand.
+  Praktisch fehlt aber noch etwas: Bislang wächst jedes Programm als ein einziger langer Block von oben nach unten. Willst du die selbe Prüfung an drei Stellen durchführen, musst du sie dreimal hinschreiben. In der nächsten Lektion lernst du *Funktionen* kennen – die Möglichkeit, einem Stück Code einen Namen zu geben und es von überall aufzurufen. Ab da baust du Programme aus wiederverwendbaren Bausteinen auf statt als eine durchgehende Textwand.
 ]

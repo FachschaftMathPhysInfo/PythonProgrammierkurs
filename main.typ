@@ -27,11 +27,11 @@
     #datetime.today().display("[month repr:long] [day], [year]")
 ]
 
-#pagebreak()
+// #pagebreak()
 
 #outline(title: "Inhaltsverzeichnis", depth: 2)
 
-#pagebreak()
+// #pagebreak()
 
 #include "vorwort.typ"
 
@@ -40,7 +40,7 @@
 
 #include "Lektionen/vorbereitung.typ"
 
-=  Unix artige Betriebssysteme
+=  Unixartige Betriebssysteme
 
 #include "Lektionen/Terminal_Naviagation.typ"
 
@@ -57,16 +57,6 @@
 #include "Lektionen/rechte.typ" // Erweitern auf chown chgrp
 
 
-
-
-
-
-
-
-
-
-
-
 =  Python
 
 
@@ -80,10 +70,6 @@
 #include "Lektionen/kontrollfluss.typ"
 
 // Schleifen
-
-
-// Funktionen
-
 
 #include "Lektionen/schleifen.typ"
 

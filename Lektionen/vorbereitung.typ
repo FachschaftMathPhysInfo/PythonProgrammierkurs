@@ -3,7 +3,7 @@
 
 == Vorbereitung eigener Computer
 
-Dieses Kapitel bereitet deinen Computer vor, um Python-Programme zu schreiben und auszuführen. Du wirst drei zentrale Komponenten installieren und konfigurieren. Je nach deinem Betriebssystem unterscheiden sich die Schritte leicht.
+In diesem Kapitel bereitest du deinen Computer vor, um Python-Programme zu schreiben und auszuführen. Du wirst drei zentrale Komponenten installieren und konfigurieren. Je nach deinem Betriebssystem unterscheiden sich die Schritte leicht.
 
 === Was benötigen wir?
 
@@ -55,15 +55,15 @@ Klicke auf den Namen deines Betriebssystems unten, um zur passenden Anleitung zu
 ==== Die Installation
 *Schritt 1: WSL2 installieren*
 
-Öffne *PowerShell* als Administrator:
-+ Geh auf die Suchleiste, such dort nach *PowerShell* und klick mit rechts auf die Option "Als Administrator starten".
+Öffne *Command Prompt*:
++ Geh auf die Suchleiste, such dort nach *CMD* und starte es".
 + Kopier diesen Befehl rein und drück Enter:
 
 ```
 wsl --install -d Ubuntu
 ```
 
-Das Terminal wird viele Zeilen Text anzeigen – das ist normal. Der Prozess dauert 5–10 Minuten. Am Ende wirst du gefragt, einen *Benutzernamen* und ein *Passwort* einzugeben. Diese sind wichtig, schreib dir beide auf, du brauchst das Passwort später!
+Das Terminal wird viele Zeilen Text anzeigen – das ist normal. Der Prozess dauert 5–10 Minuten. Am Ende wirst du aufgefordert, einen *Benutzernamen* und ein *Passwort* einzugeben. Diese sind wichtig, schreib dir beide auf, du brauchst das Passwort später!
 
 #image("../Assets/wsl-intallation.png", width: 115%, alt: "WSL2 Installation")
 
@@ -72,18 +72,17 @@ Nach der Installation: *Starte deinen PC neu.*
 *Schritt 2: Ubuntu Terminal öffnen*
 
 Nach dem Neustart:
-+ Öffne das *Start-Menü*
-+ Such nach "Ubuntu"
-+ Klick auf "Ubuntu"
+Gibt *Ubuntu* in die Suchleiste ein und starte es.
 
 Das Ubuntu-Terminal öffnet sich. Das ist dein neues "Zuhause" zum Programmieren!
 
 *Schritt 3: Python installieren*
 
-Im Ubuntu-Terminal gibst du diese Befehle ein (kopieren & einfügen mit Ctrl+Shift+V):
+Im Ubuntu-Terminal gibst du diese Befehle ein:
 
 ```bash
 sudo apt update
+sudo apt upgrade
 sudo apt install python3 python3-pip git
 ```
 
@@ -110,9 +109,8 @@ Das erlaubt VSCode, mit deinem Ubuntu-Linux zu kommunizieren.
 *Schritt 5: VSCode mit WSL verbinden*
 
 + Öffne VSCode
-+ Drück Ctrl+Shift+P (oder Cmd+Shift+P auf Mac)
-+ Tipp "WSL: New Window"
-+ Klick drauf
++ Drück Ctrl+Shift+P
++ Wähle "WSL: Connect to WSL"
 
 VSCode öffnet sich jetzt im WSL-Modus. Oben sollte es "WSL: Ubuntu" anzeigen.
 
@@ -163,11 +161,8 @@ Der _Package-Manager_ den wir verwenden heißt _Homebrew_.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-*Was passiert hier?* Wir benutzen hier 2 wichtige Programme. `curl` lädt eine Installationsdatei aus dem Internet herunter. Diese enthält sehr viele Anweisungen für die Shell. Die geben wir auch dann an `bash` weiter. `bash` werden wir noch ganz ausführlich behandeln.
-
-//Hinweis, kein Code aus dem Internet einfach so ausführen.
-
-#Hinweis[Es ist nicht ungefährlich, einfach so fremden Code aus dem Internet auszuführen. Wenn du dir unsicher bist, kannst du einfach den Link in einen Browser eingeben und nachschauen, was da genau passiert.]
+*Was passiert hier?* Wir benutzen hier 2 wichtige Programme. `curl` lädt eine Installationsdatei aus dem Internet herunter. Diese enthält sehr viele Anweisungen für die Shell. Die geben wir auch dann an `bash` weiter.#Hinweis[Es ist nicht ungefährlich, einfach so fremden Code aus dem Internet auszuführen. Wenn du dir unsicher bist, kannst du einfach den Link in einen Browser eingeben und nachschauen, was da genau passiert.]
+`bash` werden wir noch ganz ausführlich behandeln.
 
 Das dauert ein paar Minuten. Folge den Anweisungen auf dem Bildschirm.
 
@@ -229,6 +224,7 @@ Linux ist wie macOS Unix-basiert, daher läuft Python nativ ohne zusätzliche La
 
 ```bash
 sudo apt update
+sudo apt upgrade
 sudo apt install python3 python3-pip git
 ```
 
@@ -246,24 +242,24 @@ Option A (über Terminal):
 sudo apt install code
 ```
 
-Option B (für die Hacker):
+Option B (etwas komplizierter):
 + Geh auf https://code.visualstudio.com
 + Lad die `.deb` Datei (für Debian/Ubuntu) herunter
 + Installier sie mit `sudo dpkg -i code_*.deb`
 
-_[Screenshot-Hinweis: VSCode unter Linux]_
+// _[Screenshot-Hinweis: VSCode unter Linux]_
 
-*Schritt 3: Dein erstes Python-Programm*
+// *Schritt 3: Dein erstes Python-Programm*
 
-Im Terminal:
+// Im Terminal:
 
-```bash
-mkdir -p ~/Programmiervorkurs
-cd ~/Programmiervorkurs
-code .
-```
+// ```bash
+// mkdir -p ~/Programmiervorkurs
+// cd ~/Programmiervorkurs
+// code .
+// ```
 
-Das öffnet VSCode im `Programmiervorkurs` Ordner.
+// Das öffnet VSCode im `Programmiervorkurs` Ordner.
 
 // Erstell eine neue Datei:
 // + Drück Ctrl+N
@@ -297,7 +293,7 @@ Ob alles richtig ist, siehst du wenn das Licht angeht, oder so. Naja, wir müsse
   *Aufgabe 1: Verifizier, dass alles installiert ist*
   Öffne dein Terminal (WSL/macOS/Linux) und gib diese Befehle nacheinander ein:
   ```bash
-  python3 --versione
+  python3 --version
   git --version
   code --version
   ```
@@ -309,6 +305,7 @@ Ob alles richtig ist, siehst du wenn das Licht angeht, oder so. Naja, wir müsse
   ```
 
   *Wenn ein Befehl nicht funktioniert:* Geh zurück zur passenden Anleitung oben und überprüf die Schritte.
+
   *Aufgabe 2: Erstell und starte ein erstes Programm*
 
   Im Terminal:
@@ -331,7 +328,7 @@ Ob alles richtig ist, siehst du wenn das Licht angeht, oder so. Naja, wir müsse
   ```
 
     Du solltest nun
-    ```bash
+    ```
       Hello World
     ```
     in deinem Terminal stehen haben. Herzlichen Glückwunsch zu deinem ersten Programm.
@@ -376,7 +373,7 @@ Ob alles richtig ist, siehst du wenn das Licht angeht, oder so. Naja, wir müsse
   - Statt `Ctrl+Shift+P`: Öffne VSCode und klick auf "View" > "Command Palette"
   - Statt `Cmd+N`: Datei > New File
 
-    *Die Allgemeine Lösung:* Falls du irgendwo nicht mehr weiterkommst, einfach deine Tutorin fragen.
+  *Die Allgemeine Lösung:* Falls du irgendwo nicht mehr weiterkommst, einfach deine Tutorin fragen.
 ]
 
 

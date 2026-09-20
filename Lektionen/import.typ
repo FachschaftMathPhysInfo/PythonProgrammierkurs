@@ -8,7 +8,7 @@
 
     // Stell dir ein großes Haus vor, in dem jedes Zimmer eine bestimmte Aufgabe hat: die Küche zum Kochen, die Werkstatt zum Schrauben, die Bibliothek zum Lesen. Wenn du kochen willst, gehst du in die Küche, aber du musst die Küche nicht selbst in deinem Wohnzimmer bauen. Der Zugang ist einfach vorhanden, man muss ihn nur nutzen.
 
-    Wir haben jetzt viele Grundwerkzeuge kennengelernt und können jetz alles Programmieren was man programmieren kann  (das wurde sogar mal bewiesen). Doch alles selber schreiben ist anstrengend. Programmiererinnen sind faul und bedienen sich gerne am Code von anderen. Niemand will immer alles von Grund auf selber schreiben. Es wäre doch toll, wenn wir einfach bestehenden Code nehmen können, und ihn in unserem Programm einfach verwenden können.
+    Wir haben jetzt viele Grundwerkzeuge kennengelernt und können jetzT alles programmieren was man programmieren kann  (das wurde sogar mal bewiesen). Doch alles selber schreiben ist anstrengend. Programmiererinnen sind faul und bedienen sich gerne am Code von anderen. Niemand will immer alles von Grund auf selber schreiben. Es wäre doch toll, wenn wir einfach bestehenden Code nehmen können, und ihn in unser  eigenes Programm schieben könnten.
 
 Genau so funktionieren *Module* und *Imports* in Python: Andere Programmiererinnen haben bereits nützliche Funktionen und Werkzeuge geschrieben, mathematische Funktionen, Zufallszahlengeneratoren, Dateioperationen und vieles mehr. Diese sind in sogenannten *Modulen* organisiert. Mit dem Befehl `import` holst du dir diese Module ins Programm und kannst sie sofort benutzen als ob du sie selber geschrieben hättest.
 
@@ -32,7 +32,7 @@ Python kommt mit einer riesigen *Standard-Bibliothek*, das sind Module, die bere
   )
 ]
 //Alles in Python is in C implementiert
-Die `math`-Bibliothek ist das perfekte Beispiel: Sie bietet hunderte mathematische Funktionen, die man immer mal wieder braucht kann.  Warum ist das nicht alles standartmäßig in Python? Ein Grund dafür ist das auf einmal sehr viele Namen für Funktionen blockiert sind.
+Die `math`-Bibliothek ist das perfekte Beispiel: Sie bietet hunderte mathematische Funktionen, die man immer mal wieder brauchen kann.  Warum ist das nicht alles standartmäßig in Python? Ein Grund dafür ist das auf einmal sehr viele Namen für Funktionen blockiert sind.
 
 === Import-Syntax: Verschiedene Wege
 
@@ -49,7 +49,7 @@ Ein Anfängerfehler: `from math import *` importiert *alles* aus einem Modul auf
 
 === Beispiel: math-Modul für Kreisberechnungen
 
-Ein praktisches Beispiel: Du willst den Umfang und die Fläche eines Kreises berechnen. Dafür brauchst du Pi (π), und damit willst du dir nicht von Hand einen Näherungswert ausdenken.
+Ein praktisches Beispiel: Du willst den Umfang und die Fläche eines Kreises berechnen. Dafür brauchst du Pi (π), und willst du dir nicht von Hand einen Näherungswert ausdenken.
 
 #Code("13_import/import_math_basics.py")
 
@@ -81,7 +81,7 @@ Hier siehst du auch `from math import pi, sqrt`, das ist hilfreich, wenn du nur 
 
 === Eigene Module schreiben
 
-Das Schöne ist: Das Konzept funktioniert in beide Richtungen. Du kannst dir eigene Sammlungen von Funktionen schreiben und dann wie ein Module importieren. Das ist die Grundlage für größere Programme: Man gliedert seinen Code in logische Teile, jeder Teil wird eine Datei mit nützlichen Funktionen.
+Das Schöne ist: Das Konzept funktioniert in beide Richtungen. Du kannst dir eigene Sammlungen von Funktionen schreiben und dann wie ein Modul importieren. Das ist die Grundlage für größere Programme: Man gliedert seinen Code in logische Teile, jeder Teil wird eine Datei mit nützlichen Funktionen.
 
 Ein einfaches Beispiel: Du schreibst eine Datei `eigenes_modul.py` mit hilfreichen mathematischen Funktionen und dann importierst du sie überall sonst, wo du sie brauchst.
 
@@ -124,7 +124,7 @@ Falls `pip install matplotlib` bei dir nicht auf Anhieb klappt (je nach Betriebs
 
 Erweitere das Zahlenratespiel aus `zahlenratespiel_mit_random.py`:
 
-+ Gib nicht nur an, ob die geratene Zahl zu hoch oder zu niedrig ist, sondern auch, wie weit die Abweichung ist (z.B. „Zu niedrig, Abweichung: 15").
++ Gib nicht nur an, ob die geratene Zahl zu hoch oder zu niedrig ist, sondern auch, wie weit die Abweichung ist (z.B. „Zu niedrig, Abweichung: >15").
 + Setze eine maximale Anzahl von Versuchen (z.B. 7) und beende das Spiel danach, egal ob richtig geraten oder nicht.
 + Schreib nach dem Spiel die Anzahl der Versuche in eine Datei (dafür brauchst du `open()` und `write()`, die du ausprobieren darfst).
 + Ändere das Spiel so, dass nicht nur eine, sondern zwei oder drei Zahlen zu erraten sind.
@@ -139,7 +139,7 @@ Erweitere das Zahlenratespiel aus `zahlenratespiel_mit_random.py`:
 + *Lotto-Ziehung:* Schreib ein Programm, das 6 verschiedene Zahlen zwischen 1 und 49 zieht (wie beim Lotto) nutze `random.sample()`. Lies anschließend von der Nutzerin 6 Zahlen ein und sag ihr, wie viele richtig sind.
 + *Zufälliges Passwort:* Schreib ein Modul mit einer Funktion `zufallspasswort(laenge)`, die ein zufälliges Passwort generiert. (Tipp: `string.ascii_letters + string.digits + string.punctuation` enthält alle möglichen Zeichen; `random.choice()` und eine `for`-Schleife kombinieren diese.)
 + *Festgelegte Zufallszahl:* Lies nach, was `random.seed()` macht. Warum ist das wichtig für Tests und Reproduzierbarkeit?
-+ *Eigene Grafik:* Installiere `matplotlib` (`pip install matplotlib`) und passe `import_matplotlib_beispiel.py` an: Nutze statt der Temperaturen eine eigene Datenreihe (z.B. deine Würfelergebnisse aus Aufgabe 1) und probier `plt.bar()` statt `plt.plot()` aus. Was ändert sich?
++ *Eigene Grafik:* Installiere `matplotlib` (`pip install matplotlib`) und passe `import_matplotlib_beispiel.py` an: Nutze statt der Temperaturen eine eigene Datenreihe (z.B. deine Würfelergebnisse aus Aufgabe 1), probiere `plt.bar()` und `plt.plot()` aus. Was ändert sich?
 
 ]
 

@@ -6,7 +6,7 @@
 Stell dir eine Küchenmaschine vor, die Orangen zu Saft presst: Du gibst
 Orangen hinein (die Eingabe), die Maschine tut ihre Arbeit, und am Ende
 bekommst du ein Glas Saft heraus (die Ausgabe). Du musst nicht wissen, wie
-die Maschine im Inneren genau funktioniert -- Hauptsache, das Ergebnis
+die Maschine im Inneren genau funktioniert -- Hauptsache das Ergebnis
 stimmt. Und du kannst die Maschine beliebig oft benutzen, mit
 unterschiedlichen Mengen an Orangen, ohne sie jedes Mal neu zu bauen.
 
@@ -35,7 +35,7 @@ def name(argument1, argument2):
 - ```python def``` (kurz für „define") leitet die Definition ein
 - `name` ist ein frei wählbarer, sprechender Name für die Funktion (wie bei
   Variablen: `flaeche_berechnen` statt `f1`)
-- in den Klammern stehen die *Argument* -- Platzhalter für Werte, die die
+- in den Klammern stehen die *Argumente* -- Platzhalter für Werte, die die
   Funktion beim Aufruf entgegennimmt
 - der eingerückte Block darunter ist der *Funktionsrumpf*, der ausgeführt
   wird, sobald die Funktion aufgerufen wird
@@ -126,8 +126,6 @@ so aus:
 Damit wir für eine gegebene Zahl nicht jedes Mal von Hand rechnen müssen,
 lagern wir die Rechenregel in eine Funktion `collatz(x)` aus, die uns die
 jeweils nächste Zahl der Folge zurückgibt:
-#h(100%)
-
 
 #Code("10_funktionen/funktionen_collatz.py")
 
@@ -168,6 +166,8 @@ jeweils nächste Zahl der Folge zurückgibt:
   auslagern könntest?
 
 ]
+
+#pagebreak()
 
 #Quiz(answer: "b), d)")[
   Welche Aussagen zu Funktionen in Python sind korrekt?
